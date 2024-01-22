@@ -2,7 +2,8 @@
 
 uses
   consoletestrunner,
-  Tests.EOLib.Data;
+  Tests.EOLib.Data,
+  Tests.EOLib.Encrypt;
 
 var
   Application: TTestRunner;
