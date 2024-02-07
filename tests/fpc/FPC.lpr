@@ -3,7 +3,8 @@
 uses
   consoletestrunner,
   Tests.EOLib.Data,
-  Tests.EOLib.Encrypt;
+  Tests.EOLib.Encrypt,
+  Tests.EOLib.Packet;
 
 var
   Application: TTestRunner;
