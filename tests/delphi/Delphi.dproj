@@ -96,6 +96,7 @@
         <DCCReference Include="..\Tests.EOLib.Data.pas"/>
         <DCCReference Include="..\Tests.EOLib.Encrypt.pas"/>
         <DCCReference Include="..\Tests.EOLib.Packet.pas"/>
+        <DCCReference Include="..\Tests.EOLib.Utils.Optional.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -68,3 +68,6 @@ modules/
 
 # DelphiLint settings file https://github.com/integrated-application-development/delphilint
 *.delphilint
+
+# Protocol codegen artifacts
+protocol-code-generator/output

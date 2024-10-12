@@ -4,7 +4,8 @@ uses
   consoletestrunner,
   Tests.EOLib.Data,
   Tests.EOLib.Encrypt,
-  Tests.EOLib.Packet;
+  Tests.EOLib.Packet,
+  Tests.EOLib.Utils.Optional;
 
 var
   Application: TTestRunner;
