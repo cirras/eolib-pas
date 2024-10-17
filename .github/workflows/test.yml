@@ -1,0 +1,27 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Install Lazarus
+        uses: gcarreno/setup-lazarus@v3
+        with:
+          lazarus-version: "3.0"
+
+      - name: Build tests
+        run: lazbuild tests\fpc\FPC.lpi
+
+      - name: Run tests
+        run: .\tests\fpc\FPC.exe --all --format-plain
