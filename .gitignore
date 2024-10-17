@@ -71,3 +71,6 @@ modules/
 
 # Protocol codegen artifacts
 protocol-code-generator/output
+
+# Dist artifacts
+dist

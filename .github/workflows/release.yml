@@ -1,0 +1,50 @@
+name: release
+
+on:
+  push:
+    tags:
+      - v*
+
+concurrency:
+  group: release
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Install Lazarus
+        uses: gcarreno/setup-lazarus@v3
+        with:
+          lazarus-version: "3.0"
+
+      - name: Get version from tag
+        id: get-version
+        run: echo "version-without-v=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      - name: Get changelog release info
+        id: changelog
+        uses: release-flow/keep-a-changelog-action@v3
+        with:
+          command: query
+          version: ${{ steps.get-version.outputs.version-without-v }}
+
+      - name: Generate release dist
+        run: |
+          .\dist.ps1
+          Compress-Archive -Path dist\* -DestinationPath eolib-pas-${{steps.changelog.outputs.version}}.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: EOLib v${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.release-notes }}
+          files: eolib-pas-${{steps.changelog.outputs.version}}.zip
