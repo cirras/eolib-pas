@@ -1,0 +1,46 @@
+name: sonar
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sonar_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read project version
+        id: read-version
+        run: echo "version=$(cat version)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Delphi 11 standard library
+        id: setup-standard-library
+        run: |
+          BDS_PATH="./Embarcadero/Studio/22.0"
+          mkdir -p "$BDS_PATH/source"
+          curl -L -o "/tmp/standard-library.zip" "$STANDARD_LIBRARY_DOWNLOAD_URL"
+          unzip "/tmp/standard-library.zip" -d "$BDS_PATH/source"
+          echo "bds-path=${BDS_PATH}" >> "$GITHUB_OUTPUT"
+        env:
+          STANDARD_LIBRARY_DOWNLOAD_URL: ${{ secrets.STANDARD_LIBRARY_DOWNLOAD_URL }}
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v3
+        with:
+          args: >
+            -Dsonar.projectKey=eolib-pas
+            -Dsonar.projectVersion=${{steps.read-version.outputs.version}}
+            -Dsonar.sources=src
+            -Dsonar.tests=tests
+            -Dsonar.test.exclusions=tests/fpc/*
+            -Dsonar.delphi.installationPath=${{steps.setup-standard-library.outputs.bds-path}}
+            -Dsonar.delphi.compilerVersion=VER350
+            -Dsonar.delphi.unitAliases="Generics.Collections=System.Generics.Collections"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
