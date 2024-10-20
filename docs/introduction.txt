@@ -1,0 +1,10 @@
+@shorttitle(EOLib)
+@title(Introduction)
+
+EOLib is a Pascal library for writing applications related to the classic MMORPG Endless Online.
+
+It offers comprehensive support for the EO network protocol and data files, and is largely generated
+from the @url(https://github.com/cirras/eo-protocol EO Protocol) specification.
+
+Compatible with @url(https://www.embarcadero.com/products/delphi Delphi) (2009+) and
+@url(https://www.freepascal.org/ FreePascal) (3.1.1+).

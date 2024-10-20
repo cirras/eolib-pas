@@ -1,0 +1,86 @@
+name: docs
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v*
+
+concurrency:
+  group: docs
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Install Lazarus
+        uses: gcarreno/setup-lazarus@v3
+        with:
+          lazarus-version: "3.0"
+
+      - name: Download PasDoc
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: pasdoc/pasdoc
+          latest: true
+          fileName: pasdoc-*-linux-x86_64.tar.gz
+          extract: true
+
+      - name: Install PasDoc
+        run: |
+          export PASDOC_PATH=$(readlink --canonicalize ./pasdoc/bin)
+          echo "Adding $PASDOC_PATH to the PATH"
+          echo "$PASDOC_PATH" >> "$GITHUB_PATH"
+
+      - name: Generate docs
+        run: pwsh ./docs.ps1
+
+      - name: Archive docs
+        run: |
+          mkdir -p /tmp/docs
+          cd ./docs/output
+          tar -cvf docs.tar .
+
+      - name: Upload docs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: docs/output/docs.tar
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Make docs folder
+        run: |
+          rm -rf ./docs
+          mkdir -p ./docs
+          touch ./docs/.nojekyll
+
+      - name: Download new docs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: docs
+          path: /tmp
+
+      - run: tar -C ./docs -xf /tmp/docs.tar
+      - name: Deploy docs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Deploy updated documentation"
+          git push

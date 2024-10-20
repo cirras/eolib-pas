@@ -74,3 +74,6 @@ protocol-code-generator/output
 
 # Dist artifacts
 dist
+
+# PasDoc artifacts
+docs/output
