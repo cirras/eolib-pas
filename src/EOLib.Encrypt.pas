@@ -91,13 +91,6 @@ function ServerVerificationHash(Challenge: Cardinal): Integer;
 
 implementation
 
-uses
-{$IFDEF FPC}
-  SysUtils;
-{$ELSE}
-  System.SysUtils;
-{$ENDIF}
-
 procedure Interleave(var Data: TArray<Byte>);
 var
   Buffer: TArray<Byte>;
