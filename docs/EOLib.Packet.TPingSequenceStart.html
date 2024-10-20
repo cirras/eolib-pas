@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Packet: Record TPingSequenceStart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TPingSequenceStart"></span><h1 class="cio">Record TPingSequenceStart</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Packet.html">EOLib.Packet</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPingSequenceStart = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A class representing the sequence start value sent with the CONNECTION_PLAYER server packet.
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html">TConnectionPlayerServerPacket</a></dt>
+  <dd>Ping request</dd>
+</dl>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Packet.TPingSequenceStart.html#FromPingValues-Cardinal-Cardinal-">FromPingValues</a></strong>(Seq1: Cardinal; Seq2: Cardinal): <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Packet.TPingSequenceStart.html#Generate">Generate</a></strong>: <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class operator <strong><a href="EOLib.Packet.TPingSequenceStart.html#Implicit-TPingSequenceStart-">Implicit</a></strong>(SequenceStart: <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>): Cardinal;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Packet.TPingSequenceStart.html#Value">Value</a></strong>: Cardinal read FValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Packet.TPingSequenceStart.html#Seq1">Seq1</a></strong>: Cardinal read FSeq1;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Packet.TPingSequenceStart.html#Seq2">Seq2</a></strong>: Cardinal read FSeq2;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromPingValues-Cardinal-Cardinal-"></span><code>class function <strong>FromPingValues</strong>(Seq1: Cardinal; Seq2: Cardinal): <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code>TPingSequenceStart</code> from the values sent with the CONNECTION_PLAYER server packet.
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Seq1</dt>
+<dd>The seq1 short value sent with the CONNECTION_PLAYER server packet</dd>
+<dt>Seq2</dt>
+<dd>The seq2 char value sent with the CONNECTION_PLAYER server packet</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html#Seq1">TConnectionPlayerServerPacket.Seq1</a></dt>
+  <dd><dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></dd>
+  <dt><a class="normal" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html#Seq2">TConnectionPlayerServerPacket.Seq2</a></dt>
+  <dd><dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Generate"></span><code>class function <strong>Generate</strong>: <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code>TPingSequenceStart</code> with a random value in the range (0-1757).
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">An instance of <code>TPingSequenceStart</code></p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Implicit-TPingSequenceStart-"></span><code>class operator <strong>Implicit</strong>(SequenceStart: <a href="EOLib.Packet.TPingSequenceStart.html">TPingSequenceStart</a>): Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Value"></span><code>property <strong>Value</strong>: Cardinal read FValue;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The sequence start value.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Seq1"></span><code>property <strong>Seq1</strong>: Cardinal read FSeq1;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The seq1 short value sent with the CONNECTION_PLAYER server packet.
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html#Seq1">TConnectionPlayerServerPacket.Seq1</a></dt>
+  <dd><dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Seq2"></span><code>property <strong>Seq2</strong>: Cardinal read FSeq2;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The seq2 char value sent with the CONNECTION_PLAYER server packet.
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html#Seq2">TConnectionPlayerServerPacket.Seq2</a></dt>
+  <dd><dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></dd>
+</dl>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

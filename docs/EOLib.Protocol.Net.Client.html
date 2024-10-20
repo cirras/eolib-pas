@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Client</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit EOLib.Protocol.Net.Client</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Generated from the eo-protocol XML specification.
+
+<p>This file should not be modified. Changes will be lost when code is regenerated.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="EOLib.Data.html">EOLib.Data</a></li><li><a href="EOLib.Protocol.html">EOLib.Protocol</a></li><li><a href="EOLib.Protocol.Errors.html">EOLib.Protocol.Errors</a></li><li><a href="EOLib.Protocol.Net.html">EOLib.Protocol.Net</a></li><li><a href="EOLib.Protocol.Packet.html">EOLib.Protocol.Packet</a></li><li>Generics.Collections</li><li>System.SysUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSitActionHelper.html"><code>TSitActionHelper</code></a></td>
+<td class="itemdesc">Helper for the TSitAction enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildInfoTypeHelper.html"><code>TGuildInfoTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TGuildInfoType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTrainTypeHelper.html"><code>TTrainTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TTrainType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TDialogReplyHelper.html"><code>TDialogReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TDialogReply enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TFileTypeHelper.html"><code>TFileTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TFileType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatIdHelper.html"><code>TStatIdHelper</code></a></td>
+<td class="itemdesc">Helper for the TStatId enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellTargetTypeHelper.html"><code>TSpellTargetTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TSpellTargetType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TMarriageRequestTypeHelper.html"><code>TMarriageRequestTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TMarriageRequestType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IByteCoords.html"><code>IByteCoords</code></a></td>
+<td class="itemdesc">Map coordinates with raw 1-byte values</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TByteCoords.html"><code>TByteCoords</code></a></td>
+<td class="itemdesc">Map coordinates with raw 1-byte values</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWalkAction.html"><code>IWalkAction</code></a></td>
+<td class="itemdesc">Common data between walk packets</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWalkAction.html"><code>TWalkAction</code></a></td>
+<td class="itemdesc">Common data between walk packets</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IInitInitClientPacket.html"><code>IInitInitClientPacket</code></a></td>
+<td class="itemdesc">Connection initialization request.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TInitInitClientPacket.html"><code>TInitInitClientPacket</code></a></td>
+<td class="itemdesc">Connection initialization request.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IConnectionAcceptClientPacket.html"><code>IConnectionAcceptClientPacket</code></a></td>
+<td class="itemdesc">Confirm initialization data</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TConnectionAcceptClientPacket.html"><code>TConnectionAcceptClientPacket</code></a></td>
+<td class="itemdesc">Confirm initialization data</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IConnectionPingClientPacket.html"><code>IConnectionPingClientPacket</code></a></td>
+<td class="itemdesc">Ping reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TConnectionPingClientPacket.html"><code>TConnectionPingClientPacket</code></a></td>
+<td class="itemdesc">Ping reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAccountRequestClientPacket.html"><code>IAccountRequestClientPacket</code></a></td>
+<td class="itemdesc">Request creating an account</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAccountRequestClientPacket.html"><code>TAccountRequestClientPacket</code></a></td>
+<td class="itemdesc">Request creating an account</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAccountCreateClientPacket.html"><code>IAccountCreateClientPacket</code></a></td>
+<td class="itemdesc">Confirm creating an account</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html"><code>TAccountCreateClientPacket</code></a></td>
+<td class="itemdesc">Confirm creating an account</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAccountAgreeClientPacket.html"><code>IAccountAgreeClientPacket</code></a></td>
+<td class="itemdesc">Change password</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAccountAgreeClientPacket.html"><code>TAccountAgreeClientPacket</code></a></td>
+<td class="itemdesc">Change password</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICharacterRequestClientPacket.html"><code>ICharacterRequestClientPacket</code></a></td>
+<td class="itemdesc">Request to create a character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCharacterRequestClientPacket.html"><code>TCharacterRequestClientPacket</code></a></td>
+<td class="itemdesc">Request to create a character</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICharacterCreateClientPacket.html"><code>ICharacterCreateClientPacket</code></a></td>
+<td class="itemdesc">Confirm creating a character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCharacterCreateClientPacket.html"><code>TCharacterCreateClientPacket</code></a></td>
+<td class="itemdesc">Confirm creating a character</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICharacterTakeClientPacket.html"><code>ICharacterTakeClientPacket</code></a></td>
+<td class="itemdesc">Request to delete a character from an account</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCharacterTakeClientPacket.html"><code>TCharacterTakeClientPacket</code></a></td>
+<td class="itemdesc">Request to delete a character from an account</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICharacterRemoveClientPacket.html"><code>ICharacterRemoveClientPacket</code></a></td>
+<td class="itemdesc">Confirm deleting character from an account</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCharacterRemoveClientPacket.html"><code>TCharacterRemoveClientPacket</code></a></td>
+<td class="itemdesc">Confirm deleting character from an account</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ILoginRequestClientPacket.html"><code>ILoginRequestClientPacket</code></a></td>
+<td class="itemdesc">Login request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TLoginRequestClientPacket.html"><code>TLoginRequestClientPacket</code></a></td>
+<td class="itemdesc">Login request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeRequestClientPacket.html"><code>IWelcomeRequestClientPacket</code></a></td>
+<td class="itemdesc">Selected a character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeRequestClientPacket.html"><code>TWelcomeRequestClientPacket</code></a></td>
+<td class="itemdesc">Selected a character</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeMsgClientPacket.html"><code>IWelcomeMsgClientPacket</code></a></td>
+<td class="itemdesc">Entering game</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeMsgClientPacket.html"><code>TWelcomeMsgClientPacket</code></a></td>
+<td class="itemdesc">Entering game</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeData.html"><code>IWelcomeAgreeClientPacketFileTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>FileType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeDataEmf.html"><code>IWelcomeAgreeClientPacketFileTypeDataEmf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacketFileTypeDataEmf.html"><code>TWelcomeAgreeClientPacketFileTypeDataEmf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeDataEif.html"><code>IWelcomeAgreeClientPacketFileTypeDataEif</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacketFileTypeDataEif.html"><code>TWelcomeAgreeClientPacketFileTypeDataEif</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeDataEnf.html"><code>IWelcomeAgreeClientPacketFileTypeDataEnf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacketFileTypeDataEnf.html"><code>TWelcomeAgreeClientPacketFileTypeDataEnf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeDataEsf.html"><code>IWelcomeAgreeClientPacketFileTypeDataEsf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>4</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacketFileTypeDataEsf.html"><code>TWelcomeAgreeClientPacketFileTypeDataEsf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>4</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacketFileTypeDataEcf.html"><code>IWelcomeAgreeClientPacketFileTypeDataEcf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>5</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacketFileTypeDataEcf.html"><code>TWelcomeAgreeClientPacketFileTypeDataEcf</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeAgreeClientPacket.FileType</code> value <code>5</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWelcomeAgreeClientPacket.html"><code>IWelcomeAgreeClientPacket</code></a></td>
+<td class="itemdesc">Requesting a file</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWelcomeAgreeClientPacket.html"><code>TWelcomeAgreeClientPacket</code></a></td>
+<td class="itemdesc">Requesting a file</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAdminInteractTellClientPacket.html"><code>IAdminInteractTellClientPacket</code></a></td>
+<td class="itemdesc">Talk to admin</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAdminInteractTellClientPacket.html"><code>TAdminInteractTellClientPacket</code></a></td>
+<td class="itemdesc">Talk to admin</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAdminInteractReportClientPacket.html"><code>IAdminInteractReportClientPacket</code></a></td>
+<td class="itemdesc">Report character</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAdminInteractReportClientPacket.html"><code>TAdminInteractReportClientPacket</code></a></td>
+<td class="itemdesc">Report character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGlobalRemoveClientPacket.html"><code>IGlobalRemoveClientPacket</code></a></td>
+<td class="itemdesc">Enable whispers</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGlobalRemoveClientPacket.html"><code>TGlobalRemoveClientPacket</code></a></td>
+<td class="itemdesc">Enable whispers</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGlobalPlayerClientPacket.html"><code>IGlobalPlayerClientPacket</code></a></td>
+<td class="itemdesc">Disable whispers</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGlobalPlayerClientPacket.html"><code>TGlobalPlayerClientPacket</code></a></td>
+<td class="itemdesc">Disable whispers</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGlobalOpenClientPacket.html"><code>IGlobalOpenClientPacket</code></a></td>
+<td class="itemdesc">Opened global tab</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGlobalOpenClientPacket.html"><code>TGlobalOpenClientPacket</code></a></td>
+<td class="itemdesc">Opened global tab</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGlobalCloseClientPacket.html"><code>IGlobalCloseClientPacket</code></a></td>
+<td class="itemdesc">Closed global tab</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGlobalCloseClientPacket.html"><code>TGlobalCloseClientPacket</code></a></td>
+<td class="itemdesc">Closed global tab</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkRequestClientPacket.html"><code>ITalkRequestClientPacket</code></a></td>
+<td class="itemdesc">Guild chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkRequestClientPacket.html"><code>TTalkRequestClientPacket</code></a></td>
+<td class="itemdesc">Guild chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkOpenClientPacket.html"><code>ITalkOpenClientPacket</code></a></td>
+<td class="itemdesc">Party chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkOpenClientPacket.html"><code>TTalkOpenClientPacket</code></a></td>
+<td class="itemdesc">Party chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkMsgClientPacket.html"><code>ITalkMsgClientPacket</code></a></td>
+<td class="itemdesc">Global chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkMsgClientPacket.html"><code>TTalkMsgClientPacket</code></a></td>
+<td class="itemdesc">Global chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkTellClientPacket.html"><code>ITalkTellClientPacket</code></a></td>
+<td class="itemdesc">Private chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkTellClientPacket.html"><code>TTalkTellClientPacket</code></a></td>
+<td class="itemdesc">Private chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkReportClientPacket.html"><code>ITalkReportClientPacket</code></a></td>
+<td class="itemdesc">Public chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkReportClientPacket.html"><code>TTalkReportClientPacket</code></a></td>
+<td class="itemdesc">Public chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkPlayerClientPacket.html"><code>ITalkPlayerClientPacket</code></a></td>
+<td class="itemdesc">Public chat message - alias of TALK_REPORT (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkPlayerClientPacket.html"><code>TTalkPlayerClientPacket</code></a></td>
+<td class="itemdesc">Public chat message - alias of TALK_REPORT (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkUseClientPacket.html"><code>ITalkUseClientPacket</code></a></td>
+<td class="itemdesc">Public chat message - alias of TALK_REPORT (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkUseClientPacket.html"><code>TTalkUseClientPacket</code></a></td>
+<td class="itemdesc">Public chat message - alias of TALK_REPORT (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkAdminClientPacket.html"><code>ITalkAdminClientPacket</code></a></td>
+<td class="itemdesc">Admin chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkAdminClientPacket.html"><code>TTalkAdminClientPacket</code></a></td>
+<td class="itemdesc">Admin chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITalkAnnounceClientPacket.html"><code>ITalkAnnounceClientPacket</code></a></td>
+<td class="itemdesc">Admin announcement</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTalkAnnounceClientPacket.html"><code>TTalkAnnounceClientPacket</code></a></td>
+<td class="itemdesc">Admin announcement</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IAttackUseClientPacket.html"><code>IAttackUseClientPacket</code></a></td>
+<td class="itemdesc">Attacking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TAttackUseClientPacket.html"><code>TAttackUseClientPacket</code></a></td>
+<td class="itemdesc">Attacking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChairRequestClientPacketSitActionData.html"><code>IChairRequestClientPacketSitActionData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>SitAction</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChairRequestClientPacketSitActionDataSit.html"><code>IChairRequestClientPacketSitActionDataSit</code></a></td>
+<td class="itemdesc">Data associated with <code>IChairRequestClientPacket.SitAction</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TChairRequestClientPacketSitActionDataSit.html"><code>TChairRequestClientPacketSitActionDataSit</code></a></td>
+<td class="itemdesc">Data associated with <code>IChairRequestClientPacket.SitAction</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChairRequestClientPacket.html"><code>IChairRequestClientPacket</code></a></td>
+<td class="itemdesc">Sitting on a chair</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TChairRequestClientPacket.html"><code>TChairRequestClientPacket</code></a></td>
+<td class="itemdesc">Sitting on a chair</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISitRequestClientPacketSitActionData.html"><code>ISitRequestClientPacketSitActionData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>SitAction</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISitRequestClientPacketSitActionDataSit.html"><code>ISitRequestClientPacketSitActionDataSit</code></a></td>
+<td class="itemdesc">Data associated with <code>ISitRequestClientPacket.SitAction</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSitRequestClientPacketSitActionDataSit.html"><code>TSitRequestClientPacketSitActionDataSit</code></a></td>
+<td class="itemdesc">Data associated with <code>ISitRequestClientPacket.SitAction</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISitRequestClientPacket.html"><code>ISitRequestClientPacket</code></a></td>
+<td class="itemdesc">Sit/stand request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSitRequestClientPacket.html"><code>TSitRequestClientPacket</code></a></td>
+<td class="itemdesc">Sit/stand request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IEmoteReportClientPacket.html"><code>IEmoteReportClientPacket</code></a></td>
+<td class="itemdesc">Doing an emote</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TEmoteReportClientPacket.html"><code>TEmoteReportClientPacket</code></a></td>
+<td class="itemdesc">Doing an emote</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IFacePlayerClientPacket.html"><code>IFacePlayerClientPacket</code></a></td>
+<td class="itemdesc">Facing a direction</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TFacePlayerClientPacket.html"><code>TFacePlayerClientPacket</code></a></td>
+<td class="itemdesc">Facing a direction</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWalkAdminClientPacket.html"><code>IWalkAdminClientPacket</code></a></td>
+<td class="itemdesc">Walking with #nowall</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWalkAdminClientPacket.html"><code>TWalkAdminClientPacket</code></a></td>
+<td class="itemdesc">Walking with #nowall</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWalkSpecClientPacket.html"><code>IWalkSpecClientPacket</code></a></td>
+<td class="itemdesc">Walking through a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWalkSpecClientPacket.html"><code>TWalkSpecClientPacket</code></a></td>
+<td class="itemdesc">Walking through a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWalkPlayerClientPacket.html"><code>IWalkPlayerClientPacket</code></a></td>
+<td class="itemdesc">Walking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWalkPlayerClientPacket.html"><code>TWalkPlayerClientPacket</code></a></td>
+<td class="itemdesc">Walking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBankOpenClientPacket.html"><code>IBankOpenClientPacket</code></a></td>
+<td class="itemdesc">Talked to a banker NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBankOpenClientPacket.html"><code>TBankOpenClientPacket</code></a></td>
+<td class="itemdesc">Talked to a banker NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBankAddClientPacket.html"><code>IBankAddClientPacket</code></a></td>
+<td class="itemdesc">Depositing gold</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBankAddClientPacket.html"><code>TBankAddClientPacket</code></a></td>
+<td class="itemdesc">Depositing gold</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBankTakeClientPacket.html"><code>IBankTakeClientPacket</code></a></td>
+<td class="itemdesc">Withdrawing gold</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBankTakeClientPacket.html"><code>TBankTakeClientPacket</code></a></td>
+<td class="itemdesc">Withdrawing gold</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBarberBuyClientPacket.html"><code>IBarberBuyClientPacket</code></a></td>
+<td class="itemdesc">Purchasing a hair-style</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBarberBuyClientPacket.html"><code>TBarberBuyClientPacket</code></a></td>
+<td class="itemdesc">Purchasing a hair-style</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBarberOpenClientPacket.html"><code>IBarberOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a barber NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBarberOpenClientPacket.html"><code>TBarberOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a barber NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ILockerAddClientPacket.html"><code>ILockerAddClientPacket</code></a></td>
+<td class="itemdesc">Adding an item to a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TLockerAddClientPacket.html"><code>TLockerAddClientPacket</code></a></td>
+<td class="itemdesc">Adding an item to a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ILockerTakeClientPacket.html"><code>ILockerTakeClientPacket</code></a></td>
+<td class="itemdesc">Taking an item from a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TLockerTakeClientPacket.html"><code>TLockerTakeClientPacket</code></a></td>
+<td class="itemdesc">Taking an item from a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ILockerOpenClientPacket.html"><code>ILockerOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TLockerOpenClientPacket.html"><code>TLockerOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ILockerBuyClientPacket.html"><code>ILockerBuyClientPacket</code></a></td>
+<td class="itemdesc">Buying a locker space upgrade from a banker NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TLockerBuyClientPacket.html"><code>TLockerBuyClientPacket</code></a></td>
+<td class="itemdesc">Buying a locker space upgrade from a banker NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICitizenRequestClientPacket.html"><code>ICitizenRequestClientPacket</code></a></td>
+<td class="itemdesc">Request sleeping at an inn</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCitizenRequestClientPacket.html"><code>TCitizenRequestClientPacket</code></a></td>
+<td class="itemdesc">Request sleeping at an inn</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICitizenAcceptClientPacket.html"><code>ICitizenAcceptClientPacket</code></a></td>
+<td class="itemdesc">Confirm sleeping at an inn</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCitizenAcceptClientPacket.html"><code>TCitizenAcceptClientPacket</code></a></td>
+<td class="itemdesc">Confirm sleeping at an inn</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICitizenReplyClientPacket.html"><code>ICitizenReplyClientPacket</code></a></td>
+<td class="itemdesc">Subscribing to a town</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCitizenReplyClientPacket.html"><code>TCitizenReplyClientPacket</code></a></td>
+<td class="itemdesc">Subscribing to a town</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICitizenRemoveClientPacket.html"><code>ICitizenRemoveClientPacket</code></a></td>
+<td class="itemdesc">Giving up citizenship of a town</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCitizenRemoveClientPacket.html"><code>TCitizenRemoveClientPacket</code></a></td>
+<td class="itemdesc">Giving up citizenship of a town</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ICitizenOpenClientPacket.html"><code>ICitizenOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a citizenship NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TCitizenOpenClientPacket.html"><code>TCitizenOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a citizenship NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IShopCreateClientPacket.html"><code>IShopCreateClientPacket</code></a></td>
+<td class="itemdesc">Crafting an item from a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TShopCreateClientPacket.html"><code>TShopCreateClientPacket</code></a></td>
+<td class="itemdesc">Crafting an item from a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IShopBuyClientPacket.html"><code>IShopBuyClientPacket</code></a></td>
+<td class="itemdesc">Purchasing an item from a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TShopBuyClientPacket.html"><code>TShopBuyClientPacket</code></a></td>
+<td class="itemdesc">Purchasing an item from a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IShopSellClientPacket.html"><code>IShopSellClientPacket</code></a></td>
+<td class="itemdesc">Selling an item to a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TShopSellClientPacket.html"><code>TShopSellClientPacket</code></a></td>
+<td class="itemdesc">Selling an item to a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IShopOpenClientPacket.html"><code>IShopOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a shop NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TShopOpenClientPacket.html"><code>TShopOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a shop NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillOpenClientPacket.html"><code>IStatSkillOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a skill master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillOpenClientPacket.html"><code>TStatSkillOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a skill master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillTakeClientPacket.html"><code>IStatSkillTakeClientPacket</code></a></td>
+<td class="itemdesc">Learning a skill from a skill master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillTakeClientPacket.html"><code>TStatSkillTakeClientPacket</code></a></td>
+<td class="itemdesc">Learning a skill from a skill master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillRemoveClientPacket.html"><code>IStatSkillRemoveClientPacket</code></a></td>
+<td class="itemdesc">Forgetting a skill at a skill master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillRemoveClientPacket.html"><code>TStatSkillRemoveClientPacket</code></a></td>
+<td class="itemdesc">Forgetting a skill at a skill master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillAddClientPacketActionTypeData.html"><code>IStatSkillAddClientPacketActionTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ActionType</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillAddClientPacketActionTypeDataStat.html"><code>IStatSkillAddClientPacketActionTypeDataStat</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillAddClientPacket.ActionType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillAddClientPacketActionTypeDataStat.html"><code>TStatSkillAddClientPacketActionTypeDataStat</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillAddClientPacket.ActionType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillAddClientPacketActionTypeDataSkill.html"><code>IStatSkillAddClientPacketActionTypeDataSkill</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillAddClientPacket.ActionType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillAddClientPacketActionTypeDataSkill.html"><code>TStatSkillAddClientPacketActionTypeDataSkill</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillAddClientPacket.ActionType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillAddClientPacket.html"><code>IStatSkillAddClientPacket</code></a></td>
+<td class="itemdesc">Spending a stat point on a stat or skill</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillAddClientPacket.html"><code>TStatSkillAddClientPacket</code></a></td>
+<td class="itemdesc">Spending a stat point on a stat or skill</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IStatSkillJunkClientPacket.html"><code>IStatSkillJunkClientPacket</code></a></td>
+<td class="itemdesc">Resetting stats at a skill master</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TStatSkillJunkClientPacket.html"><code>TStatSkillJunkClientPacket</code></a></td>
+<td class="itemdesc">Resetting stats at a skill master</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html"><code>IItemUseClientPacket</code></a></td>
+<td class="itemdesc">Using an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TItemUseClientPacket.html"><code>TItemUseClientPacket</code></a></td>
+<td class="itemdesc">Using an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IItemDropClientPacket.html"><code>IItemDropClientPacket</code></a></td>
+<td class="itemdesc">Dropping items on the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TItemDropClientPacket.html"><code>TItemDropClientPacket</code></a></td>
+<td class="itemdesc">Dropping items on the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IItemJunkClientPacket.html"><code>IItemJunkClientPacket</code></a></td>
+<td class="itemdesc">Junking items</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html"><code>TItemJunkClientPacket</code></a></td>
+<td class="itemdesc">Junking items</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IItemGetClientPacket.html"><code>IItemGetClientPacket</code></a></td>
+<td class="itemdesc">Taking items from the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TItemGetClientPacket.html"><code>TItemGetClientPacket</code></a></td>
+<td class="itemdesc">Taking items from the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBoardRemoveClientPacket.html"><code>IBoardRemoveClientPacket</code></a></td>
+<td class="itemdesc">Removing a post from a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBoardRemoveClientPacket.html"><code>TBoardRemoveClientPacket</code></a></td>
+<td class="itemdesc">Removing a post from a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBoardCreateClientPacket.html"><code>IBoardCreateClientPacket</code></a></td>
+<td class="itemdesc">Posting a new message to a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBoardCreateClientPacket.html"><code>TBoardCreateClientPacket</code></a></td>
+<td class="itemdesc">Posting a new message to a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBoardTakeClientPacket.html"><code>IBoardTakeClientPacket</code></a></td>
+<td class="itemdesc">Reading a post on a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBoardTakeClientPacket.html"><code>TBoardTakeClientPacket</code></a></td>
+<td class="itemdesc">Reading a post on a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBoardOpenClientPacket.html"><code>IBoardOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBoardOpenClientPacket.html"><code>TBoardOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IJukeboxOpenClientPacket.html"><code>IJukeboxOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening the jukebox listing</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TJukeboxOpenClientPacket.html"><code>TJukeboxOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening the jukebox listing</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IJukeboxMsgClientPacket.html"><code>IJukeboxMsgClientPacket</code></a></td>
+<td class="itemdesc">Requesting a song on a jukebox</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TJukeboxMsgClientPacket.html"><code>TJukeboxMsgClientPacket</code></a></td>
+<td class="itemdesc">Requesting a song on a jukebox</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IJukeboxUseClientPacket.html"><code>IJukeboxUseClientPacket</code></a></td>
+<td class="itemdesc">Playing a note with the bard skill</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TJukeboxUseClientPacket.html"><code>TJukeboxUseClientPacket</code></a></td>
+<td class="itemdesc">Playing a note with the bard skill</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWarpAcceptClientPacket.html"><code>IWarpAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept a warp request from the server</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWarpAcceptClientPacket.html"><code>TWarpAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept a warp request from the server</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IWarpTakeClientPacket.html"><code>IWarpTakeClientPacket</code></a></td>
+<td class="itemdesc">Request to download a copy of the map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TWarpTakeClientPacket.html"><code>TWarpTakeClientPacket</code></a></td>
+<td class="itemdesc">Request to download a copy of the map</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPaperdollRequestClientPacket.html"><code>IPaperdollRequestClientPacket</code></a></td>
+<td class="itemdesc">Request for a player's paperdoll</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPaperdollRequestClientPacket.html"><code>TPaperdollRequestClientPacket</code></a></td>
+<td class="itemdesc">Request for a player's paperdoll</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPaperdollRemoveClientPacket.html"><code>IPaperdollRemoveClientPacket</code></a></td>
+<td class="itemdesc">Unequipping an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPaperdollRemoveClientPacket.html"><code>TPaperdollRemoveClientPacket</code></a></td>
+<td class="itemdesc">Unequipping an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPaperdollAddClientPacket.html"><code>IPaperdollAddClientPacket</code></a></td>
+<td class="itemdesc">Equipping an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPaperdollAddClientPacket.html"><code>TPaperdollAddClientPacket</code></a></td>
+<td class="itemdesc">Equipping an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IBookRequestClientPacket.html"><code>IBookRequestClientPacket</code></a></td>
+<td class="itemdesc">Request for a player's book</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TBookRequestClientPacket.html"><code>TBookRequestClientPacket</code></a></td>
+<td class="itemdesc">Request for a player's book</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IMessagePingClientPacket.html"><code>IMessagePingClientPacket</code></a></td>
+<td class="itemdesc">#ping command request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TMessagePingClientPacket.html"><code>TMessagePingClientPacket</code></a></td>
+<td class="itemdesc">#ping command request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPlayersAcceptClientPacket.html"><code>IPlayersAcceptClientPacket</code></a></td>
+<td class="itemdesc">#find command request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPlayersAcceptClientPacket.html"><code>TPlayersAcceptClientPacket</code></a></td>
+<td class="itemdesc">#find command request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPlayersRequestClientPacket.html"><code>IPlayersRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting a list of online players</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPlayersRequestClientPacket.html"><code>TPlayersRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting a list of online players</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPlayersListClientPacket.html"><code>IPlayersListClientPacket</code></a></td>
+<td class="itemdesc">Requesting a list of online friends</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPlayersListClientPacket.html"><code>TPlayersListClientPacket</code></a></td>
+<td class="itemdesc">Requesting a list of online friends</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IDoorOpenClientPacket.html"><code>IDoorOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a door</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TDoorOpenClientPacket.html"><code>TDoorOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a door</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChestOpenClientPacket.html"><code>IChestOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TChestOpenClientPacket.html"><code>TChestOpenClientPacket</code></a></td>
+<td class="itemdesc">Opening a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChestAddClientPacket.html"><code>IChestAddClientPacket</code></a></td>
+<td class="itemdesc">Placing an item in to a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TChestAddClientPacket.html"><code>TChestAddClientPacket</code></a></td>
+<td class="itemdesc">Placing an item in to a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IChestTakeClientPacket.html"><code>IChestTakeClientPacket</code></a></td>
+<td class="itemdesc">Taking an item from a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TChestTakeClientPacket.html"><code>TChestTakeClientPacket</code></a></td>
+<td class="itemdesc">Taking an item from a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IRefreshRequestClientPacket.html"><code>IRefreshRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting new info about nearby objects</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TRefreshRequestClientPacket.html"><code>TRefreshRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting new info about nearby objects</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IRangeRequestClientPacket.html"><code>IRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby players and NPCs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TRangeRequestClientPacket.html"><code>TRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby players and NPCs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html"><code>IPlayerRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby players</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPlayerRangeRequestClientPacket.html"><code>TPlayerRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby players</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html"><code>INpcRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby NPCs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TNpcRangeRequestClientPacket.html"><code>TNpcRangeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting info about nearby NPCs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPartyRequestClientPacket.html"><code>IPartyRequestClientPacket</code></a></td>
+<td class="itemdesc">Send party invite / join request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPartyRequestClientPacket.html"><code>TPartyRequestClientPacket</code></a></td>
+<td class="itemdesc">Send party invite / join request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPartyAcceptClientPacket.html"><code>IPartyAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept party invite / join request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPartyAcceptClientPacket.html"><code>TPartyAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept party invite / join request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPartyRemoveClientPacket.html"><code>IPartyRemoveClientPacket</code></a></td>
+<td class="itemdesc">Remove player from a party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPartyRemoveClientPacket.html"><code>TPartyRemoveClientPacket</code></a></td>
+<td class="itemdesc">Remove player from a party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPartyTakeClientPacket.html"><code>IPartyTakeClientPacket</code></a></td>
+<td class="itemdesc">Request updated party info</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPartyTakeClientPacket.html"><code>TPartyTakeClientPacket</code></a></td>
+<td class="itemdesc">Request updated party info</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildRequestClientPacket.html"><code>IGuildRequestClientPacket</code></a></td>
+<td class="itemdesc">Requested to create a guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildRequestClientPacket.html"><code>TGuildRequestClientPacket</code></a></td>
+<td class="itemdesc">Requested to create a guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildAcceptClientPacket.html"><code>IGuildAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept pending guild creation invite</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildAcceptClientPacket.html"><code>TGuildAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accept pending guild creation invite</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildRemoveClientPacket.html"><code>IGuildRemoveClientPacket</code></a></td>
+<td class="itemdesc">Leave guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildRemoveClientPacket.html"><code>TGuildRemoveClientPacket</code></a></td>
+<td class="itemdesc">Leave guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildAgreeClientPacketInfoTypeData.html"><code>IGuildAgreeClientPacketInfoTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>InfoType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildAgreeClientPacketInfoTypeDataDescription.html"><code>IGuildAgreeClientPacketInfoTypeDataDescription</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildAgreeClientPacket.InfoType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildAgreeClientPacketInfoTypeDataDescription.html"><code>TGuildAgreeClientPacketInfoTypeDataDescription</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildAgreeClientPacket.InfoType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildAgreeClientPacketInfoTypeDataRanks.html"><code>IGuildAgreeClientPacketInfoTypeDataRanks</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildAgreeClientPacket.InfoType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildAgreeClientPacketInfoTypeDataRanks.html"><code>TGuildAgreeClientPacketInfoTypeDataRanks</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildAgreeClientPacket.InfoType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildAgreeClientPacket.html"><code>IGuildAgreeClientPacket</code></a></td>
+<td class="itemdesc">Update the guild description or rank list</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildAgreeClientPacket.html"><code>TGuildAgreeClientPacket</code></a></td>
+<td class="itemdesc">Update the guild description or rank list</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildCreateClientPacket.html"><code>IGuildCreateClientPacket</code></a></td>
+<td class="itemdesc">Final confirm creating a guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildCreateClientPacket.html"><code>TGuildCreateClientPacket</code></a></td>
+<td class="itemdesc">Final confirm creating a guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildPlayerClientPacket.html"><code>IGuildPlayerClientPacket</code></a></td>
+<td class="itemdesc">Request to join a guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildPlayerClientPacket.html"><code>TGuildPlayerClientPacket</code></a></td>
+<td class="itemdesc">Request to join a guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildTakeClientPacket.html"><code>IGuildTakeClientPacket</code></a></td>
+<td class="itemdesc">Request guild description, rank list, or bank balance</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildTakeClientPacket.html"><code>TGuildTakeClientPacket</code></a></td>
+<td class="itemdesc">Request guild description, rank list, or bank balance</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildUseClientPacket.html"><code>IGuildUseClientPacket</code></a></td>
+<td class="itemdesc">Accepted a join request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildUseClientPacket.html"><code>TGuildUseClientPacket</code></a></td>
+<td class="itemdesc">Accepted a join request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildBuyClientPacket.html"><code>IGuildBuyClientPacket</code></a></td>
+<td class="itemdesc">Deposit gold in to the guild bank</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildBuyClientPacket.html"><code>TGuildBuyClientPacket</code></a></td>
+<td class="itemdesc">Deposit gold in to the guild bank</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildOpenClientPacket.html"><code>IGuildOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a guild master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildOpenClientPacket.html"><code>TGuildOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a guild master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildTellClientPacket.html"><code>IGuildTellClientPacket</code></a></td>
+<td class="itemdesc">Requested member list of a guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildTellClientPacket.html"><code>TGuildTellClientPacket</code></a></td>
+<td class="itemdesc">Requested member list of a guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildReportClientPacket.html"><code>IGuildReportClientPacket</code></a></td>
+<td class="itemdesc">Requested general information of a guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildReportClientPacket.html"><code>TGuildReportClientPacket</code></a></td>
+<td class="itemdesc">Requested general information of a guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildJunkClientPacket.html"><code>IGuildJunkClientPacket</code></a></td>
+<td class="itemdesc">Disband guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildJunkClientPacket.html"><code>TGuildJunkClientPacket</code></a></td>
+<td class="itemdesc">Disband guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildKickClientPacket.html"><code>IGuildKickClientPacket</code></a></td>
+<td class="itemdesc">Kick member from guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildKickClientPacket.html"><code>TGuildKickClientPacket</code></a></td>
+<td class="itemdesc">Kick member from guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IGuildRankClientPacket.html"><code>IGuildRankClientPacket</code></a></td>
+<td class="itemdesc">Update a member's rank</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TGuildRankClientPacket.html"><code>TGuildRankClientPacket</code></a></td>
+<td class="itemdesc">Update a member's rank</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISpellRequestClientPacket.html"><code>ISpellRequestClientPacket</code></a></td>
+<td class="itemdesc">Begin spell chanting</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellRequestClientPacket.html"><code>TSpellRequestClientPacket</code></a></td>
+<td class="itemdesc">Begin spell chanting</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISpellTargetSelfClientPacket.html"><code>ISpellTargetSelfClientPacket</code></a></td>
+<td class="itemdesc">Self-targeted spell cast</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellTargetSelfClientPacket.html"><code>TSpellTargetSelfClientPacket</code></a></td>
+<td class="itemdesc">Self-targeted spell cast</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISpellTargetOtherClientPacket.html"><code>ISpellTargetOtherClientPacket</code></a></td>
+<td class="itemdesc">Targeted spell cast</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellTargetOtherClientPacket.html"><code>TSpellTargetOtherClientPacket</code></a></td>
+<td class="itemdesc">Targeted spell cast</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISpellTargetGroupClientPacket.html"><code>ISpellTargetGroupClientPacket</code></a></td>
+<td class="itemdesc">Group spell cast</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellTargetGroupClientPacket.html"><code>TSpellTargetGroupClientPacket</code></a></td>
+<td class="itemdesc">Group spell cast</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ISpellUseClientPacket.html"><code>ISpellUseClientPacket</code></a></td>
+<td class="itemdesc">Raise arm to cast a spell (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TSpellUseClientPacket.html"><code>TSpellUseClientPacket</code></a></td>
+<td class="itemdesc">Raise arm to cast a spell (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeRequestClientPacket.html"><code>ITradeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting a trade with another player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeRequestClientPacket.html"><code>TTradeRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting a trade with another player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeAcceptClientPacket.html"><code>ITradeAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accepting a trade request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeAcceptClientPacket.html"><code>TTradeAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accepting a trade request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeRemoveClientPacket.html"><code>ITradeRemoveClientPacket</code></a></td>
+<td class="itemdesc">Remove an item from the trade screen</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeRemoveClientPacket.html"><code>TTradeRemoveClientPacket</code></a></td>
+<td class="itemdesc">Remove an item from the trade screen</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeAgreeClientPacket.html"><code>ITradeAgreeClientPacket</code></a></td>
+<td class="itemdesc">Mark trade as agreed</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeAgreeClientPacket.html"><code>TTradeAgreeClientPacket</code></a></td>
+<td class="itemdesc">Mark trade as agreed</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeAddClientPacket.html"><code>ITradeAddClientPacket</code></a></td>
+<td class="itemdesc">Add an item to the trade screen</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html"><code>TTradeAddClientPacket</code></a></td>
+<td class="itemdesc">Add an item to the trade screen</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.ITradeCloseClientPacket.html"><code>ITradeCloseClientPacket</code></a></td>
+<td class="itemdesc">Cancel the trade</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TTradeCloseClientPacket.html"><code>TTradeCloseClientPacket</code></a></td>
+<td class="itemdesc">Cancel the trade</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestUseClientPacket.html"><code>IQuestUseClientPacket</code></a></td>
+<td class="itemdesc">Talking to a quest NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TQuestUseClientPacket.html"><code>TQuestUseClientPacket</code></a></td>
+<td class="itemdesc">Talking to a quest NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestAcceptClientPacketReplyTypeData.html"><code>IQuestAcceptClientPacketReplyTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyType</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestAcceptClientPacketReplyTypeDataOk.html"><code>IQuestAcceptClientPacketReplyTypeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestAcceptClientPacket.ReplyType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TQuestAcceptClientPacketReplyTypeDataOk.html"><code>TQuestAcceptClientPacketReplyTypeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestAcceptClientPacket.ReplyType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestAcceptClientPacketReplyTypeDataLink.html"><code>IQuestAcceptClientPacketReplyTypeDataLink</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestAcceptClientPacket.ReplyType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TQuestAcceptClientPacketReplyTypeDataLink.html"><code>TQuestAcceptClientPacketReplyTypeDataLink</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestAcceptClientPacket.ReplyType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestAcceptClientPacket.html"><code>IQuestAcceptClientPacket</code></a></td>
+<td class="itemdesc">Response to a quest NPC dialog</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TQuestAcceptClientPacket.html"><code>TQuestAcceptClientPacket</code></a></td>
+<td class="itemdesc">Response to a quest NPC dialog</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html"><code>IQuestListClientPacket</code></a></td>
+<td class="itemdesc">Quest history / progress request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TQuestListClientPacket.html"><code>TQuestListClientPacket</code></a></td>
+<td class="itemdesc">Quest history / progress request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IMarriageOpenClientPacket.html"><code>IMarriageOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a law NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TMarriageOpenClientPacket.html"><code>TMarriageOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a law NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IMarriageRequestClientPacket.html"><code>IMarriageRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting marriage approval</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TMarriageRequestClientPacket.html"><code>TMarriageRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting marriage approval</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPriestAcceptClientPacket.html"><code>IPriestAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accepting a marriage request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPriestAcceptClientPacket.html"><code>TPriestAcceptClientPacket</code></a></td>
+<td class="itemdesc">Accepting a marriage request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPriestOpenClientPacket.html"><code>IPriestOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a priest NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPriestOpenClientPacket.html"><code>TPriestOpenClientPacket</code></a></td>
+<td class="itemdesc">Talking to a priest NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPriestRequestClientPacket.html"><code>IPriestRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting marriage at a priest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPriestRequestClientPacket.html"><code>TPriestRequestClientPacket</code></a></td>
+<td class="itemdesc">Requesting marriage at a priest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.IPriestUseClientPacket.html"><code>IPriestUseClientPacket</code></a></td>
+<td class="itemdesc">Saying &quot;I do&quot; at a wedding</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Client.TPriestUseClientPacket.html"><code>TPriestUseClientPacket</code></a></td>
+<td class="itemdesc">Saying &quot;I do&quot; at a wedding</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TSitAction">TSitAction</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TGuildInfoType">TGuildInfoType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TTrainType">TTrainType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TDialogReply">TDialogReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TFileType">TFileType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TStatId">TStatId</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TSpellTargetType">TSpellTargetType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Client.html#TMarriageRequestType">TMarriageRequestType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSitAction"></span><code><strong>TSitAction</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Whether the player wants to sit or stand</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Sit">Sit = 1</span></li>
+<li>
+<span id="Stand">Stand = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGuildInfoType"></span><code><strong>TGuildInfoType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The type of guild info being interacted with</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Description">Description = 1</span></li>
+<li>
+<span id="Ranks">Ranks = 2</span></li>
+<li>
+<span id="Bank">Bank = 3</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TTrainType"></span><code><strong>TTrainType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Whether the player is spending a stat point or a skill point</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Stat">Stat = 1</span></li>
+<li>
+<span id="Skill">Skill = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDialogReply"></span><code><strong>TDialogReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Whether the player has clicked the OK button or a link in a quest dialog</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Ok">Ok = 1</span></li>
+<li>
+<span id="Link">Link = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFileType"></span><code><strong>TFileType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Data file type</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Emf">Emf = 1</span></li>
+<li>
+<span id="Eif">Eif = 2</span></li>
+<li>
+<span id="Enf">Enf = 3</span></li>
+<li>
+<span id="Esf">Esf = 4</span></li>
+<li>
+<span id="Ecf">Ecf = 5</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStatId"></span><code><strong>TStatId</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Base character stat</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Str">Str = 1</span></li>
+<li>
+<span id="Int">Int = 2</span></li>
+<li>
+<span id="Wis">Wis = 3</span></li>
+<li>
+<span id="Agi">Agi = 4</span></li>
+<li>
+<span id="Con">Con = 5</span></li>
+<li>
+<span id="Cha">Cha = 6</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSpellTargetType"></span><code><strong>TSpellTargetType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Target type of a spell cast</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Player">Player = 1</span></li>
+<li>
+<span id="Npc">Npc = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMarriageRequestType"></span><code><strong>TMarriageRequestType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Request type sent with MARRIAGE_REQUEST packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="MarriageApproval">MarriageApproval = 1</span></li>
+<li>
+<span id="Divorce">Divorce = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

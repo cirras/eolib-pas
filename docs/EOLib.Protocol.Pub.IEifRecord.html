@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Pub: Interface IEifRecord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IEifRecord"></span><h1 class="cio">Interface IEifRecord</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Pub.html">EOLib.Protocol.Pub</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IEifRecord = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Record of Item data in an Endless Item File</p>
+<h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt>GUID['{7C49D4F2-8C38-5BA2-BFFD-84830BFE1F99}']</dt>
+  <dd></dd>
+</dl>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IEifRecord</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetName">GetName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetName-string-">SetName</a></strong>(Name: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetGraphicId">GetGraphicId</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetGraphicId-Cardinal-">SetGraphicId</a></strong>(GraphicId: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetType">GetType</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetType-TItemType-">SetType</a></strong>(Type_: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSubtype">GetSubtype</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSubtype-TItemSubtype-">SetSubtype</a></strong>(Subtype: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpecial">GetSpecial</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpecial-TItemSpecial-">SetSpecial</a></strong>(Special: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetHp">GetHp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetHp-Cardinal-">SetHp</a></strong>(Hp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetTp">GetTp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetTp-Cardinal-">SetTp</a></strong>(Tp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetMinDamage">GetMinDamage</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetMinDamage-Cardinal-">SetMinDamage</a></strong>(MinDamage: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetMaxDamage">GetMaxDamage</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetMaxDamage-Cardinal-">SetMaxDamage</a></strong>(MaxDamage: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetAccuracy">GetAccuracy</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetAccuracy-Cardinal-">SetAccuracy</a></strong>(Accuracy: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetEvade">GetEvade</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetEvade-Cardinal-">SetEvade</a></strong>(Evade: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetArmor">GetArmor</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetArmor-Cardinal-">SetArmor</a></strong>(Armor: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetReturnDamage">GetReturnDamage</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetReturnDamage-Cardinal-">SetReturnDamage</a></strong>(ReturnDamage: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetStr">GetStr</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetStr-Cardinal-">SetStr</a></strong>(Str: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntl">GetIntl</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntl-Cardinal-">SetIntl</a></strong>(Intl: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetWis">GetWis</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetWis-Cardinal-">SetWis</a></strong>(Wis: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgi">GetAgi</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgi-Cardinal-">SetAgi</a></strong>(Agi: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetCon">GetCon</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetCon-Cardinal-">SetCon</a></strong>(Con: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetCha">GetCha</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetCha-Cardinal-">SetCha</a></strong>(Cha: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetLightResistance">GetLightResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetLightResistance-Cardinal-">SetLightResistance</a></strong>(LightResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetDarkResistance">GetDarkResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetDarkResistance-Cardinal-">SetDarkResistance</a></strong>(DarkResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetEarthResistance">GetEarthResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetEarthResistance-Cardinal-">SetEarthResistance</a></strong>(EarthResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetAirResistance">GetAirResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetAirResistance-Cardinal-">SetAirResistance</a></strong>(AirResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetWaterResistance">GetWaterResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetWaterResistance-Cardinal-">SetWaterResistance</a></strong>(WaterResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetFireResistance">GetFireResistance</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetFireResistance-Cardinal-">SetFireResistance</a></strong>(FireResistance: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec1">GetSpec1</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec1-Cardinal-">SetSpec1</a></strong>(Spec1: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec2">GetSpec2</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec2-Cardinal-">SetSpec2</a></strong>(Spec2: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec3">GetSpec3</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec3-Cardinal-">SetSpec3</a></strong>(Spec3: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetLevelRequirement">GetLevelRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetLevelRequirement-Cardinal-">SetLevelRequirement</a></strong>(LevelRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetClassRequirement">GetClassRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a></strong>(ClassRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetStrRequirement">GetStrRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetStrRequirement-Cardinal-">SetStrRequirement</a></strong>(StrRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntRequirement">GetIntRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntRequirement-Cardinal-">SetIntRequirement</a></strong>(IntRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetWisRequirement">GetWisRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetWisRequirement-Cardinal-">SetWisRequirement</a></strong>(WisRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgiRequirement">GetAgiRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgiRequirement-Cardinal-">SetAgiRequirement</a></strong>(AgiRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetConRequirement">GetConRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetConRequirement-Cardinal-">SetConRequirement</a></strong>(ConRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetChaRequirement">GetChaRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetChaRequirement-Cardinal-">SetChaRequirement</a></strong>(ChaRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetElement">GetElement</a></strong>: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetElement-TElement-">SetElement</a></strong>(Element: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetElementDamage">GetElementDamage</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetElementDamage-Cardinal-">SetElementDamage</a></strong>(ElementDamage: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetWeight">GetWeight</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetWeight-Cardinal-">SetWeight</a></strong>(Weight: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GetSize">GetSize</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#SetSize-TItemSize-">SetSize</a></strong>(Size: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Name">Name</a></strong>: string read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#GraphicId">GraphicId</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetGraphicId">GetGraphicId</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetGraphicId-Cardinal-">SetGraphicId</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Type_">Type_</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetType">GetType</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetType-TItemType-">SetType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Subtype">Subtype</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSubtype">GetSubtype</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSubtype-TItemSubtype-">SetSubtype</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Special">Special</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpecial">GetSpecial</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpecial-TItemSpecial-">SetSpecial</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Hp">Hp</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetHp">GetHp</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetHp-Cardinal-">SetHp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Tp">Tp</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetTp">GetTp</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetTp-Cardinal-">SetTp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#MinDamage">MinDamage</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetMinDamage">GetMinDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetMinDamage-Cardinal-">SetMinDamage</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#MaxDamage">MaxDamage</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetMaxDamage">GetMaxDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetMaxDamage-Cardinal-">SetMaxDamage</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Accuracy">Accuracy</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAccuracy">GetAccuracy</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAccuracy-Cardinal-">SetAccuracy</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Evade">Evade</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetEvade">GetEvade</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetEvade-Cardinal-">SetEvade</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Armor">Armor</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetArmor">GetArmor</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetArmor-Cardinal-">SetArmor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ReturnDamage">ReturnDamage</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetReturnDamage">GetReturnDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetReturnDamage-Cardinal-">SetReturnDamage</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Str">Str</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetStr">GetStr</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetStr-Cardinal-">SetStr</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Intl">Intl</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntl">GetIntl</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntl-Cardinal-">SetIntl</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Wis">Wis</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWis">GetWis</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWis-Cardinal-">SetWis</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Agi">Agi</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgi">GetAgi</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgi-Cardinal-">SetAgi</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Con">Con</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetCon">GetCon</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetCon-Cardinal-">SetCon</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Cha">Cha</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetCha">GetCha</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetCha-Cardinal-">SetCha</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#LightResistance">LightResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetLightResistance">GetLightResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetLightResistance-Cardinal-">SetLightResistance</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#DarkResistance">DarkResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetDarkResistance">GetDarkResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetDarkResistance-Cardinal-">SetDarkResistance</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#EarthResistance">EarthResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetEarthResistance">GetEarthResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetEarthResistance-Cardinal-">SetEarthResistance</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#AirResistance">AirResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAirResistance">GetAirResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAirResistance-Cardinal-">SetAirResistance</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#WaterResistance">WaterResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWaterResistance">GetWaterResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWaterResistance-Cardinal-">SetWaterResistance</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#FireResistance">FireResistance</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetFireResistance">GetFireResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetFireResistance-Cardinal-">SetFireResistance</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Spec1">Spec1</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec1">GetSpec1</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec1-Cardinal-">SetSpec1</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Spec2">Spec2</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec2">GetSpec2</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec2-Cardinal-">SetSpec2</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Spec3">Spec3</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec3">GetSpec3</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec3-Cardinal-">SetSpec3</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#LevelRequirement">LevelRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetLevelRequirement">GetLevelRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetLevelRequirement-Cardinal-">SetLevelRequirement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ClassRequirement">ClassRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetClassRequirement">GetClassRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#StrRequirement">StrRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetStrRequirement">GetStrRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetStrRequirement-Cardinal-">SetStrRequirement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#IntRequirement">IntRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntRequirement">GetIntRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntRequirement-Cardinal-">SetIntRequirement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#WisRequirement">WisRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWisRequirement">GetWisRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWisRequirement-Cardinal-">SetWisRequirement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#AgiRequirement">AgiRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgiRequirement">GetAgiRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgiRequirement-Cardinal-">SetAgiRequirement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ConRequirement">ConRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetConRequirement">GetConRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetConRequirement-Cardinal-">SetConRequirement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ChaRequirement">ChaRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetChaRequirement">GetChaRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetChaRequirement-Cardinal-">SetChaRequirement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Element">Element</a></strong>: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetElement">GetElement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetElement-TElement-">SetElement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#ElementDamage">ElementDamage</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetElementDamage">GetElementDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetElementDamage-Cardinal-">SetElementDamage</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Weight">Weight</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWeight">GetWeight</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWeight-Cardinal-">SetWeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.IEifRecord.html#Size">Size</a></strong>: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSize">GetSize</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSize-TItemSize-">SetSize</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetName"></span><code>function <strong>GetName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetName-string-"></span><code>procedure <strong>SetName</strong>(Name: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetGraphicId"></span><code>function <strong>GetGraphicId</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetGraphicId-Cardinal-"></span><code>procedure <strong>SetGraphicId</strong>(GraphicId: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetType"></span><code>function <strong>GetType</strong>: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetType-TItemType-"></span><code>procedure <strong>SetType</strong>(Type_: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSubtype"></span><code>function <strong>GetSubtype</strong>: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSubtype-TItemSubtype-"></span><code>procedure <strong>SetSubtype</strong>(Subtype: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpecial"></span><code>function <strong>GetSpecial</strong>: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpecial-TItemSpecial-"></span><code>procedure <strong>SetSpecial</strong>(Special: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetHp"></span><code>function <strong>GetHp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetHp-Cardinal-"></span><code>procedure <strong>SetHp</strong>(Hp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTp"></span><code>function <strong>GetTp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTp-Cardinal-"></span><code>procedure <strong>SetTp</strong>(Tp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMinDamage"></span><code>function <strong>GetMinDamage</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMinDamage-Cardinal-"></span><code>procedure <strong>SetMinDamage</strong>(MinDamage: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaxDamage"></span><code>function <strong>GetMaxDamage</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaxDamage-Cardinal-"></span><code>procedure <strong>SetMaxDamage</strong>(MaxDamage: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAccuracy"></span><code>function <strong>GetAccuracy</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAccuracy-Cardinal-"></span><code>procedure <strong>SetAccuracy</strong>(Accuracy: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEvade"></span><code>function <strong>GetEvade</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetEvade-Cardinal-"></span><code>procedure <strong>SetEvade</strong>(Evade: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetArmor"></span><code>function <strong>GetArmor</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetArmor-Cardinal-"></span><code>procedure <strong>SetArmor</strong>(Armor: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetReturnDamage"></span><code>function <strong>GetReturnDamage</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetReturnDamage-Cardinal-"></span><code>procedure <strong>SetReturnDamage</strong>(ReturnDamage: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetStr"></span><code>function <strong>GetStr</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetStr-Cardinal-"></span><code>procedure <strong>SetStr</strong>(Str: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetIntl"></span><code>function <strong>GetIntl</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetIntl-Cardinal-"></span><code>procedure <strong>SetIntl</strong>(Intl: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetWis"></span><code>function <strong>GetWis</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetWis-Cardinal-"></span><code>procedure <strong>SetWis</strong>(Wis: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAgi"></span><code>function <strong>GetAgi</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAgi-Cardinal-"></span><code>procedure <strong>SetAgi</strong>(Agi: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCon"></span><code>function <strong>GetCon</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCon-Cardinal-"></span><code>procedure <strong>SetCon</strong>(Con: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCha"></span><code>function <strong>GetCha</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCha-Cardinal-"></span><code>procedure <strong>SetCha</strong>(Cha: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLightResistance"></span><code>function <strong>GetLightResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLightResistance-Cardinal-"></span><code>procedure <strong>SetLightResistance</strong>(LightResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDarkResistance"></span><code>function <strong>GetDarkResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetDarkResistance-Cardinal-"></span><code>procedure <strong>SetDarkResistance</strong>(DarkResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEarthResistance"></span><code>function <strong>GetEarthResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetEarthResistance-Cardinal-"></span><code>procedure <strong>SetEarthResistance</strong>(EarthResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAirResistance"></span><code>function <strong>GetAirResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAirResistance-Cardinal-"></span><code>procedure <strong>SetAirResistance</strong>(AirResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetWaterResistance"></span><code>function <strong>GetWaterResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetWaterResistance-Cardinal-"></span><code>procedure <strong>SetWaterResistance</strong>(WaterResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFireResistance"></span><code>function <strong>GetFireResistance</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetFireResistance-Cardinal-"></span><code>procedure <strong>SetFireResistance</strong>(FireResistance: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpec1"></span><code>function <strong>GetSpec1</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpec1-Cardinal-"></span><code>procedure <strong>SetSpec1</strong>(Spec1: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpec2"></span><code>function <strong>GetSpec2</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpec2-Cardinal-"></span><code>procedure <strong>SetSpec2</strong>(Spec2: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpec3"></span><code>function <strong>GetSpec3</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpec3-Cardinal-"></span><code>procedure <strong>SetSpec3</strong>(Spec3: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLevelRequirement"></span><code>function <strong>GetLevelRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLevelRequirement-Cardinal-"></span><code>procedure <strong>SetLevelRequirement</strong>(LevelRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetClassRequirement"></span><code>function <strong>GetClassRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetClassRequirement-Cardinal-"></span><code>procedure <strong>SetClassRequirement</strong>(ClassRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetStrRequirement"></span><code>function <strong>GetStrRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetStrRequirement-Cardinal-"></span><code>procedure <strong>SetStrRequirement</strong>(StrRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetIntRequirement"></span><code>function <strong>GetIntRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetIntRequirement-Cardinal-"></span><code>procedure <strong>SetIntRequirement</strong>(IntRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetWisRequirement"></span><code>function <strong>GetWisRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetWisRequirement-Cardinal-"></span><code>procedure <strong>SetWisRequirement</strong>(WisRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAgiRequirement"></span><code>function <strong>GetAgiRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAgiRequirement-Cardinal-"></span><code>procedure <strong>SetAgiRequirement</strong>(AgiRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetConRequirement"></span><code>function <strong>GetConRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetConRequirement-Cardinal-"></span><code>procedure <strong>SetConRequirement</strong>(ConRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetChaRequirement"></span><code>function <strong>GetChaRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetChaRequirement-Cardinal-"></span><code>procedure <strong>SetChaRequirement</strong>(ChaRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetElement"></span><code>function <strong>GetElement</strong>: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetElement-TElement-"></span><code>procedure <strong>SetElement</strong>(Element: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetElementDamage"></span><code>function <strong>GetElementDamage</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetElementDamage-Cardinal-"></span><code>procedure <strong>SetElementDamage</strong>(ElementDamage: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetWeight"></span><code>function <strong>GetWeight</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetWeight-Cardinal-"></span><code>procedure <strong>SetWeight</strong>(Weight: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSize"></span><code>function <strong>GetSize</strong>: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSize-TItemSize-"></span><code>procedure <strong>SetSize</strong>(Size: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>IEifRecord</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be 252 or less</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GraphicId"></span><code>property <strong>GraphicId</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetGraphicId">GetGraphicId</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetGraphicId-Cardinal-">SetGraphicId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Type_"></span><code>property <strong>Type_</strong>: <a href="EOLib.Protocol.Pub.html#TItemType">TItemType</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetType">GetType</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetType-TItemType-">SetType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Subtype"></span><code>property <strong>Subtype</strong>: <a href="EOLib.Protocol.Pub.html#TItemSubtype">TItemSubtype</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSubtype">GetSubtype</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSubtype-TItemSubtype-">SetSubtype</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Special"></span><code>property <strong>Special</strong>: <a href="EOLib.Protocol.Pub.html#TItemSpecial">TItemSpecial</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpecial">GetSpecial</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpecial-TItemSpecial-">SetSpecial</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Hp"></span><code>property <strong>Hp</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetHp">GetHp</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetHp-Cardinal-">SetHp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Tp"></span><code>property <strong>Tp</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetTp">GetTp</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetTp-Cardinal-">SetTp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinDamage"></span><code>property <strong>MinDamage</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetMinDamage">GetMinDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetMinDamage-Cardinal-">SetMinDamage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxDamage"></span><code>property <strong>MaxDamage</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetMaxDamage">GetMaxDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetMaxDamage-Cardinal-">SetMaxDamage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Accuracy"></span><code>property <strong>Accuracy</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAccuracy">GetAccuracy</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAccuracy-Cardinal-">SetAccuracy</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Evade"></span><code>property <strong>Evade</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetEvade">GetEvade</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetEvade-Cardinal-">SetEvade</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Armor"></span><code>property <strong>Armor</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetArmor">GetArmor</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetArmor-Cardinal-">SetArmor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReturnDamage"></span><code>property <strong>ReturnDamage</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetReturnDamage">GetReturnDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetReturnDamage-Cardinal-">SetReturnDamage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Str"></span><code>property <strong>Str</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetStr">GetStr</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetStr-Cardinal-">SetStr</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Intl"></span><code>property <strong>Intl</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntl">GetIntl</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntl-Cardinal-">SetIntl</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Wis"></span><code>property <strong>Wis</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWis">GetWis</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWis-Cardinal-">SetWis</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Agi"></span><code>property <strong>Agi</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgi">GetAgi</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgi-Cardinal-">SetAgi</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Con"></span><code>property <strong>Con</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetCon">GetCon</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetCon-Cardinal-">SetCon</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Cha"></span><code>property <strong>Cha</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetCha">GetCha</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetCha-Cardinal-">SetCha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LightResistance"></span><code>property <strong>LightResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetLightResistance">GetLightResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetLightResistance-Cardinal-">SetLightResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DarkResistance"></span><code>property <strong>DarkResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetDarkResistance">GetDarkResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetDarkResistance-Cardinal-">SetDarkResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EarthResistance"></span><code>property <strong>EarthResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetEarthResistance">GetEarthResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetEarthResistance-Cardinal-">SetEarthResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AirResistance"></span><code>property <strong>AirResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAirResistance">GetAirResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAirResistance-Cardinal-">SetAirResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WaterResistance"></span><code>property <strong>WaterResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWaterResistance">GetWaterResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWaterResistance-Cardinal-">SetWaterResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FireResistance"></span><code>property <strong>FireResistance</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetFireResistance">GetFireResistance</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetFireResistance-Cardinal-">SetFireResistance</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Spec1"></span><code>property <strong>Spec1</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec1">GetSpec1</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec1-Cardinal-">SetSpec1</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Holds one the following values, depending on item type: scroll_map, doll_graphic, exp_reward, hair_color, effect, key, alcohol_potency <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-16194276</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Spec2"></span><code>property <strong>Spec2</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec2">GetSpec2</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec2-Cardinal-">SetSpec2</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Holds one the following values, depending on item type: scroll_x, gender <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Spec3"></span><code>property <strong>Spec3</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSpec3">GetSpec3</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSpec3-Cardinal-">SetSpec3</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Holds one the following values, depending on item type: scroll_y <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LevelRequirement"></span><code>property <strong>LevelRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetLevelRequirement">GetLevelRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetLevelRequirement-Cardinal-">SetLevelRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClassRequirement"></span><code>property <strong>ClassRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetClassRequirement">GetClassRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StrRequirement"></span><code>property <strong>StrRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetStrRequirement">GetStrRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetStrRequirement-Cardinal-">SetStrRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IntRequirement"></span><code>property <strong>IntRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetIntRequirement">GetIntRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetIntRequirement-Cardinal-">SetIntRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WisRequirement"></span><code>property <strong>WisRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWisRequirement">GetWisRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWisRequirement-Cardinal-">SetWisRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AgiRequirement"></span><code>property <strong>AgiRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetAgiRequirement">GetAgiRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetAgiRequirement-Cardinal-">SetAgiRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConRequirement"></span><code>property <strong>ConRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetConRequirement">GetConRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetConRequirement-Cardinal-">SetConRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ChaRequirement"></span><code>property <strong>ChaRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetChaRequirement">GetChaRequirement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetChaRequirement-Cardinal-">SetChaRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Element"></span><code>property <strong>Element</strong>: <a href="EOLib.Protocol.Pub.html#TElement">TElement</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetElement">GetElement</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetElement-TElement-">SetElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ElementDamage"></span><code>property <strong>ElementDamage</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetElementDamage">GetElementDamage</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetElementDamage-Cardinal-">SetElementDamage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Weight"></span><code>property <strong>Weight</strong>: Cardinal read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetWeight">GetWeight</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetWeight-Cardinal-">SetWeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Size"></span><code>property <strong>Size</strong>: <a href="EOLib.Protocol.Pub.html#TItemSize">TItemSize</a> read <a href="EOLib.Protocol.Pub.IEifRecord.html#GetSize">GetSize</a> write <a href="EOLib.Protocol.Pub.IEifRecord.html#SetSize-TItemSize-">SetSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

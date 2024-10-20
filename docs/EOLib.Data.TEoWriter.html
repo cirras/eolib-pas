@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Data: Class TEoWriter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TEoWriter"></span><h1 class="cio">Class TEoWriter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Data.html">EOLib.Data</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TEoWriter = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+A class for writing EO data to a sequence of bytes.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TEoWriter</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="EOLib.Data.TEoWriter.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddByte-Cardinal-">AddByte</a></strong>(Value: Cardinal);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddBytes-TArrayByte-">AddBytes</a></strong>(const Bytes: TArray&lt;Byte&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddChar-Cardinal-">AddChar</a></strong>(Number: Cardinal);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddShort-Cardinal-">AddShort</a></strong>(Number: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddThree-Cardinal-">AddThree</a></strong>(Number: Cardinal);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddInt-Cardinal-">AddInt</a></strong>(Number: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddString-string-">AddString</a></strong>(Str: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddFixedString-string-Cardinal-Boolean-">AddFixedString</a></strong>(Str: string; ExpectedLength: Cardinal; Padded: Boolean = False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddEncodedString-string-">AddEncodedString</a></strong>(Str: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoWriter.html#AddFixedEncodedString-string-Cardinal-Boolean-">AddFixedEncodedString</a></strong>(Str: string; ExpectedLength: Cardinal; Padded: Boolean = False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoWriter.html#ToByteArray">ToByteArray</a></strong>: TArray&lt;Byte&gt;;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Data.TEoWriter.html#StringSanitizationMode">StringSanitizationMode</a></strong>: Boolean read FStringSanitizationMode write FStringSanitizationMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Data.TEoWriter.html#Length">Length</a></strong>: Cardinal read FLength;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoWriter</code> instance with no data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddByte-Cardinal-"></span><code>procedure <strong>AddByte</strong>(Value: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a raw byte to the writer data.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Value</dt>
+<dd>The byte to be added</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the value is above <code>$FF</code></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddBytes-TArrayByte-"></span><code>procedure <strong>AddBytes</strong>(const Bytes: TArray&lt;Byte&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an array of raw bytes to the writer data.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Bytes</dt>
+<dd>The array of bytes to be added</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddChar-Cardinal-"></span><code>procedure <strong>AddChar</strong>(Number: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an encoded 1-byte integer to the writer data.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Number</dt>
+<dd>The number to be encoded and added</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the value is above <a class="normal" href="EOLib.Data.html#EoCharMax">EoCharMax</a></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddShort-Cardinal-"></span><code>procedure <strong>AddShort</strong>(Number: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an encoded 2-byte integer to the writer data.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Number</dt>
+<dd>The number to be encoded and added</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the value is above <a class="normal" href="EOLib.Data.html#EoShortMax">EoShortMax</a></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddThree-Cardinal-"></span><code>procedure <strong>AddThree</strong>(Number: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an encoded 3-byte integer to the writer data.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Number</dt>
+<dd>The number to be encoded and added</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the value is above <a class="normal" href="EOLib.Data.html#EoThreeMax">EoThreeMax</a></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddInt-Cardinal-"></span><code>procedure <strong>AddInt</strong>(Number: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an encoded 4-byte integer to the writer data.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Number</dt>
+<dd>The number to be encoded and added</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the value is above <a class="normal" href="EOLib.Data.html#EoIntMax">EoIntMax</a></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddString-string-"></span><code>procedure <strong>AddString</strong>(Str: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a string to the writer data.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Str</dt>
+<dd>The string to be added</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddFixedString-string-Cardinal-Boolean-"></span><code>procedure <strong>AddFixedString</strong>(Str: string; ExpectedLength: Cardinal; Padded: Boolean = False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a fixed-length string to the writer data.
+
+<p>  
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Str</dt>
+<dd>The string to be added</dd>
+<dt>Length</dt>
+<dd>The expected length of the string</dd>
+<dt>Padded</dt>
+<dd><code>True</code> if <code>Str</code> should be padded to <code>Length</code> with trailing <code>$FF</code> bytes</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the string does not have the expected length</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddEncodedString-string-"></span><code>procedure <strong>AddEncodedString</strong>(Str: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an encoded string to the writer data.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Str</dt>
+<dd>The string to be encoded and added</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddFixedEncodedString-string-Cardinal-Boolean-"></span><code>procedure <strong>AddFixedEncodedString</strong>(Str: string; ExpectedLength: Cardinal; Padded: Boolean = False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a fixed-length encoded string to the writer data.
+
+<p>  
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Str</dt>
+<dd>The string to be encoded and added</dd>
+<dt>Length</dt>
+<dd>The expected length of the string</dd>
+<dt>Padded</dt>
+<dd><code>True</code> if <code>Str</code> should be padded to <code>Length</code> with trailing <code>$FF</code> bytes</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EArgumentException</code></dt>
+<dd>If the string does not have the expected length</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToByteArray"></span><code>function <strong>ToByteArray</strong>: TArray&lt;Byte&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the writer data as a byte array.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A copy of the writer data as a byte array</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StringSanitizationMode"></span><code>property <strong>StringSanitizationMode</strong>: Boolean read FStringSanitizationMode write FStringSanitizationMode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If string sanitization mode is enabled, the writer will switch <code>$FF</code> (ÿ) bytes in strings to <code>$79</code> (y).
+
+<p>See:
+
+<p><a href="https://github.com/Cirras/eo-protocol/blob/master/docs/chunks.md#sanitization">Chunked Reading: Sanitization</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Length"></span><code>property <strong>Length</strong>: Cardinal read FLength;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The length of the writer data.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

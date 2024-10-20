@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Server: Interface IInitInitServerPacketReplyCodeDataBanned</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IInitInitServerPacketReplyCodeDataBanned"></span><h1 class="cio">Interface IInitInitServerPacketReplyCodeDataBanned</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.Server.html">EOLib.Protocol.Net.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IInitInitServerPacketReplyCodeDataBanned = interface(<a class="normal" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeData.html">IInitInitServerPacketReplyCodeData</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>3</code>.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="ancestor"><a class="normal" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeData.html">IInitInitServerPacketReplyCodeData</a></li>
+<li class="thisitem">IInitInitServerPacketReplyCodeDataBanned</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanType">GetBanType</a></strong>: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanType-TInitBanType-">SetBanType</a></strong>(BanType: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanTypeData">GetBanTypeData</a></strong>: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanTypeData-IInitInitServerPacketReplyCodeDataBannedBanTypeData-">SetBanTypeData</a></strong>(BanTypeData: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#BanType">BanType</a></strong>: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a> read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanType">GetBanType</a> write <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanType-TInitBanType-">SetBanType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#BanTypeData">BanTypeData</a></strong>: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a> read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanTypeData">GetBanTypeData</a> write <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanTypeData-IInitInitServerPacketReplyCodeDataBannedBanTypeData-">SetBanTypeData</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt>GUID['{5FE5E167-3610-51BA-A87C-7941B54B9048}']</dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBanType"></span><code>function <strong>GetBanType</strong>: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBanType-TInitBanType-"></span><code>procedure <strong>SetBanType</strong>(BanType: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBanTypeData"></span><code>function <strong>GetBanTypeData</strong>: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBanTypeData-IInitInitServerPacketReplyCodeDataBannedBanTypeData-"></span><code>procedure <strong>SetBanTypeData</strong>(BanTypeData: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>IInitInitServerPacketReplyCodeDataBanned</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BanType"></span><code>property <strong>BanType</strong>: <a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a> read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanType">GetBanType</a> write <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanType-TInitBanType-">SetBanType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BanTypeData"></span><code>property <strong>BanTypeData</strong>: <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html">IInitInitServerPacketReplyCodeDataBannedBanTypeData</a> read <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#GetBanTypeData">GetBanTypeData</a> write <a href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html#SetBanTypeData-IInitInitServerPacketReplyCodeDataBannedBanTypeData-">SetBanTypeData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Data associated with the <code>BanType</code> field.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

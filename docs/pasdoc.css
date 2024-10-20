@@ -1,0 +1,242 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Adjusted', 'Segoe UI', 'Liberation Sans', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navigation {
+  width: 320px;
+  color: white;
+  background-color: #343a40;
+  position: fixed;
+  height: 100%;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+.navigation h2 {
+  text-align: left;
+  color: #f8f9fa;
+}
+
+.navigation h2::before {
+  content: '';
+  background-image: url(logo.svg);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-bottom: 0.75em;
+}
+
+.navigation a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #17a2b8;
+}
+
+.content {
+  margin-left: 320px;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.content h1 {
+  color: #343a40;
+  margin-top: 0;
+}
+
+.appinfo {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 1px solid #dee2e6;
+  margin: 1.5em 0;
+}
+
+img {
+  border: none;
+}
+
+li>p:only-child {
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+table.wide_list {
+  border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.wide_list th,
+table.wide_list td {
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+}
+
+table.detail.wide_list {
+  margin-bottom: 5px;
+}
+
+tr.list {
+  background-color: #e9ecef;
+}
+
+tr.listheader {
+  background-color: #343a40;
+  color: white;
+}
+
+td.itemcode {
+  width: 100%;
+}
+
+tr.list code {
+  background-color: #dee2e6;
+}
+
+td.itemcode code {
+  background-color: unset;
+  border: unset;
+  padding: unset;
+}
+
+.sections .one_section {
+  background-color: #f1f3f5;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+  background-color: #e9ecef;
+  padding: 0.2em;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.longcode {
+  font-family: Consolas, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+  background-color: #e9ecef;
+  padding: 1em;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+dl.tag.warning {
+  border-left: 5px solid #dc3545;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+dl.tag.note {
+  border-left: 5px solid #ffc107;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  background-color: #fff3cd;
+  border-radius: 4px;
+}
+
+h6.description_section {
+  font-size: 100%;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+table.table_tag {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+}
+
+table.table_tag th,
+table.table_tag td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+form.search-form {
+  margin-top: 30px;
+}
+
+input#tipue_search_input {
+  width: 195px;
+  vertical-align: middle;
+}
+
+div.search-button {
+  display: inline-block;
+}
+
+/* Hide descriptions that just say "This item has no description." */
+p.nodescription {
+  display: none;
+  color: red;
+}
+
+/*
+  CSS hack to hide attribute description sections.
+  Looks like PasDoc is sticking interface GUIDs into these (which vaguely look like attributes).
+*/
+
+h6.description_section:has(+ dl.attributes) {
+  display: none;
+}
+
+dl.attributes {
+  display: none;
+}
+
+/* Collapse description cells with no meaningful content. */
+td:has(p.nodescription:only-child) {
+  display: none;
+}
+
+td:has(p.nodescription:first-child):has(dl.attributes:last-child) {
+  display: none;
+}

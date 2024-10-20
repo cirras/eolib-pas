@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Server: Interface ITalkListServerPacket</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="ITalkListServerPacket"></span><h1 class="cio">Interface ITalkListServerPacket</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.Server.html">EOLib.Protocol.Net.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type ITalkListServerPacket = interface(<a class="normal" href="EOLib.Protocol.Packet.IPacket.html">IPacket</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Global chat backfill. Sent by the official game server when a player opens the global chat tab.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="ancestor"><a class="normal" href="EOLib.Protocol.Packet.IPacket.html">IPacket</a></li>
+<li class="thisitem">ITalkListServerPacket</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetMessages">GetMessages</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#SetMessages-TArrayIGlobalBackfillMessage-">SetMessages</a></strong>(Messages: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#Family">Family</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#Action">Action</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#Messages">Messages</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetMessages">GetMessages</a> write <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#SetMessages-TArrayIGlobalBackfillMessage-">SetMessages</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt>GUID['{0AF0E9EE-000C-5737-84B6-CC5224605F8D}']</dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMessages"></span><code>function <strong>GetMessages</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMessages-TArrayIGlobalBackfillMessage-"></span><code>procedure <strong>SetMessages</strong>(Messages: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Family"></span><code>function <strong>Family</strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet family associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet family associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Action"></span><code>function <strong>Action</strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet action associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet action associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>ITalkListServerPacket</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Messages"></span><code>property <strong>Messages</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html">IGlobalBackfillMessage</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#GetMessages">GetMessages</a> write <a href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html#SetMessages-TArrayIGlobalBackfillMessage-">SetMessages</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Utils.Optional: Record TOptional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TOptional"></span><h1 class="cio">Record TOptional</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Utils.Optional.html">EOLib.Utils.Optional</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TOptional&lt;T&gt; = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A generic record that holds an optional (nullable) value of type <code>T</code>.
+
+<p>This type is inspired by Java's <code>Optional</code> type and is useful for indicating the presence or absence of a value, avoiding the need for sentinel values like 0 or empty string for non-nullable types.</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#From-T-">From</a></strong>(Value: T): <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#Empty">Empty</a></strong>: <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#Get">Get</a></strong>: T;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#TryGet-T-">TryGet</a></strong>(out Value: T): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#OrElse-T-">OrElse</a></strong>(Default: T): T;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#OrElseGet-TFuncT-">OrElseGet</a></strong>(Supplier: TFunc&lt;T&gt;): T;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#IfPresent-TProcT-">IfPresent</a></strong>(Consumer: TProc&lt;T&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class operator <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#Implicit-T-">Implicit</a></strong>(Value: T): <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; inline;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#IsPresent">IsPresent</a></strong>: Boolean read FIsPresent;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Utils.Optional.TOptional.generic.html#IsEmpty">IsEmpty</a></strong>: Boolean read GetIsEmpty;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="From-T-"></span><code>class function <strong>From</strong>(Value: T): <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of <code>TOptional</code> with a value.
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Value</dt>
+<dd>The value to hold.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">A <code>TOptional</code> with a value present</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Empty"></span><code>class function <strong>Empty</strong>: <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an empty <code>TOptional</code>.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A <code>TOptional</code> with no value present</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get"></span><code>function <strong>Get</strong>: T;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the held value if it is present, otherwise raises an <a class="normal" href="EOLib.Utils.Optional.EOptionalError.html">EOptionalError</a> if the optional is empty.
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The held value</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><a class="normal" href="EOLib.Utils.Optional.EOptionalError.html">EOptionalError</a></dt>
+<dd>If the optional is empty.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TryGet-T-"></span><code>function <strong>TryGet</strong>(out Value: T): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Tries to get the held value if it is present, returning <code>True</code> if successful.
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Value</dt>
+<dd>The out parameter that will contain the value if successful</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the value is present, <code>False</code> otherwise</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OrElse-T-"></span><code>function <strong>OrElse</strong>(Default: T): T;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the held value if present, otherwise returns the provided default value.
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Default</dt>
+<dd>The value to return if the optional is empty</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The held value if present, or the provided default value</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OrElseGet-TFuncT-"></span><code>function <strong>OrElseGet</strong>(Supplier: TFunc&lt;T&gt;): T;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the held value if present, otherwise returns the value supplied by the provided supplier function.
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Supplier</dt>
+<dd>A function that provides the default value if the optional is empty</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The held value if present, or the value supplied by the provided function</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IfPresent-TProcT-"></span><code>procedure <strong>IfPresent</strong>(Consumer: TProc&lt;T&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Executes the provided consumer procedure if the value is present.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Consumer</dt>
+<dd>A procedure to execute if the value is present</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Implicit-T-"></span><code>class operator <strong>Implicit</strong>(Value: T): <a href="EOLib.Utils.Optional.TOptional.generic.html">TOptional</a>&lt;T&gt;; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Implicit conversion operator to allow assigning a value of type <code>T</code> directly to <code>TOptional</code>.
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Value</dt>
+<dd>The value to convert to TOptional.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">A <code>TOptional</code> holding the provided value.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsPresent"></span><code>property <strong>IsPresent</strong>: Boolean read FIsPresent;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Indicates whether the value is present.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsEmpty"></span><code>property <strong>IsEmpty</strong>: Boolean read GetIsEmpty;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Indicates whether the optional is empty.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

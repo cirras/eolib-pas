@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit EOLib.Protocol.Map</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Generated from the eo-protocol XML specification.
+
+<p>This file should not be modified. Changes will be lost when code is regenerated.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="EOLib.Data.html">EOLib.Data</a></li><li><a href="EOLib.Protocol.html">EOLib.Protocol</a></li><li><a href="EOLib.Protocol.Errors.html">EOLib.Protocol.Errors</a></li><li>Generics.Collections</li><li>System.SysUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapTypeHelper.html"><code>TMapTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapTimedEffectHelper.html"><code>TMapTimedEffectHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapTimedEffect enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapMusicControlHelper.html"><code>TMapMusicControlHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapMusicControl enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapTileSpecHelper.html"><code>TMapTileSpecHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapTileSpec enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapNpc.html"><code>IMapNpc</code></a></td>
+<td class="itemdesc">NPC spawn EMF entity</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapNpc.html"><code>TMapNpc</code></a></td>
+<td class="itemdesc">NPC spawn EMF entity</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapLegacyDoorKey.html"><code>IMapLegacyDoorKey</code></a></td>
+<td class="itemdesc">Legacy EMF entity used to specify a key on a door</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapLegacyDoorKey.html"><code>TMapLegacyDoorKey</code></a></td>
+<td class="itemdesc">Legacy EMF entity used to specify a key on a door</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapItem.html"><code>IMapItem</code></a></td>
+<td class="itemdesc">Item spawn EMF entity</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapItem.html"><code>TMapItem</code></a></td>
+<td class="itemdesc">Item spawn EMF entity</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapWarp.html"><code>IMapWarp</code></a></td>
+<td class="itemdesc">Warp EMF entity</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapWarp.html"><code>TMapWarp</code></a></td>
+<td class="itemdesc">Warp EMF entity</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapSign.html"><code>IMapSign</code></a></td>
+<td class="itemdesc">Sign EMF entity</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapSign.html"><code>TMapSign</code></a></td>
+<td class="itemdesc">Sign EMF entity</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapTileSpecRowTile.html"><code>IMapTileSpecRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of tilespecs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapTileSpecRowTile.html"><code>TMapTileSpecRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of tilespecs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapTileSpecRow.html"><code>IMapTileSpecRow</code></a></td>
+<td class="itemdesc">A row of tilespecs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapTileSpecRow.html"><code>TMapTileSpecRow</code></a></td>
+<td class="itemdesc">A row of tilespecs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapWarpRowTile.html"><code>IMapWarpRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of warp entities</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapWarpRowTile.html"><code>TMapWarpRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of warp entities</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapWarpRow.html"><code>IMapWarpRow</code></a></td>
+<td class="itemdesc">A row of warp entities</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapWarpRow.html"><code>TMapWarpRow</code></a></td>
+<td class="itemdesc">A row of warp entities</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapGraphicRowTile.html"><code>IMapGraphicRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of map graphics</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapGraphicRowTile.html"><code>TMapGraphicRowTile</code></a></td>
+<td class="itemdesc">A single tile in a row of map graphics</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapGraphicRow.html"><code>IMapGraphicRow</code></a></td>
+<td class="itemdesc">A row in a layer of map graphics</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapGraphicRow.html"><code>TMapGraphicRow</code></a></td>
+<td class="itemdesc">A row in a layer of map graphics</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IMapGraphicLayer.html"><code>IMapGraphicLayer</code></a></td>
+<td class="itemdesc">A layer of map graphics</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TMapGraphicLayer.html"><code>TMapGraphicLayer</code></a></td>
+<td class="itemdesc">A layer of map graphics</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Map.IEmf.html"><code>IEmf</code></a></td>
+<td class="itemdesc">Endless Map File</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Map.TEmf.html"><code>TEmf</code></a></td>
+<td class="itemdesc">Endless Map File</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Map.html#TMapType">TMapType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Map.html#TMapTimedEffect">TMapTimedEffect</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Map.html#TMapMusicControl">TMapMusicControl</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Map.html#TMapTileSpec">TMapTileSpec</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapType"></span><code><strong>TMapType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="nodescription">This item has no description.</p><h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Normal">Normal = 0</span></li>
+<li>
+<span id="Pk">Pk = 3</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapTimedEffect"></span><code><strong>TMapTimedEffect</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A timed effect that can occur on a map</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="None">None = 0</span></li>
+<li>
+<span id="HpDrain">HpDrain = 1</span></li>
+<li>
+<span id="TpDrain">TpDrain = 2</span></li>
+<li>
+<span id="Quake1">Quake1 = 3</span></li>
+<li>
+<span id="Quake2">Quake2 = 4</span></li>
+<li>
+<span id="Quake3">Quake3 = 5</span></li>
+<li>
+<span id="Quake4">Quake4 = 6</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapMusicControl"></span><code><strong>TMapMusicControl</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+How background music should be played on a map</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="InterruptIfDifferentPlayOnce">InterruptIfDifferentPlayOnce = 0</span></li>
+<li>
+<span id="InterruptPlayOnce">InterruptPlayOnce = 1</span></li>
+<li>
+<span id="FinishPlayOnce">FinishPlayOnce = 2</span></li>
+<li>
+<span id="InterruptIfDifferentPlayRepeat">InterruptIfDifferentPlayRepeat = 3</span></li>
+<li>
+<span id="InterruptPlayRepeat">InterruptPlayRepeat = 4</span></li>
+<li>
+<span id="FinishPlayRepeat">FinishPlayRepeat = 5</span></li>
+<li>
+<span id="InterruptPlayNothing">InterruptPlayNothing = 6</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapTileSpec"></span><code><strong>TMapTileSpec</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The type of a tile on a map</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Wall">Wall = 0</span></li>
+<li>
+<span id="ChairDown">ChairDown = 1</span></li>
+<li>
+<span id="ChairLeft">ChairLeft = 2</span></li>
+<li>
+<span id="ChairRight">ChairRight = 3</span></li>
+<li>
+<span id="ChairUp">ChairUp = 4</span></li>
+<li>
+<span id="ChairDownRight">ChairDownRight = 5</span></li>
+<li>
+<span id="ChairUpLeft">ChairUpLeft = 6</span></li>
+<li>
+<span id="ChairAll">ChairAll = 7</span></li>
+<li>
+<span id="Reserved8">Reserved8 = 8</span></li>
+<li>
+<span id="Chest">Chest = 9</span></li>
+<li>
+<span id="Reserved10">Reserved10 = 10</span></li>
+<li>
+<span id="Reserved11">Reserved11 = 11</span></li>
+<li>
+<span id="Reserved12">Reserved12 = 12</span></li>
+<li>
+<span id="Reserved13">Reserved13 = 13</span></li>
+<li>
+<span id="Reserved14">Reserved14 = 14</span></li>
+<li>
+<span id="Reserved15">Reserved15 = 15</span></li>
+<li>
+<span id="BankVault">BankVault = 16</span></li>
+<li>
+<span id="NpcBoundary">NpcBoundary = 17</span></li>
+<li>
+<span id="Edge">Edge = 18</span></li>
+<li>
+<span id="FakeWall">FakeWall = 19</span></li>
+<li>
+<span id="Board1">Board1 = 20</span></li>
+<li>
+<span id="Board2">Board2 = 21</span></li>
+<li>
+<span id="Board3">Board3 = 22</span></li>
+<li>
+<span id="Board4">Board4 = 23</span></li>
+<li>
+<span id="Board5">Board5 = 24</span></li>
+<li>
+<span id="Board6">Board6 = 25</span></li>
+<li>
+<span id="Board7">Board7 = 26</span></li>
+<li>
+<span id="Board8">Board8 = 27</span></li>
+<li>
+<span id="Jukebox">Jukebox = 28</span></li>
+<li>
+<span id="Jump">Jump = 29</span></li>
+<li>
+<span id="Water">Water = 30</span></li>
+<li>
+<span id="Reserved31">Reserved31 = 31</span></li>
+<li>
+<span id="Arena">Arena = 32</span></li>
+<li>
+<span id="AmbientSource">AmbientSource = 33</span></li>
+<li>
+<span id="TimedSpikes">TimedSpikes = 34</span></li>
+<li>
+<span id="Spikes">Spikes = 35</span></li>
+<li>
+<span id="HiddenSpikes">HiddenSpikes = 36</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

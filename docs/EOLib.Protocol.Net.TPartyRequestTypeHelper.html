@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net: Record TPartyRequestTypeHelper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TPartyRequestTypeHelper"></span><h1 class="cio">Record TPartyRequestTypeHelper</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.html">EOLib.Protocol.Net</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPartyRequestTypeHelper = record helper for TPartyRequestType</code></p>
+<h2 class="description">Description</h2>
+<p>
+Helper for the TPartyRequestType enum type.</p>
+<h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Net.TPartyRequestTypeHelper.html#FromInt-Cardinal-">FromInt</a></strong>(Value: Cardinal): <a href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a>; static; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.TPartyRequestTypeHelper.html#ToInt">ToInt</a></strong>: Cardinal; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.TPartyRequestTypeHelper.html#ToString">ToString</a></strong>: string;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FromInt-Cardinal-"></span><code>class function <strong>FromInt</strong>(Value: Cardinal): <a href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a>; static; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts an ordinal value to a <a class="normal" href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a> enum value.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Value</dt>
+<dd>The ordinal value to convert</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">A <a class="normal" href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a> enum value from the given ordinal value</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToInt"></span><code>function <strong>ToInt</strong>: Cardinal; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts the <a class="normal" href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a> enum value to its corresponding ordinal value.  <dl class="tag note"><dt><strong>Note</strong></dt><dd> Protocol enums may hold out-of-bounds &quot;unrecognized&quot; values, which would cause range-checking errors with <code>Ord</code>. <br> <code>ToInt</code> is safe to use with range-checking enabled.</dd></dl></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The ordinal representation of the <a class="normal" href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a> value</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToString"></span><code>function <strong>ToString</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts the <a class="normal" href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a> enum value to its string representation. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The string representation of the TPartyRequestType value</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

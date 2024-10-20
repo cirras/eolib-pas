@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Map: Class TMapItem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TMapItem"></span><h1 class="cio">Class TMapItem</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Map.html">EOLib.Protocol.Map</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TMapItem = class(TInterfacedObject, <a class="normal" href="EOLib.Protocol.Map.IMapItem.html">IMapItem</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Item spawn EMF entity</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TMapItem</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetCoords">GetCoords</a></strong>: <a href="EOLib.Protocol.ICoords.html">ICoords</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetCoords-ICoords-">SetCoords</a></strong>(Coords: <a href="EOLib.Protocol.ICoords.html">ICoords</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetKey">GetKey</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetKey-Cardinal-">SetKey</a></strong>(Key: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetChestSlot">GetChestSlot</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetChestSlot-Cardinal-">SetChestSlot</a></strong>(ChestSlot: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetItemId">GetItemId</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetItemId-Cardinal-">SetItemId</a></strong>(ItemId: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetSpawnTime">GetSpawnTime</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetSpawnTime-Cardinal-">SetSpawnTime</a></strong>(SpawnTime: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Map.TMapItem.html#GetAmount">GetAmount</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#SetAmount-Cardinal-">SetAmount</a></strong>(Amount: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Map.TMapItem.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Map.TMapItem.html#Deserialize-TEoReader-">Deserialize</a></strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Map.TMapItem.html">TMapItem</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#Coords">Coords</a></strong>: <a href="EOLib.Protocol.ICoords.html">ICoords</a> read <a href="EOLib.Protocol.Map.TMapItem.html#GetCoords">GetCoords</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetCoords-ICoords-">SetCoords</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#Key">Key</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetKey">GetKey</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetKey-Cardinal-">SetKey</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#ChestSlot">ChestSlot</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetChestSlot">GetChestSlot</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetChestSlot-Cardinal-">SetChestSlot</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#ItemId">ItemId</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetItemId">GetItemId</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetItemId-Cardinal-">SetItemId</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#SpawnTime">SpawnTime</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetSpawnTime">GetSpawnTime</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetSpawnTime-Cardinal-">SetSpawnTime</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Map.TMapItem.html#Amount">Amount</a></strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetAmount">GetAmount</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetAmount-Cardinal-">SetAmount</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCoords"></span><code>function <strong>GetCoords</strong>: <a href="EOLib.Protocol.ICoords.html">ICoords</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCoords-ICoords-"></span><code>procedure <strong>SetCoords</strong>(Coords: <a href="EOLib.Protocol.ICoords.html">ICoords</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetKey"></span><code>function <strong>GetKey</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetKey-Cardinal-"></span><code>procedure <strong>SetKey</strong>(Key: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetChestSlot"></span><code>function <strong>GetChestSlot</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetChestSlot-Cardinal-"></span><code>procedure <strong>SetChestSlot</strong>(ChestSlot: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetItemId"></span><code>function <strong>GetItemId</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetItemId-Cardinal-"></span><code>procedure <strong>SetItemId</strong>(ItemId: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpawnTime"></span><code>function <strong>GetSpawnTime</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpawnTime-Cardinal-"></span><code>procedure <strong>SetSpawnTime</strong>(SpawnTime: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAmount"></span><code>function <strong>GetAmount</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAmount-Cardinal-"></span><code>procedure <strong>SetAmount</strong>(Amount: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>TMapItem</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Deserialize-TEoReader-"></span><code>class function <strong>Deserialize</strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Map.TMapItem.html">TMapItem</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deserializes an instance of <code>TMapItem</code> from the provided <a class="normal" href="EOLib.Data.TEoReader.html">TEoReader</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Reader</dt>
+<dd>The reader that the object will be deserialized from</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The deserialized object</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Coords"></span><code>property <strong>Coords</strong>: <a href="EOLib.Protocol.ICoords.html">ICoords</a> read <a href="EOLib.Protocol.Map.TMapItem.html#GetCoords">GetCoords</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetCoords-ICoords-">SetCoords</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Key"></span><code>property <strong>Key</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetKey">GetKey</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetKey-Cardinal-">SetKey</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ChestSlot"></span><code>property <strong>ChestSlot</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetChestSlot">GetChestSlot</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetChestSlot-Cardinal-">SetChestSlot</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ItemId"></span><code>property <strong>ItemId</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetItemId">GetItemId</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetItemId-Cardinal-">SetItemId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpawnTime"></span><code>property <strong>SpawnTime</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetSpawnTime">GetSpawnTime</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetSpawnTime-Cardinal-">SetSpawnTime</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Amount"></span><code>property <strong>Amount</strong>: Cardinal read <a href="EOLib.Protocol.Map.TMapItem.html#GetAmount">GetAmount</a> write <a href="EOLib.Protocol.Map.TMapItem.html#SetAmount-Cardinal-">SetAmount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-16194276</dd></dl></p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

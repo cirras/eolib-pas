@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Client: Class TAccountCreateClientPacket</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TAccountCreateClientPacket"></span><h1 class="cio">Class TAccountCreateClientPacket</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.Client.html">EOLib.Protocol.Net.Client</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TAccountCreateClientPacket = class(TInterfacedObject, <a class="normal" href="EOLib.Protocol.Packet.IPacket.html">IPacket</a>, <a class="normal" href="EOLib.Protocol.Net.Client.IAccountCreateClientPacket.html">IAccountCreateClientPacket</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Confirm creating an account</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TAccountCreateClientPacket</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetSessionId">GetSessionId</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetSessionId-Cardinal-">SetSessionId</a></strong>(SessionId: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetUsername">GetUsername</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetUsername-string-">SetUsername</a></strong>(Username: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetPassword">GetPassword</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetPassword-string-">SetPassword</a></strong>(Password: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetFullName">GetFullName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetFullName-string-">SetFullName</a></strong>(FullName: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetLocation">GetLocation</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetLocation-string-">SetLocation</a></strong>(Location: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetEmail">GetEmail</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetEmail-string-">SetEmail</a></strong>(Email: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetComputer">GetComputer</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetComputer-string-">SetComputer</a></strong>(Computer: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetHdid">GetHdid</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetHdid-string-">SetHdid</a></strong>(Hdid: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Family">Family</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Action">Action</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#PacketFamily">PacketFamily</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#PacketAction">PacketAction</a></strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Deserialize-TEoReader-">Deserialize</a></strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html">TAccountCreateClientPacket</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SessionId">SessionId</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetSessionId">GetSessionId</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetSessionId-Cardinal-">SetSessionId</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Username">Username</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetUsername">GetUsername</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetUsername-string-">SetUsername</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Password">Password</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetPassword">GetPassword</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetPassword-string-">SetPassword</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#FullName">FullName</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetFullName">GetFullName</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetFullName-string-">SetFullName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Location">Location</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetLocation">GetLocation</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetLocation-string-">SetLocation</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Email">Email</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetEmail">GetEmail</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetEmail-string-">SetEmail</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Computer">Computer</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetComputer">GetComputer</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetComputer-string-">SetComputer</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#Hdid">Hdid</a></strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetHdid">GetHdid</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetHdid-string-">SetHdid</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSessionId"></span><code>function <strong>GetSessionId</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSessionId-Cardinal-"></span><code>procedure <strong>SetSessionId</strong>(SessionId: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetUsername"></span><code>function <strong>GetUsername</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetUsername-string-"></span><code>procedure <strong>SetUsername</strong>(Username: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPassword"></span><code>function <strong>GetPassword</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPassword-string-"></span><code>procedure <strong>SetPassword</strong>(Password: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFullName"></span><code>function <strong>GetFullName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetFullName-string-"></span><code>procedure <strong>SetFullName</strong>(FullName: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLocation"></span><code>function <strong>GetLocation</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLocation-string-"></span><code>procedure <strong>SetLocation</strong>(Location: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEmail"></span><code>function <strong>GetEmail</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetEmail-string-"></span><code>procedure <strong>SetEmail</strong>(Email: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetComputer"></span><code>function <strong>GetComputer</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetComputer-string-"></span><code>procedure <strong>SetComputer</strong>(Computer: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetHdid"></span><code>function <strong>GetHdid</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetHdid-string-"></span><code>procedure <strong>SetHdid</strong>(Hdid: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Family"></span><code>function <strong>Family</strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet family associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet family associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Action"></span><code>function <strong>Action</strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet action associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet action associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>TAccountCreateClientPacket</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PacketFamily"></span><code>class function <strong>PacketFamily</strong>: <a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet family associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet family associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PacketAction"></span><code>class function <strong>PacketAction</strong>: <a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the packet action associated with this packet. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The packet action associated with this packet</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Deserialize-TEoReader-"></span><code>class function <strong>Deserialize</strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html">TAccountCreateClientPacket</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deserializes an instance of <code>TAccountCreateClientPacket</code> from the provided <a class="normal" href="EOLib.Data.TEoReader.html">TEoReader</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Reader</dt>
+<dd>The reader that the object will be deserialized from</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The deserialized object</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SessionId"></span><code>property <strong>SessionId</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetSessionId">GetSessionId</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetSessionId-Cardinal-">SetSessionId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Username"></span><code>property <strong>Username</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetUsername">GetUsername</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetUsername-string-">SetUsername</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Password"></span><code>property <strong>Password</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetPassword">GetPassword</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetPassword-string-">SetPassword</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FullName"></span><code>property <strong>FullName</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetFullName">GetFullName</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetFullName-string-">SetFullName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Location"></span><code>property <strong>Location</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetLocation">GetLocation</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetLocation-string-">SetLocation</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Email"></span><code>property <strong>Email</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetEmail">GetEmail</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetEmail-string-">SetEmail</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Computer"></span><code>property <strong>Computer</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetComputer">GetComputer</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetComputer-string-">SetComputer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Hdid"></span><code>property <strong>Hdid</strong>: string read <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#GetHdid">GetHdid</a> write <a href="EOLib.Protocol.Net.Client.TAccountCreateClientPacket.html#SetHdid-string-">SetHdid</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

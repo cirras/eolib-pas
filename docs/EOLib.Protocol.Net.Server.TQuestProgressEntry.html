@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Server: Class TQuestProgressEntry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TQuestProgressEntry"></span><h1 class="cio">Class TQuestProgressEntry</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.Server.html">EOLib.Protocol.Net.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TQuestProgressEntry = class(TInterfacedObject, <a class="normal" href="EOLib.Protocol.Net.Server.IQuestProgressEntry.html">IQuestProgressEntry</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+An entry in the Quest Progress window</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TQuestProgressEntry</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetName">GetName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetName-string-">SetName</a></strong>(Name: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetDescription">GetDescription</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetDescription-string-">SetDescription</a></strong>(Description: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetIcon">GetIcon</a></strong>: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetIcon-TQuestRequirementIcon-">SetIcon</a></strong>(Icon: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetProgress">GetProgress</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetProgress-Cardinal-">SetProgress</a></strong>(Progress: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetTarget">GetTarget</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetTarget-Cardinal-">SetTarget</a></strong>(Target: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Deserialize-TEoReader-">Deserialize</a></strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html">TQuestProgressEntry</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Name">Name</a></strong>: string read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetName">GetName</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Description">Description</a></strong>: string read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetDescription">GetDescription</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetDescription-string-">SetDescription</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Icon">Icon</a></strong>: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a> read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetIcon">GetIcon</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetIcon-TQuestRequirementIcon-">SetIcon</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Progress">Progress</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetProgress">GetProgress</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetProgress-Cardinal-">SetProgress</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#Target">Target</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetTarget">GetTarget</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetTarget-Cardinal-">SetTarget</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetName"></span><code>function <strong>GetName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetName-string-"></span><code>procedure <strong>SetName</strong>(Name: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDescription"></span><code>function <strong>GetDescription</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetDescription-string-"></span><code>procedure <strong>SetDescription</strong>(Description: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetIcon"></span><code>function <strong>GetIcon</strong>: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetIcon-TQuestRequirementIcon-"></span><code>procedure <strong>SetIcon</strong>(Icon: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetProgress"></span><code>function <strong>GetProgress</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetProgress-Cardinal-"></span><code>procedure <strong>SetProgress</strong>(Progress: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTarget"></span><code>function <strong>GetTarget</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTarget-Cardinal-"></span><code>procedure <strong>SetTarget</strong>(Target: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>TQuestProgressEntry</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Deserialize-TEoReader-"></span><code>class function <strong>Deserialize</strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html">TQuestProgressEntry</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deserializes an instance of <code>TQuestProgressEntry</code> from the provided <a class="normal" href="EOLib.Data.TEoReader.html">TEoReader</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Reader</dt>
+<dd>The reader that the object will be deserialized from</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The deserialized object</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetName">GetName</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Description"></span><code>property <strong>Description</strong>: string read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetDescription">GetDescription</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetDescription-string-">SetDescription</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Icon"></span><code>property <strong>Icon</strong>: <a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a> read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetIcon">GetIcon</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetIcon-TQuestRequirementIcon-">SetIcon</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Progress"></span><code>property <strong>Progress</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetProgress">GetProgress</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetProgress-Cardinal-">SetProgress</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Target"></span><code>property <strong>Target</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#GetTarget">GetTarget</a> write <a href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html#SetTarget-Cardinal-">SetTarget</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

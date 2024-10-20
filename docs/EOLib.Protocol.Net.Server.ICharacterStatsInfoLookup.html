@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Server: Interface ICharacterStatsInfoLookup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="ICharacterStatsInfoLookup"></span><h1 class="cio">Interface ICharacterStatsInfoLookup</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Net.Server.html">EOLib.Protocol.Net.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type ICharacterStatsInfoLookup = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Character stats data. Sent with character info lookups.</p>
+<h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt>GUID['{87D2384E-BE76-52FA-B6A0-87F914AE5C58}']</dt>
+  <dd></dd>
+</dl>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">ICharacterStatsInfoLookup</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetHp">GetHp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetHp-Cardinal-">SetHp</a></strong>(Hp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxHp">GetMaxHp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxHp-Cardinal-">SetMaxHp</a></strong>(MaxHp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetTp">GetTp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetTp-Cardinal-">SetTp</a></strong>(Tp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxTp">GetMaxTp</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxTp-Cardinal-">SetMaxTp</a></strong>(MaxTp: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetBaseStats">GetBaseStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetBaseStats-ICharacterBaseStats-">SetBaseStats</a></strong>(BaseStats: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetSecondaryStats">GetSecondaryStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetSecondaryStats-ICharacterSecondaryStatsInfoLookup-">SetSecondaryStats</a></strong>(SecondaryStats: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetElementalStats">GetElementalStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetElementalStats-ICharacterElementalStats-">SetElementalStats</a></strong>(ElementalStats: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#Hp">Hp</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetHp">GetHp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetHp-Cardinal-">SetHp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#MaxHp">MaxHp</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxHp">GetMaxHp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxHp-Cardinal-">SetMaxHp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#Tp">Tp</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetTp">GetTp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetTp-Cardinal-">SetTp</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#MaxTp">MaxTp</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxTp">GetMaxTp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxTp-Cardinal-">SetMaxTp</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#BaseStats">BaseStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetBaseStats">GetBaseStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetBaseStats-ICharacterBaseStats-">SetBaseStats</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SecondaryStats">SecondaryStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetSecondaryStats">GetSecondaryStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetSecondaryStats-ICharacterSecondaryStatsInfoLookup-">SetSecondaryStats</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#ElementalStats">ElementalStats</a></strong>: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetElementalStats">GetElementalStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetElementalStats-ICharacterElementalStats-">SetElementalStats</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetHp"></span><code>function <strong>GetHp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetHp-Cardinal-"></span><code>procedure <strong>SetHp</strong>(Hp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaxHp"></span><code>function <strong>GetMaxHp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaxHp-Cardinal-"></span><code>procedure <strong>SetMaxHp</strong>(MaxHp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTp"></span><code>function <strong>GetTp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTp-Cardinal-"></span><code>procedure <strong>SetTp</strong>(Tp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaxTp"></span><code>function <strong>GetMaxTp</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaxTp-Cardinal-"></span><code>procedure <strong>SetMaxTp</strong>(MaxTp: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBaseStats"></span><code>function <strong>GetBaseStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBaseStats-ICharacterBaseStats-"></span><code>procedure <strong>SetBaseStats</strong>(BaseStats: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSecondaryStats"></span><code>function <strong>GetSecondaryStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSecondaryStats-ICharacterSecondaryStatsInfoLookup-"></span><code>procedure <strong>SetSecondaryStats</strong>(SecondaryStats: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetElementalStats"></span><code>function <strong>GetElementalStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetElementalStats-ICharacterElementalStats-"></span><code>procedure <strong>SetElementalStats</strong>(ElementalStats: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>ICharacterStatsInfoLookup</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Hp"></span><code>property <strong>Hp</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetHp">GetHp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetHp-Cardinal-">SetHp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxHp"></span><code>property <strong>MaxHp</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxHp">GetMaxHp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxHp-Cardinal-">SetMaxHp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Tp"></span><code>property <strong>Tp</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetTp">GetTp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetTp-Cardinal-">SetTp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxTp"></span><code>property <strong>MaxTp</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetMaxTp">GetMaxTp</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetMaxTp-Cardinal-">SetMaxTp</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BaseStats"></span><code>property <strong>BaseStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html">ICharacterBaseStats</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetBaseStats">GetBaseStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetBaseStats-ICharacterBaseStats-">SetBaseStats</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SecondaryStats"></span><code>property <strong>SecondaryStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html">ICharacterSecondaryStatsInfoLookup</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetSecondaryStats">GetSecondaryStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetSecondaryStats-ICharacterSecondaryStatsInfoLookup-">SetSecondaryStats</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ElementalStats"></span><code>property <strong>ElementalStats</strong>: <a href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html">ICharacterElementalStats</a> read <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#GetElementalStats">GetElementalStats</a> write <a href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html#SetElementalStats-ICharacterElementalStats-">SetElementalStats</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

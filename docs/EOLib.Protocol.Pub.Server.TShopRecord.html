@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Pub.Server: Class TShopRecord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TShopRecord"></span><h1 class="cio">Class TShopRecord</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Pub.Server.html">EOLib.Protocol.Pub.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TShopRecord = class(TInterfacedObject, <a class="normal" href="EOLib.Protocol.Pub.Server.IShopRecord.html">IShopRecord</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Record of Shop data in an Endless Shop File</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TShopRecord</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetBehaviorId">GetBehaviorId</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a></strong>(BehaviorId: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetName">GetName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetName-string-">SetName</a></strong>(Name: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMinLevel">GetMinLevel</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMinLevel-Cardinal-">SetMinLevel</a></strong>(MinLevel: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMaxLevel">GetMaxLevel</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMaxLevel-Cardinal-">SetMaxLevel</a></strong>(MaxLevel: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetClassRequirement">GetClassRequirement</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a></strong>(ClassRequirement: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetTrades">GetTrades</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetTrades-TArrayIShopTradeRecord-">SetTrades</a></strong>(Trades: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetCrafts">GetCrafts</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetCrafts-TArrayIShopCraftRecord-">SetCrafts</a></strong>(Crafts: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#Deserialize-TEoReader-">Deserialize</a></strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Pub.Server.TShopRecord.html">TShopRecord</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#BehaviorId">BehaviorId</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetBehaviorId">GetBehaviorId</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#Name">Name</a></strong>: string read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#MinLevel">MinLevel</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMinLevel">GetMinLevel</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMinLevel-Cardinal-">SetMinLevel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#MaxLevel">MaxLevel</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMaxLevel">GetMaxLevel</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMaxLevel-Cardinal-">SetMaxLevel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#ClassRequirement">ClassRequirement</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetClassRequirement">GetClassRequirement</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#Trades">Trades</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetTrades">GetTrades</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetTrades-TArrayIShopTradeRecord-">SetTrades</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TShopRecord.html#Crafts">Crafts</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetCrafts">GetCrafts</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetCrafts-TArrayIShopCraftRecord-">SetCrafts</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBehaviorId"></span><code>function <strong>GetBehaviorId</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBehaviorId-Cardinal-"></span><code>procedure <strong>SetBehaviorId</strong>(BehaviorId: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetName"></span><code>function <strong>GetName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetName-string-"></span><code>procedure <strong>SetName</strong>(Name: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMinLevel"></span><code>function <strong>GetMinLevel</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMinLevel-Cardinal-"></span><code>procedure <strong>SetMinLevel</strong>(MinLevel: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaxLevel"></span><code>function <strong>GetMaxLevel</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaxLevel-Cardinal-"></span><code>procedure <strong>SetMaxLevel</strong>(MaxLevel: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetClassRequirement"></span><code>function <strong>GetClassRequirement</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetClassRequirement-Cardinal-"></span><code>procedure <strong>SetClassRequirement</strong>(ClassRequirement: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTrades"></span><code>function <strong>GetTrades</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTrades-TArrayIShopTradeRecord-"></span><code>procedure <strong>SetTrades</strong>(Trades: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCrafts"></span><code>function <strong>GetCrafts</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCrafts-TArrayIShopCraftRecord-"></span><code>procedure <strong>SetCrafts</strong>(Crafts: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>TShopRecord</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Deserialize-TEoReader-"></span><code>class function <strong>Deserialize</strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Pub.Server.TShopRecord.html">TShopRecord</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deserializes an instance of <code>TShopRecord</code> from the provided <a class="normal" href="EOLib.Data.TEoReader.html">TEoReader</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Reader</dt>
+<dd>The reader that the object will be deserialized from</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The deserialized object</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BehaviorId"></span><code>property <strong>BehaviorId</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetBehaviorId">GetBehaviorId</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be 252 or less</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinLevel"></span><code>property <strong>MinLevel</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMinLevel">GetMinLevel</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMinLevel-Cardinal-">SetMinLevel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Minimum level required to use this shop <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxLevel"></span><code>property <strong>MaxLevel</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetMaxLevel">GetMaxLevel</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetMaxLevel-Cardinal-">SetMaxLevel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Maximum level allowed to use this shop <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClassRequirement"></span><code>property <strong>ClassRequirement</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetClassRequirement">GetClassRequirement</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetClassRequirement-Cardinal-">SetClassRequirement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Class required to use this shop <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Trades"></span><code>property <strong>Trades</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopTradeRecord.html">IShopTradeRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetTrades">GetTrades</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetTrades-TArrayIShopTradeRecord-">SetTrades</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be 64008 or less</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Crafts"></span><code>property <strong>Crafts</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IShopCraftRecord.html">IShopCraftRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#GetCrafts">GetCrafts</a> write <a href="EOLib.Protocol.Pub.Server.TShopRecord.html#SetCrafts-TArrayIShopCraftRecord-">SetCrafts</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be 252 or less</dd></dl></p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

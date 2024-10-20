@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Pub.Server: Class TInnRecord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TInnRecord"></span><h1 class="cio">Class TInnRecord</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Protocol.Pub.Server.html">EOLib.Protocol.Pub.Server</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TInnRecord = class(TInterfacedObject, <a class="normal" href="EOLib.Protocol.Pub.Server.IInnRecord.html">IInnRecord</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Record of Inn data in an Endless Inn File</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TInnRecord</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetBehaviorId">GetBehaviorId</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a></strong>(BehaviorId: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetName">GetName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetName-string-">SetName</a></strong>(Name: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnMap">GetSpawnMap</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnMap-Cardinal-">SetSpawnMap</a></strong>(SpawnMap: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnX">GetSpawnX</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnX-Cardinal-">SetSpawnX</a></strong>(SpawnX: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnY">GetSpawnY</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnY-Cardinal-">SetSpawnY</a></strong>(SpawnY: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepMap">GetSleepMap</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepMap-Cardinal-">SetSleepMap</a></strong>(SleepMap: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepX">GetSleepX</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepX-Cardinal-">SetSleepX</a></strong>(SleepX: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepY">GetSleepY</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepY-Cardinal-">SetSleepY</a></strong>(SleepY: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnEnabled">GetAlternateSpawnEnabled</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnEnabled-Boolean-">SetAlternateSpawnEnabled</a></strong>(AlternateSpawnEnabled: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnMap">GetAlternateSpawnMap</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnMap-Cardinal-">SetAlternateSpawnMap</a></strong>(AlternateSpawnMap: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnX">GetAlternateSpawnX</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnX-Cardinal-">SetAlternateSpawnX</a></strong>(AlternateSpawnX: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnY">GetAlternateSpawnY</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnY-Cardinal-">SetAlternateSpawnY</a></strong>(AlternateSpawnY: Cardinal);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetQuestions">GetQuestions</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetQuestions-TArrayIInnQuestionRecord-">SetQuestions</a></strong>(Questions: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt;);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#Serialize-TEoWriter-">Serialize</a></strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#Deserialize-TEoReader-">Deserialize</a></strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Pub.Server.TInnRecord.html">TInnRecord</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#BehaviorId">BehaviorId</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetBehaviorId">GetBehaviorId</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#Name">Name</a></strong>: string read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SpawnMap">SpawnMap</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnMap">GetSpawnMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnMap-Cardinal-">SetSpawnMap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SpawnX">SpawnX</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnX">GetSpawnX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnX-Cardinal-">SetSpawnX</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SpawnY">SpawnY</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnY">GetSpawnY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnY-Cardinal-">SetSpawnY</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SleepMap">SleepMap</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepMap">GetSleepMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepMap-Cardinal-">SetSleepMap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SleepX">SleepX</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepX">GetSleepX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepX-Cardinal-">SetSleepX</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SleepY">SleepY</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepY">GetSleepY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepY-Cardinal-">SetSleepY</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#AlternateSpawnEnabled">AlternateSpawnEnabled</a></strong>: Boolean read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnEnabled">GetAlternateSpawnEnabled</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnEnabled-Boolean-">SetAlternateSpawnEnabled</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#AlternateSpawnMap">AlternateSpawnMap</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnMap">GetAlternateSpawnMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnMap-Cardinal-">SetAlternateSpawnMap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#AlternateSpawnX">AlternateSpawnX</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnX">GetAlternateSpawnX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnX-Cardinal-">SetAlternateSpawnX</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#AlternateSpawnY">AlternateSpawnY</a></strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnY">GetAlternateSpawnY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnY-Cardinal-">SetAlternateSpawnY</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Pub.Server.TInnRecord.html#Questions">Questions</a></strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetQuestions">GetQuestions</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetQuestions-TArrayIInnQuestionRecord-">SetQuestions</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBehaviorId"></span><code>function <strong>GetBehaviorId</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBehaviorId-Cardinal-"></span><code>procedure <strong>SetBehaviorId</strong>(BehaviorId: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetName"></span><code>function <strong>GetName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetName-string-"></span><code>procedure <strong>SetName</strong>(Name: string);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpawnMap"></span><code>function <strong>GetSpawnMap</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpawnMap-Cardinal-"></span><code>procedure <strong>SetSpawnMap</strong>(SpawnMap: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpawnX"></span><code>function <strong>GetSpawnX</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpawnX-Cardinal-"></span><code>procedure <strong>SetSpawnX</strong>(SpawnX: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSpawnY"></span><code>function <strong>GetSpawnY</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSpawnY-Cardinal-"></span><code>procedure <strong>SetSpawnY</strong>(SpawnY: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSleepMap"></span><code>function <strong>GetSleepMap</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSleepMap-Cardinal-"></span><code>procedure <strong>SetSleepMap</strong>(SleepMap: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSleepX"></span><code>function <strong>GetSleepX</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSleepX-Cardinal-"></span><code>procedure <strong>SetSleepX</strong>(SleepX: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSleepY"></span><code>function <strong>GetSleepY</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSleepY-Cardinal-"></span><code>procedure <strong>SetSleepY</strong>(SleepY: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAlternateSpawnEnabled"></span><code>function <strong>GetAlternateSpawnEnabled</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAlternateSpawnEnabled-Boolean-"></span><code>procedure <strong>SetAlternateSpawnEnabled</strong>(AlternateSpawnEnabled: Boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAlternateSpawnMap"></span><code>function <strong>GetAlternateSpawnMap</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAlternateSpawnMap-Cardinal-"></span><code>procedure <strong>SetAlternateSpawnMap</strong>(AlternateSpawnMap: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAlternateSpawnX"></span><code>function <strong>GetAlternateSpawnX</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAlternateSpawnX-Cardinal-"></span><code>procedure <strong>SetAlternateSpawnX</strong>(AlternateSpawnX: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAlternateSpawnY"></span><code>function <strong>GetAlternateSpawnY</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetAlternateSpawnY-Cardinal-"></span><code>procedure <strong>SetAlternateSpawnY</strong>(AlternateSpawnY: Cardinal);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetQuestions"></span><code>function <strong>GetQuestions</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetQuestions-TArrayIInnQuestionRecord-"></span><code>procedure <strong>SetQuestions</strong>(Questions: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt;);</code></td>
+</tr>
+<tr><td colspan="2">
+<p class="nodescription">This item has no description.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Serialize-TEoWriter-"></span><code>procedure <strong>Serialize</strong>(Writer: <a href="EOLib.Data.TEoWriter.html">TEoWriter</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Serializes this <code>TInnRecord</code> object to the provided <a class="normal" href="EOLib.Data.TEoWriter.html">TEoWriter</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Writer</dt>
+<dd>The writer that this object will be serialized to</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Deserialize-TEoReader-"></span><code>class function <strong>Deserialize</strong>(Reader: <a href="EOLib.Data.TEoReader.html">TEoReader</a>): <a href="EOLib.Protocol.Pub.Server.TInnRecord.html">TInnRecord</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deserializes an instance of <code>TInnRecord</code> from the provided <a class="normal" href="EOLib.Data.TEoReader.html">TEoReader</a>.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Reader</dt>
+<dd>The reader that the object will be deserialized from</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The deserialized object</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetByteSize">GetByteSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The size of the data that this object was deserialized from. <dl class="tag note"><dt><strong>Note</strong></dt><dd>0 if the instance was not created by the <code>Deserialize</code> method.</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BehaviorId"></span><code>property <strong>BehaviorId</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetBehaviorId">GetBehaviorId</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetBehaviorId-Cardinal-">SetBehaviorId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Behavior ID of the NPC that runs the inn. 0 for default inn <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetName">GetName</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetName-string-">SetName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be 252 or less</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpawnMap"></span><code>property <strong>SpawnMap</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnMap">GetSpawnMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnMap-Cardinal-">SetSpawnMap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ID of the map the player is sent to after respawning <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpawnX"></span><code>property <strong>SpawnX</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnX">GetSpawnX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnX-Cardinal-">SetSpawnX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+X coordinate of the map the player is sent to after respawning <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SpawnY"></span><code>property <strong>SpawnY</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSpawnY">GetSpawnY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSpawnY-Cardinal-">SetSpawnY</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Y coordinate of the map the player is sent to after respawning <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SleepMap"></span><code>property <strong>SleepMap</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepMap">GetSleepMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepMap-Cardinal-">SetSleepMap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ID of the map the player is sent to after sleeping at the inn <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SleepX"></span><code>property <strong>SleepX</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepX">GetSleepX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepX-Cardinal-">SetSleepX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+X coordinate of the map the player is sent to after sleeping at the inn <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SleepY"></span><code>property <strong>SleepY</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetSleepY">GetSleepY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetSleepY-Cardinal-">SetSleepY</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Y coordinate of the map the player is sent to after sleeping at the inn <dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AlternateSpawnEnabled"></span><code>property <strong>AlternateSpawnEnabled</strong>: Boolean read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnEnabled">GetAlternateSpawnEnabled</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnEnabled-Boolean-">SetAlternateSpawnEnabled</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Flag for an alternate spawn point. If true, the server will use this alternate spawn map, x, and, y based on some other condition.
+
+<p>In the official server, this is used to respawn new characters on the noob island until they reach a certain level.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AlternateSpawnMap"></span><code>property <strong>AlternateSpawnMap</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnMap">GetAlternateSpawnMap</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnMap-Cardinal-">SetAlternateSpawnMap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-64008</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AlternateSpawnX"></span><code>property <strong>AlternateSpawnX</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnX">GetAlternateSpawnX</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnX-Cardinal-">SetAlternateSpawnX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AlternateSpawnY"></span><code>property <strong>AlternateSpawnY</strong>: Cardinal read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetAlternateSpawnY">GetAlternateSpawnY</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetAlternateSpawnY-Cardinal-">SetAlternateSpawnY</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Value range is 0-252</dd></dl></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Questions"></span><code>property <strong>Questions</strong>: TArray&lt;<a href="EOLib.Protocol.Pub.Server.IInnQuestionRecord.html">IInnQuestionRecord</a>&gt; read <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#GetQuestions">GetQuestions</a> write <a href="EOLib.Protocol.Pub.Server.TInnRecord.html#SetQuestions-TArrayIInnQuestionRecord-">SetQuestions</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<dl class="tag note"><dt><strong>Note</strong></dt><dd>Length must be <code>3</code></dd></dl></p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

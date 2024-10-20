@@ -1,0 +1,3301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net.Server</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit EOLib.Protocol.Net.Server</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Generated from the eo-protocol XML specification.
+
+<p>This file should not be modified. Changes will be lost when code is regenerated.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="EOLib.Data.html">EOLib.Data</a></li><li><a href="EOLib.Protocol.html">EOLib.Protocol</a></li><li><a href="EOLib.Protocol.Errors.html">EOLib.Protocol.Errors</a></li><li><a href="EOLib.Protocol.Net.html">EOLib.Protocol.Net</a></li><li><a href="EOLib.Protocol.Packet.html">EOLib.Protocol.Packet</a></li><li><a href="EOLib.Protocol.Pub.html">EOLib.Protocol.Pub</a></li><li><a href="EOLib.Utils.Optional.html">EOLib.Utils.Optional</a></li><li>Generics.Collections</li><li>System.SysUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitReplyHelper.html"><code>TInitReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TInitReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitBanTypeHelper.html"><code>TInitBanTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TInitBanType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterIconHelper.html"><code>TCharacterIconHelper</code></a></td>
+<td class="itemdesc">Helper for the TCharacterIcon enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarChangeTypeHelper.html"><code>TAvatarChangeTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TAvatarChangeType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkReplyHelper.html"><code>TTalkReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TTalkReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSitStateHelper.html"><code>TSitStateHelper</code></a></td>
+<td class="itemdesc">Helper for the TSitState enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMapEffectHelper.html"><code>TMapEffectHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapEffect enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReplyHelper.html"><code>TGuildReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TGuildReply enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInnUnsubscribeReplyHelper.html"><code>TInnUnsubscribeReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TInnUnsubscribeReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyHelper.html"><code>TCharacterReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TCharacterReply enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSkillMasterReplyHelper.html"><code>TSkillMasterReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TSkillMasterReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyHelper.html"><code>TAccountReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TAccountReply enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyHelper.html"><code>TLoginReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TLoginReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDialogEntryTypeHelper.html"><code>TDialogEntryTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TDialogEntryType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestRequirementIconHelper.html"><code>TQuestRequirementIconHelper</code></a></td>
+<td class="itemdesc">Helper for the TQuestRequirementIcon enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpEffectHelper.html"><code>TWarpEffectHelper</code></a></td>
+<td class="itemdesc">Helper for the TWarpEffect enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpTypeHelper.html"><code>TWarpTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TWarpType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeCodeHelper.html"><code>TWelcomeCodeHelper</code></a></td>
+<td class="itemdesc">Helper for the TWelcomeCode enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginMessageCodeHelper.html"><code>TLoginMessageCodeHelper</code></a></td>
+<td class="itemdesc">Helper for the TLoginMessageCode enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminMessageTypeHelper.html"><code>TAdminMessageTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TAdminMessageType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayerKilledStateHelper.html"><code>TPlayerKilledStateHelper</code></a></td>
+<td class="itemdesc">Helper for the TPlayerKilledState enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcKillStealProtectionStateHelper.html"><code>TNpcKillStealProtectionStateHelper</code></a></td>
+<td class="itemdesc">Helper for the TNpcKillStealProtectionState enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMapDamageTypeHelper.html"><code>TMapDamageTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TMapDamageType enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMarriageReplyHelper.html"><code>TMarriageReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TMarriageReply enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPriestReplyHelper.html"><code>TPriestReplyHelper</code></a></td>
+<td class="itemdesc">Helper for the TPriestReply enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyReplyCodeHelper.html"><code>TPartyReplyCodeHelper</code></a></td>
+<td class="itemdesc">Helper for the TPartyReplyCode enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBigCoords.html"><code>IBigCoords</code></a></td>
+<td class="itemdesc">Map coordinates with 2-byte values</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBigCoords.html"><code>TBigCoords</code></a></td>
+<td class="itemdesc">Map coordinates with 2-byte values</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEquipmentChange.html"><code>IEquipmentChange</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEquipmentChange.html"><code>TEquipmentChange</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEquipmentMapInfo.html"><code>IEquipmentMapInfo</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEquipmentMapInfo.html"><code>TEquipmentMapInfo</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEquipmentCharacterSelect.html"><code>IEquipmentCharacterSelect</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEquipmentCharacterSelect.html"><code>TEquipmentCharacterSelect</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEquipmentWelcome.html"><code>IEquipmentWelcome</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEquipmentWelcome.html"><code>TEquipmentWelcome</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEquipmentPaperdoll.html"><code>IEquipmentPaperdoll</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEquipmentPaperdoll.html"><code>TEquipmentPaperdoll</code></a></td>
+<td class="itemdesc">Player equipment data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterMapInfo.html"><code>ICharacterMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby character.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterMapInfo.html"><code>TCharacterMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby character.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcMapInfo.html"><code>INpcMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcMapInfo.html"><code>TNpcMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemMapInfo.html"><code>IItemMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby item on the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemMapInfo.html"><code>TItemMapInfo</code></a></td>
+<td class="itemdesc">Information about a nearby item on the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarChangeChangeTypeData.html"><code>IAvatarChangeChangeTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ChangeType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarChangeChangeTypeDataEquipment.html"><code>IAvatarChangeChangeTypeDataEquipment</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarChangeChangeTypeDataEquipment.html"><code>TAvatarChangeChangeTypeDataEquipment</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarChangeChangeTypeDataHair.html"><code>IAvatarChangeChangeTypeDataHair</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarChangeChangeTypeDataHair.html"><code>TAvatarChangeChangeTypeDataHair</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarChangeChangeTypeDataHairColor.html"><code>IAvatarChangeChangeTypeDataHairColor</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarChangeChangeTypeDataHairColor.html"><code>TAvatarChangeChangeTypeDataHairColor</code></a></td>
+<td class="itemdesc">Data associated with <code>IAvatarChange.ChangeType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarChange.html"><code>IAvatarChange</code></a></td>
+<td class="itemdesc">Information about a nearby player's appearance changing</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarChange.html"><code>TAvatarChange</code></a></td>
+<td class="itemdesc">Information about a nearby player's appearance changing</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INearbyInfo.html"><code>INearbyInfo</code></a></td>
+<td class="itemdesc">Information about nearby entities</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNearbyInfo.html"><code>TNearbyInfo</code></a></td>
+<td class="itemdesc">Information about nearby entities</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMapFile.html"><code>IMapFile</code></a></td>
+<td class="itemdesc">A map file (EMF)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMapFile.html"><code>TMapFile</code></a></td>
+<td class="itemdesc">A map file (EMF)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPubFile.html"><code>IPubFile</code></a></td>
+<td class="itemdesc">A pub file (EIF, ENF, ECF, ESF)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPubFile.html"><code>TPubFile</code></a></td>
+<td class="itemdesc">A pub file (EIF, ENF, ECF, ESF)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IOnlinePlayer.html"><code>IOnlinePlayer</code></a></td>
+<td class="itemdesc">A player in the online list</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TOnlinePlayer.html"><code>TOnlinePlayer</code></a></td>
+<td class="itemdesc">A player in the online list</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersList.html"><code>IPlayersList</code></a></td>
+<td class="itemdesc">Information about online players</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersList.html"><code>TPlayersList</code></a></td>
+<td class="itemdesc">Information about online players</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersListFriends.html"><code>IPlayersListFriends</code></a></td>
+<td class="itemdesc">Information about online players.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersListFriends.html"><code>TPlayersListFriends</code></a></td>
+<td class="itemdesc">Information about online players.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterSelectionListEntry.html"><code>ICharacterSelectionListEntry</code></a></td>
+<td class="itemdesc">Character selection screen character</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterSelectionListEntry.html"><code>TCharacterSelectionListEntry</code></a></td>
+<td class="itemdesc">Character selection screen character</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IServerSettings.html"><code>IServerSettings</code></a></td>
+<td class="itemdesc">Settings sent with WELCOME_REPLY packet</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TServerSettings.html"><code>TServerSettings</code></a></td>
+<td class="itemdesc">Settings sent with WELCOME_REPLY packet</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopTradeItem.html"><code>IShopTradeItem</code></a></td>
+<td class="itemdesc">An item that a shop can buy or sell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopTradeItem.html"><code>TShopTradeItem</code></a></td>
+<td class="itemdesc">An item that a shop can buy or sell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopCraftItem.html"><code>IShopCraftItem</code></a></td>
+<td class="itemdesc">An item that a shop can craft</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopCraftItem.html"><code>TShopCraftItem</code></a></td>
+<td class="itemdesc">An item that a shop can craft</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopSoldItem.html"><code>IShopSoldItem</code></a></td>
+<td class="itemdesc">A sold item when selling an item to a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopSoldItem.html"><code>TShopSoldItem</code></a></td>
+<td class="itemdesc">A sold item when selling an item to a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterBaseStats.html"><code>ICharacterBaseStats</code></a></td>
+<td class="itemdesc">The 6 base character stats</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterBaseStats.html"><code>TCharacterBaseStats</code></a></td>
+<td class="itemdesc">The 6 base character stats</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterBaseStatsWelcome.html"><code>ICharacterBaseStatsWelcome</code></a></td>
+<td class="itemdesc">The 6 base character stats.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterBaseStatsWelcome.html"><code>TCharacterBaseStatsWelcome</code></a></td>
+<td class="itemdesc">The 6 base character stats.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterSecondaryStats.html"><code>ICharacterSecondaryStats</code></a></td>
+<td class="itemdesc">The 5 secondary character stats</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterSecondaryStats.html"><code>TCharacterSecondaryStats</code></a></td>
+<td class="itemdesc">The 5 secondary character stats</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterSecondaryStatsInfoLookup.html"><code>ICharacterSecondaryStatsInfoLookup</code></a></td>
+<td class="itemdesc">The 5 secondary character stats.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterSecondaryStatsInfoLookup.html"><code>TCharacterSecondaryStatsInfoLookup</code></a></td>
+<td class="itemdesc">The 5 secondary character stats.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterElementalStats.html"><code>ICharacterElementalStats</code></a></td>
+<td class="itemdesc">The 6 elemental character stats</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterElementalStats.html"><code>TCharacterElementalStats</code></a></td>
+<td class="itemdesc">The 6 elemental character stats</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterStatsReset.html"><code>ICharacterStatsReset</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterStatsReset.html"><code>TCharacterStatsReset</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterStatsWelcome.html"><code>ICharacterStatsWelcome</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterStatsWelcome.html"><code>TCharacterStatsWelcome</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterStatsUpdate.html"><code>ICharacterStatsUpdate</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterStatsUpdate.html"><code>TCharacterStatsUpdate</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterStatsInfoLookup.html"><code>ICharacterStatsInfoLookup</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterStatsInfoLookup.html"><code>TCharacterStatsInfoLookup</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterStatsEquipmentChange.html"><code>ICharacterStatsEquipmentChange</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterStatsEquipmentChange.html"><code>TCharacterStatsEquipmentChange</code></a></td>
+<td class="itemdesc">Character stats data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISkillLearn.html"><code>ISkillLearn</code></a></td>
+<td class="itemdesc">A skill that can be learned from a skill master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSkillLearn.html"><code>TSkillLearn</code></a></td>
+<td class="itemdesc">A skill that can be learned from a skill master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBoardPostListing.html"><code>IBoardPostListing</code></a></td>
+<td class="itemdesc">An entry in the list of town board posts</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBoardPostListing.html"><code>TBoardPostListing</code></a></td>
+<td class="itemdesc">An entry in the list of town board posts</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterDetails.html"><code>ICharacterDetails</code></a></td>
+<td class="itemdesc">Information displayed on the paperdoll and book</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterDetails.html"><code>TCharacterDetails</code></a></td>
+<td class="itemdesc">Information displayed on the paperdoll and book</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyMember.html"><code>IPartyMember</code></a></td>
+<td class="itemdesc">A member of the player's party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyMember.html"><code>TPartyMember</code></a></td>
+<td class="itemdesc">A member of the player's party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyExpShare.html"><code>IPartyExpShare</code></a></td>
+<td class="itemdesc">EXP gain for a member of the player's party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyExpShare.html"><code>TPartyExpShare</code></a></td>
+<td class="itemdesc">EXP gain for a member of the player's party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildStaff.html"><code>IGuildStaff</code></a></td>
+<td class="itemdesc">Information about a guild staff member (recruiter or leader)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildStaff.html"><code>TGuildStaff</code></a></td>
+<td class="itemdesc">Information about a guild staff member (recruiter or leader)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildMember.html"><code>IGuildMember</code></a></td>
+<td class="itemdesc">Information about a guild member</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildMember.html"><code>TGuildMember</code></a></td>
+<td class="itemdesc">Information about a guild member</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGroupHealTargetPlayer.html"><code>IGroupHealTargetPlayer</code></a></td>
+<td class="itemdesc">Nearby player hit by a group heal spell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGroupHealTargetPlayer.html"><code>TGroupHealTargetPlayer</code></a></td>
+<td class="itemdesc">Nearby player hit by a group heal spell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeItemData.html"><code>ITradeItemData</code></a></td>
+<td class="itemdesc">Trade window item data</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeItemData.html"><code>TTradeItemData</code></a></td>
+<td class="itemdesc">Trade window item data</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcKilledData.html"><code>INpcKilledData</code></a></td>
+<td class="itemdesc">Information about an NPC that has been killed</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcKilledData.html"><code>TNpcKilledData</code></a></td>
+<td class="itemdesc">Information about an NPC that has been killed</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILevelUpStats.html"><code>ILevelUpStats</code></a></td>
+<td class="itemdesc">Level and stat updates</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLevelUpStats.html"><code>TLevelUpStats</code></a></td>
+<td class="itemdesc">Level and stat updates</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcUpdatePosition.html"><code>INpcUpdatePosition</code></a></td>
+<td class="itemdesc">An NPC walking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcUpdatePosition.html"><code>TNpcUpdatePosition</code></a></td>
+<td class="itemdesc">An NPC walking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcUpdateAttack.html"><code>INpcUpdateAttack</code></a></td>
+<td class="itemdesc">An NPC attacking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcUpdateAttack.html"><code>TNpcUpdateAttack</code></a></td>
+<td class="itemdesc">An NPC attacking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcUpdateChat.html"><code>INpcUpdateChat</code></a></td>
+<td class="itemdesc">An NPC talking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcUpdateChat.html"><code>TNpcUpdateChat</code></a></td>
+<td class="itemdesc">An NPC talking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestProgressEntry.html"><code>IQuestProgressEntry</code></a></td>
+<td class="itemdesc">An entry in the Quest Progress window</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestProgressEntry.html"><code>TQuestProgressEntry</code></a></td>
+<td class="itemdesc">An entry in the Quest Progress window</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDialogQuestEntry.html"><code>IDialogQuestEntry</code></a></td>
+<td class="itemdesc">An entry in the quest switcher</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDialogQuestEntry.html"><code>TDialogQuestEntry</code></a></td>
+<td class="itemdesc">An entry in the quest switcher</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDialogEntryEntryTypeData.html"><code>IDialogEntryEntryTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>EntryType</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDialogEntryEntryTypeDataLink.html"><code>IDialogEntryEntryTypeDataLink</code></a></td>
+<td class="itemdesc">Data associated with <code>IDialogEntry.EntryType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDialogEntryEntryTypeDataLink.html"><code>TDialogEntryEntryTypeDataLink</code></a></td>
+<td class="itemdesc">Data associated with <code>IDialogEntry.EntryType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDialogEntry.html"><code>IDialogEntry</code></a></td>
+<td class="itemdesc">An entry in a quest dialog</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDialogEntry.html"><code>TDialogEntry</code></a></td>
+<td class="itemdesc">An entry in a quest dialog</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMapDrainDamageOther.html"><code>IMapDrainDamageOther</code></a></td>
+<td class="itemdesc">Another player taking damage from a map HP drain</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMapDrainDamageOther.html"><code>TMapDrainDamageOther</code></a></td>
+<td class="itemdesc">Another player taking damage from a map HP drain</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGlobalBackfillMessage.html"><code>IGlobalBackfillMessage</code></a></td>
+<td class="itemdesc">A backfilled global chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGlobalBackfillMessage.html"><code>TGlobalBackfillMessage</code></a></td>
+<td class="itemdesc">A backfilled global chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayerEffect.html"><code>IPlayerEffect</code></a></td>
+<td class="itemdesc">An effect playing on a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayerEffect.html"><code>TPlayerEffect</code></a></td>
+<td class="itemdesc">An effect playing on a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITileEffect.html"><code>ITileEffect</code></a></td>
+<td class="itemdesc">An effect playing on a tile</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTileEffect.html"><code>TTileEffect</code></a></td>
+<td class="itemdesc">An effect playing on a tile</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeData.html"><code>IInitInitServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataOutOfDate.html"><code>IInitInitServerPacketReplyCodeDataOutOfDate</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataOutOfDate.html"><code>TInitInitServerPacketReplyCodeDataOutOfDate</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataOk.html"><code>IInitInitServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataOk.html"><code>TInitInitServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData.html"><code>IInitInitServerPacketReplyCodeDataBannedBanTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>BanType</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeData0.html"><code>IInitInitServerPacketReplyCodeDataBannedBanTypeData0</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacketReplyCodeDataBanned.BanType</code> value <code>0</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataBannedBanTypeData0.html"><code>TInitInitServerPacketReplyCodeDataBannedBanTypeData0</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacketReplyCodeDataBanned.BanType</code> value <code>0</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBannedBanTypeDataTemporary.html"><code>IInitInitServerPacketReplyCodeDataBannedBanTypeDataTemporary</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacketReplyCodeDataBanned.BanType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataBannedBanTypeDataTemporary.html"><code>TInitInitServerPacketReplyCodeDataBannedBanTypeDataTemporary</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacketReplyCodeDataBanned.BanType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataBanned.html"><code>IInitInitServerPacketReplyCodeDataBanned</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataBanned.html"><code>TInitInitServerPacketReplyCodeDataBanned</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataWarpMap.html"><code>IInitInitServerPacketReplyCodeDataWarpMap</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataWarpMap.html"><code>TInitInitServerPacketReplyCodeDataWarpMap</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataFileEmf.html"><code>IInitInitServerPacketReplyCodeDataFileEmf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataFileEmf.html"><code>TInitInitServerPacketReplyCodeDataFileEmf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataFileEif.html"><code>IInitInitServerPacketReplyCodeDataFileEif</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataFileEif.html"><code>TInitInitServerPacketReplyCodeDataFileEif</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataFileEnf.html"><code>IInitInitServerPacketReplyCodeDataFileEnf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataFileEnf.html"><code>TInitInitServerPacketReplyCodeDataFileEnf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataFileEsf.html"><code>IInitInitServerPacketReplyCodeDataFileEsf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>8</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataFileEsf.html"><code>TInitInitServerPacketReplyCodeDataFileEsf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>8</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataFileEcf.html"><code>IInitInitServerPacketReplyCodeDataFileEcf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>12</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataFileEcf.html"><code>TInitInitServerPacketReplyCodeDataFileEcf</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>12</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataMapMutation.html"><code>IInitInitServerPacketReplyCodeDataMapMutation</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>10</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataMapMutation.html"><code>TInitInitServerPacketReplyCodeDataMapMutation</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>10</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataPlayersList.html"><code>IInitInitServerPacketReplyCodeDataPlayersList</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>9</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataPlayersList.html"><code>TInitInitServerPacketReplyCodeDataPlayersList</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>9</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacketReplyCodeDataPlayersListFriends.html"><code>IInitInitServerPacketReplyCodeDataPlayersListFriends</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>11</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacketReplyCodeDataPlayersListFriends.html"><code>TInitInitServerPacketReplyCodeDataPlayersListFriends</code></a></td>
+<td class="itemdesc">Data associated with <code>IInitInitServerPacket.ReplyCode</code> value <code>11</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IInitInitServerPacket.html"><code>IInitInitServerPacket</code></a></td>
+<td class="itemdesc">Reply to connection initialization and requests for unencrypted data.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TInitInitServerPacket.html"><code>TInitInitServerPacket</code></a></td>
+<td class="itemdesc">Reply to connection initialization and requests for unencrypted data.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpPlayerServerPacket.html"><code>IWarpPlayerServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.WarpMap</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpPlayerServerPacket.html"><code>TWarpPlayerServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.WarpMap</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomePingServerPacket.html"><code>IWelcomePingServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileMap</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomePingServerPacket.html"><code>TWelcomePingServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileMap</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomePongServerPacket.html"><code>IWelcomePongServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEif</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomePongServerPacket.html"><code>TWelcomePongServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEif</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeNet242ServerPacket.html"><code>IWelcomeNet242ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEnf</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeNet242ServerPacket.html"><code>TWelcomeNet242ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEnf</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeNet243ServerPacket.html"><code>IWelcomeNet243ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEsf</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeNet243ServerPacket.html"><code>TWelcomeNet243ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEsf</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersListServerPacket.html"><code>IPlayersListServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.PlayersList</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersListServerPacket.html"><code>TPlayersListServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.PlayersList</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpCreateServerPacket.html"><code>IWarpCreateServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.MapMutation</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpCreateServerPacket.html"><code>TWarpCreateServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.MapMutation</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersReplyServerPacket.html"><code>IPlayersReplyServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.PlayersListFriends</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersReplyServerPacket.html"><code>TPlayersReplyServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.PlayersListFriends</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeNet244ServerPacket.html"><code>IWelcomeNet244ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEcf</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeNet244ServerPacket.html"><code>TWelcomeNet244ServerPacket</code></a></td>
+<td class="itemdesc">Equivalent to INIT_INIT with InitReply.FileEcf</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IConnectionPlayerServerPacket.html"><code>IConnectionPlayerServerPacket</code></a></td>
+<td class="itemdesc">Ping request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TConnectionPlayerServerPacket.html"><code>TConnectionPlayerServerPacket</code></a></td>
+<td class="itemdesc">Ping request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeData.html"><code>IAccountReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataExists.html"><code>IAccountReplyServerPacketReplyCodeDataExists</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataExists.html"><code>TAccountReplyServerPacketReplyCodeDataExists</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataNotApproved.html"><code>IAccountReplyServerPacketReplyCodeDataNotApproved</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataNotApproved.html"><code>TAccountReplyServerPacketReplyCodeDataNotApproved</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataCreated.html"><code>IAccountReplyServerPacketReplyCodeDataCreated</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataCreated.html"><code>TAccountReplyServerPacketReplyCodeDataCreated</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataChangeFailed.html"><code>IAccountReplyServerPacketReplyCodeDataChangeFailed</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataChangeFailed.html"><code>TAccountReplyServerPacketReplyCodeDataChangeFailed</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataChanged.html"><code>IAccountReplyServerPacketReplyCodeDataChanged</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataChanged.html"><code>TAccountReplyServerPacketReplyCodeDataChanged</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataRequestDenied.html"><code>IAccountReplyServerPacketReplyCodeDataRequestDenied</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataRequestDenied.html"><code>TAccountReplyServerPacketReplyCodeDataRequestDenied</code></a></td>
+<td class="itemdesc">Data associated with <code>IAccountReplyServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacketReplyCodeDataDefault.html"><code>IAccountReplyServerPacketReplyCodeDataDefault</code></a></td>
+<td class="itemdesc">Default data associated with <code>IAccountReplyServerPacket.ReplyCode</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacketReplyCodeDataDefault.html"><code>TAccountReplyServerPacketReplyCodeDataDefault</code></a></td>
+<td class="itemdesc">Default data associated with <code>IAccountReplyServerPacket.ReplyCode</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAccountReplyServerPacket.html"><code>IAccountReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Account-family packets</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAccountReplyServerPacket.html"><code>TAccountReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Account-family packets</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeData.html"><code>ICharacterReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataExists.html"><code>ICharacterReplyServerPacketReplyCodeDataExists</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataExists.html"><code>TCharacterReplyServerPacketReplyCodeDataExists</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataFull.html"><code>ICharacterReplyServerPacketReplyCodeDataFull</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataFull.html"><code>TCharacterReplyServerPacketReplyCodeDataFull</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataFull3.html"><code>ICharacterReplyServerPacketReplyCodeDataFull3</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataFull3.html"><code>TCharacterReplyServerPacketReplyCodeDataFull3</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataNotApproved.html"><code>ICharacterReplyServerPacketReplyCodeDataNotApproved</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataNotApproved.html"><code>TCharacterReplyServerPacketReplyCodeDataNotApproved</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataOk.html"><code>ICharacterReplyServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataOk.html"><code>TCharacterReplyServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataDeleted.html"><code>ICharacterReplyServerPacketReplyCodeDataDeleted</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataDeleted.html"><code>TCharacterReplyServerPacketReplyCodeDataDeleted</code></a></td>
+<td class="itemdesc">Data associated with <code>ICharacterReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacketReplyCodeDataDefault.html"><code>ICharacterReplyServerPacketReplyCodeDataDefault</code></a></td>
+<td class="itemdesc">Default data associated with <code>ICharacterReplyServerPacket.ReplyCode</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacketReplyCodeDataDefault.html"><code>TCharacterReplyServerPacketReplyCodeDataDefault</code></a></td>
+<td class="itemdesc">Default data associated with <code>ICharacterReplyServerPacket.ReplyCode</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterReplyServerPacket.html"><code>ICharacterReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Character-family packets</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterReplyServerPacket.html"><code>TCharacterReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Character-family packets</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICharacterPlayerServerPacket.html"><code>ICharacterPlayerServerPacket</code></a></td>
+<td class="itemdesc">Reply to client request to delete a character from the account (Character_Take)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCharacterPlayerServerPacket.html"><code>TCharacterPlayerServerPacket</code></a></td>
+<td class="itemdesc">Reply to client request to delete a character from the account (Character_Take)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeData.html"><code>ILoginReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataWrongUser.html"><code>ILoginReplyServerPacketReplyCodeDataWrongUser</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataWrongUser.html"><code>TLoginReplyServerPacketReplyCodeDataWrongUser</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataWrongUserPassword.html"><code>ILoginReplyServerPacketReplyCodeDataWrongUserPassword</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataWrongUserPassword.html"><code>TLoginReplyServerPacketReplyCodeDataWrongUserPassword</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataOk.html"><code>ILoginReplyServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataOk.html"><code>TLoginReplyServerPacketReplyCodeDataOk</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataBanned.html"><code>ILoginReplyServerPacketReplyCodeDataBanned</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataBanned.html"><code>TLoginReplyServerPacketReplyCodeDataBanned</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>4</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataLoggedIn.html"><code>ILoginReplyServerPacketReplyCodeDataLoggedIn</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataLoggedIn.html"><code>TLoginReplyServerPacketReplyCodeDataLoggedIn</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>5</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacketReplyCodeDataBusy.html"><code>ILoginReplyServerPacketReplyCodeDataBusy</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacketReplyCodeDataBusy.html"><code>TLoginReplyServerPacketReplyCodeDataBusy</code></a></td>
+<td class="itemdesc">Data associated with <code>ILoginReplyServerPacket.ReplyCode</code> value <code>6</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILoginReplyServerPacket.html"><code>ILoginReplyServerPacket</code></a></td>
+<td class="itemdesc">Login reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLoginReplyServerPacket.html"><code>TLoginReplyServerPacket</code></a></td>
+<td class="itemdesc">Login reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeReplyServerPacketWelcomeCodeData.html"><code>IWelcomeReplyServerPacketWelcomeCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>WelcomeCode</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeReplyServerPacketWelcomeCodeDataSelectCharacter.html"><code>IWelcomeReplyServerPacketWelcomeCodeDataSelectCharacter</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeReplyServerPacket.WelcomeCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeReplyServerPacketWelcomeCodeDataSelectCharacter.html"><code>TWelcomeReplyServerPacketWelcomeCodeDataSelectCharacter</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeReplyServerPacket.WelcomeCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeReplyServerPacketWelcomeCodeDataEnterGame.html"><code>IWelcomeReplyServerPacketWelcomeCodeDataEnterGame</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeReplyServerPacket.WelcomeCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeReplyServerPacketWelcomeCodeDataEnterGame.html"><code>TWelcomeReplyServerPacketWelcomeCodeDataEnterGame</code></a></td>
+<td class="itemdesc">Data associated with <code>IWelcomeReplyServerPacket.WelcomeCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWelcomeReplyServerPacket.html"><code>IWelcomeReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to selecting a character / entering game</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWelcomeReplyServerPacket.html"><code>TWelcomeReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to selecting a character / entering game</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractReplyServerPacketMessageTypeData.html"><code>IAdminInteractReplyServerPacketMessageTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>MessageType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractReplyServerPacketMessageTypeDataMessage.html"><code>IAdminInteractReplyServerPacketMessageTypeDataMessage</code></a></td>
+<td class="itemdesc">Data associated with <code>IAdminInteractReplyServerPacket.MessageType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractReplyServerPacketMessageTypeDataMessage.html"><code>TAdminInteractReplyServerPacketMessageTypeDataMessage</code></a></td>
+<td class="itemdesc">Data associated with <code>IAdminInteractReplyServerPacket.MessageType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractReplyServerPacketMessageTypeDataReport.html"><code>IAdminInteractReplyServerPacketMessageTypeDataReport</code></a></td>
+<td class="itemdesc">Data associated with <code>IAdminInteractReplyServerPacket.MessageType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractReplyServerPacketMessageTypeDataReport.html"><code>TAdminInteractReplyServerPacketMessageTypeDataReport</code></a></td>
+<td class="itemdesc">Data associated with <code>IAdminInteractReplyServerPacket.MessageType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractReplyServerPacket.html"><code>IAdminInteractReplyServerPacket</code></a></td>
+<td class="itemdesc">Incoming admin message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractReplyServerPacket.html"><code>TAdminInteractReplyServerPacket</code></a></td>
+<td class="itemdesc">Incoming admin message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractRemoveServerPacket.html"><code>IAdminInteractRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player disappearing (admin hide)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractRemoveServerPacket.html"><code>TAdminInteractRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player disappearing (admin hide)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractAgreeServerPacket.html"><code>IAdminInteractAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player appearing (admin un-hide)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractAgreeServerPacket.html"><code>TAdminInteractAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player appearing (admin un-hide)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractListServerPacket.html"><code>IAdminInteractListServerPacket</code></a></td>
+<td class="itemdesc">Admin character inventory popup</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractListServerPacket.html"><code>TAdminInteractListServerPacket</code></a></td>
+<td class="itemdesc">Admin character inventory popup</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAdminInteractTellServerPacket.html"><code>IAdminInteractTellServerPacket</code></a></td>
+<td class="itemdesc">Admin character info lookup</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAdminInteractTellServerPacket.html"><code>TAdminInteractTellServerPacket</code></a></td>
+<td class="itemdesc">Admin character info lookup</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkRequestServerPacket.html"><code>ITalkRequestServerPacket</code></a></td>
+<td class="itemdesc">Guild chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkRequestServerPacket.html"><code>TTalkRequestServerPacket</code></a></td>
+<td class="itemdesc">Guild chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkOpenServerPacket.html"><code>ITalkOpenServerPacket</code></a></td>
+<td class="itemdesc">Party chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkOpenServerPacket.html"><code>TTalkOpenServerPacket</code></a></td>
+<td class="itemdesc">Party chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkMsgServerPacket.html"><code>ITalkMsgServerPacket</code></a></td>
+<td class="itemdesc">Global chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkMsgServerPacket.html"><code>TTalkMsgServerPacket</code></a></td>
+<td class="itemdesc">Global chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkTellServerPacket.html"><code>ITalkTellServerPacket</code></a></td>
+<td class="itemdesc">Private chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkTellServerPacket.html"><code>TTalkTellServerPacket</code></a></td>
+<td class="itemdesc">Private chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkPlayerServerPacket.html"><code>ITalkPlayerServerPacket</code></a></td>
+<td class="itemdesc">Public chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkPlayerServerPacket.html"><code>TTalkPlayerServerPacket</code></a></td>
+<td class="itemdesc">Public chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkReplyServerPacket.html"><code>ITalkReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to send a private message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkReplyServerPacket.html"><code>TTalkReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to send a private message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkAdminServerPacket.html"><code>ITalkAdminServerPacket</code></a></td>
+<td class="itemdesc">Admin chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkAdminServerPacket.html"><code>TTalkAdminServerPacket</code></a></td>
+<td class="itemdesc">Admin chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkAnnounceServerPacket.html"><code>ITalkAnnounceServerPacket</code></a></td>
+<td class="itemdesc">Admin announcement</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkAnnounceServerPacket.html"><code>TTalkAnnounceServerPacket</code></a></td>
+<td class="itemdesc">Admin announcement</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkServerServerPacket.html"><code>ITalkServerServerPacket</code></a></td>
+<td class="itemdesc">Server message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkServerServerPacket.html"><code>TTalkServerServerPacket</code></a></td>
+<td class="itemdesc">Server message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkListServerPacket.html"><code>ITalkListServerPacket</code></a></td>
+<td class="itemdesc">Global chat backfill.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkListServerPacket.html"><code>TTalkListServerPacket</code></a></td>
+<td class="itemdesc">Global chat backfill.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMessageOpenServerPacket.html"><code>IMessageOpenServerPacket</code></a></td>
+<td class="itemdesc">Status bar message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMessageOpenServerPacket.html"><code>TMessageOpenServerPacket</code></a></td>
+<td class="itemdesc">Status bar message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMessageCloseServerPacket.html"><code>IMessageCloseServerPacket</code></a></td>
+<td class="itemdesc">Server is rebooting</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMessageCloseServerPacket.html"><code>TMessageCloseServerPacket</code></a></td>
+<td class="itemdesc">Server is rebooting</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMessageAcceptServerPacket.html"><code>IMessageAcceptServerPacket</code></a></td>
+<td class="itemdesc">Large message box</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMessageAcceptServerPacket.html"><code>TMessageAcceptServerPacket</code></a></td>
+<td class="itemdesc">Large message box</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITalkSpecServerPacket.html"><code>ITalkSpecServerPacket</code></a></td>
+<td class="itemdesc">Temporary mute applied</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTalkSpecServerPacket.html"><code>TTalkSpecServerPacket</code></a></td>
+<td class="itemdesc">Temporary mute applied</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAttackPlayerServerPacket.html"><code>IAttackPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player attacking</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAttackPlayerServerPacket.html"><code>TAttackPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player attacking</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAttackErrorServerPacket.html"><code>IAttackErrorServerPacket</code></a></td>
+<td class="itemdesc">Show flood protection message (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAttackErrorServerPacket.html"><code>TAttackErrorServerPacket</code></a></td>
+<td class="itemdesc">Show flood protection message (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarReplyServerPacket.html"><code>IAvatarReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by another player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarReplyServerPacket.html"><code>TAvatarReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by another player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChairPlayerServerPacket.html"><code>IChairPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player sitting on a chair</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChairPlayerServerPacket.html"><code>TChairPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player sitting on a chair</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChairReplyServerPacket.html"><code>IChairReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character sitting on a chair</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChairReplyServerPacket.html"><code>TChairReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character sitting on a chair</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChairCloseServerPacket.html"><code>IChairCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character standing up from a chair</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChairCloseServerPacket.html"><code>TChairCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character standing up from a chair</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChairRemoveServerPacket.html"><code>IChairRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player standing up from a chair</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChairRemoveServerPacket.html"><code>TChairRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player standing up from a chair</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISitPlayerServerPacket.html"><code>ISitPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player sitting down</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSitPlayerServerPacket.html"><code>TSitPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player sitting down</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISitCloseServerPacket.html"><code>ISitCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character standing up</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSitCloseServerPacket.html"><code>TSitCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character standing up</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISitRemoveServerPacket.html"><code>ISitRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player standing up</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSitRemoveServerPacket.html"><code>TSitRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player standing up</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISitReplyServerPacket.html"><code>ISitReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character sitting down</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSitReplyServerPacket.html"><code>TSitReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character sitting down</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEmotePlayerServerPacket.html"><code>IEmotePlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player doing an emote</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEmotePlayerServerPacket.html"><code>TEmotePlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player doing an emote</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectPlayerServerPacket.html"><code>IEffectPlayerServerPacket</code></a></td>
+<td class="itemdesc">Effects playing on nearby players</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectPlayerServerPacket.html"><code>TEffectPlayerServerPacket</code></a></td>
+<td class="itemdesc">Effects playing on nearby players</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IFacePlayerServerPacket.html"><code>IFacePlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player facing a direction</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TFacePlayerServerPacket.html"><code>TFacePlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player facing a direction</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarRemoveServerPacket.html"><code>IAvatarRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has disappeared from view</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarRemoveServerPacket.html"><code>TAvatarRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has disappeared from view</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersAgreeServerPacket.html"><code>IPlayersAgreeServerPacket</code></a></td>
+<td class="itemdesc">Player has appeared in nearby view</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersAgreeServerPacket.html"><code>TPlayersAgreeServerPacket</code></a></td>
+<td class="itemdesc">Player has appeared in nearby view</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersRemoveServerPacket.html"><code>IPlayersRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has logged out</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersRemoveServerPacket.html"><code>TPlayersRemoveServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has logged out</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRangeReplyServerPacket.html"><code>IRangeReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for information about nearby players and NPCs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRangeReplyServerPacket.html"><code>TRangeReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for information about nearby players and NPCs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcAgreeServerPacket.html"><code>INpcAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for information about nearby NPCs</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcAgreeServerPacket.html"><code>TNpcAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for information about nearby NPCs</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWalkPlayerServerPacket.html"><code>IWalkPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has walked</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWalkPlayerServerPacket.html"><code>TWalkPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player has walked</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWalkReplyServerPacket.html"><code>IWalkReplyServerPacket</code></a></td>
+<td class="itemdesc">Players, NPCs, and Items appearing in nearby view</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWalkReplyServerPacket.html"><code>TWalkReplyServerPacket</code></a></td>
+<td class="itemdesc">Players, NPCs, and Items appearing in nearby view</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWalkCloseServerPacket.html"><code>IWalkCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character has been frozen</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWalkCloseServerPacket.html"><code>TWalkCloseServerPacket</code></a></td>
+<td class="itemdesc">Your character has been frozen</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWalkOpenServerPacket.html"><code>IWalkOpenServerPacket</code></a></td>
+<td class="itemdesc">Your character has been unfrozen</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWalkOpenServerPacket.html"><code>TWalkOpenServerPacket</code></a></td>
+<td class="itemdesc">Your character has been unfrozen</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBankOpenServerPacket.html"><code>IBankOpenServerPacket</code></a></td>
+<td class="itemdesc">Open banker NPC interface</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBankOpenServerPacket.html"><code>TBankOpenServerPacket</code></a></td>
+<td class="itemdesc">Open banker NPC interface</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBankReplyServerPacket.html"><code>IBankReplyServerPacket</code></a></td>
+<td class="itemdesc">Update gold counts after deposit/withdraw</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBankReplyServerPacket.html"><code>TBankReplyServerPacket</code></a></td>
+<td class="itemdesc">Update gold counts after deposit/withdraw</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBarberAgreeServerPacket.html"><code>IBarberAgreeServerPacket</code></a></td>
+<td class="itemdesc">Purchasing a new hair style</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBarberAgreeServerPacket.html"><code>TBarberAgreeServerPacket</code></a></td>
+<td class="itemdesc">Purchasing a new hair style</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBarberOpenServerPacket.html"><code>IBarberOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a barber NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBarberOpenServerPacket.html"><code>TBarberOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a barber NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILockerReplyServerPacket.html"><code>ILockerReplyServerPacket</code></a></td>
+<td class="itemdesc">Response to adding an item to a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLockerReplyServerPacket.html"><code>TLockerReplyServerPacket</code></a></td>
+<td class="itemdesc">Response to adding an item to a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILockerGetServerPacket.html"><code>ILockerGetServerPacket</code></a></td>
+<td class="itemdesc">Response to taking an item from a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLockerGetServerPacket.html"><code>TLockerGetServerPacket</code></a></td>
+<td class="itemdesc">Response to taking an item from a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILockerOpenServerPacket.html"><code>ILockerOpenServerPacket</code></a></td>
+<td class="itemdesc">Opening a bank locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLockerOpenServerPacket.html"><code>TLockerOpenServerPacket</code></a></td>
+<td class="itemdesc">Opening a bank locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILockerBuyServerPacket.html"><code>ILockerBuyServerPacket</code></a></td>
+<td class="itemdesc">Response to buying a locker space upgrade from a banker NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLockerBuyServerPacket.html"><code>TLockerBuyServerPacket</code></a></td>
+<td class="itemdesc">Response to buying a locker space upgrade from a banker NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ILockerSpecServerPacket.html"><code>ILockerSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to add an item to a full locker</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html"><code>TLockerSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to add an item to a full locker</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICitizenReplyServerPacket.html"><code>ICitizenReplyServerPacket</code></a></td>
+<td class="itemdesc">Response to subscribing to a town</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCitizenReplyServerPacket.html"><code>TCitizenReplyServerPacket</code></a></td>
+<td class="itemdesc">Response to subscribing to a town</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICitizenRemoveServerPacket.html"><code>ICitizenRemoveServerPacket</code></a></td>
+<td class="itemdesc">Response to giving up citizenship of a town</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCitizenRemoveServerPacket.html"><code>TCitizenRemoveServerPacket</code></a></td>
+<td class="itemdesc">Response to giving up citizenship of a town</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICitizenOpenServerPacket.html"><code>ICitizenOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a citizenship NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCitizenOpenServerPacket.html"><code>TCitizenOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a citizenship NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICitizenRequestServerPacket.html"><code>ICitizenRequestServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting sleeping at an inn</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCitizenRequestServerPacket.html"><code>TCitizenRequestServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting sleeping at an inn</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICitizenAcceptServerPacket.html"><code>ICitizenAcceptServerPacket</code></a></td>
+<td class="itemdesc">Sleeping at an inn</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCitizenAcceptServerPacket.html"><code>TCitizenAcceptServerPacket</code></a></td>
+<td class="itemdesc">Sleeping at an inn</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopCreateServerPacket.html"><code>IShopCreateServerPacket</code></a></td>
+<td class="itemdesc">Response to crafting an item from a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopCreateServerPacket.html"><code>TShopCreateServerPacket</code></a></td>
+<td class="itemdesc">Response to crafting an item from a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopBuyServerPacket.html"><code>IShopBuyServerPacket</code></a></td>
+<td class="itemdesc">Response to purchasing an item from a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopBuyServerPacket.html"><code>TShopBuyServerPacket</code></a></td>
+<td class="itemdesc">Response to purchasing an item from a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopSellServerPacket.html"><code>IShopSellServerPacket</code></a></td>
+<td class="itemdesc">Response to selling an item to a shop</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopSellServerPacket.html"><code>TShopSellServerPacket</code></a></td>
+<td class="itemdesc">Response to selling an item to a shop</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IShopOpenServerPacket.html"><code>IShopOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a shop NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TShopOpenServerPacket.html"><code>TShopOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a shop NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillOpenServerPacket.html"><code>IStatSkillOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a skill master NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillOpenServerPacket.html"><code>TStatSkillOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a skill master NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillReplyServerPacketReplyCodeData.html"><code>IStatSkillReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillReplyServerPacketReplyCodeDataWrongClass.html"><code>IStatSkillReplyServerPacketReplyCodeDataWrongClass</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillReplyServerPacketReplyCodeDataWrongClass.html"><code>TStatSkillReplyServerPacketReplyCodeDataWrongClass</code></a></td>
+<td class="itemdesc">Data associated with <code>IStatSkillReplyServerPacket.ReplyCode</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillReplyServerPacket.html"><code>IStatSkillReplyServerPacket</code></a></td>
+<td class="itemdesc">Response from unsuccessful action at a skill master</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillReplyServerPacket.html"><code>TStatSkillReplyServerPacket</code></a></td>
+<td class="itemdesc">Response from unsuccessful action at a skill master</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillTakeServerPacket.html"><code>IStatSkillTakeServerPacket</code></a></td>
+<td class="itemdesc">Response from learning a skill from a skill master</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillTakeServerPacket.html"><code>TStatSkillTakeServerPacket</code></a></td>
+<td class="itemdesc">Response from learning a skill from a skill master</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillRemoveServerPacket.html"><code>IStatSkillRemoveServerPacket</code></a></td>
+<td class="itemdesc">Response to forgetting a skill at a skill master</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillRemoveServerPacket.html"><code>TStatSkillRemoveServerPacket</code></a></td>
+<td class="itemdesc">Response to forgetting a skill at a skill master</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillPlayerServerPacket.html"><code>IStatSkillPlayerServerPacket</code></a></td>
+<td class="itemdesc">Response to spending stat points</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillPlayerServerPacket.html"><code>TStatSkillPlayerServerPacket</code></a></td>
+<td class="itemdesc">Response to spending stat points</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillAcceptServerPacket.html"><code>IStatSkillAcceptServerPacket</code></a></td>
+<td class="itemdesc">Response to spending skill points</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillAcceptServerPacket.html"><code>TStatSkillAcceptServerPacket</code></a></td>
+<td class="itemdesc">Response to spending skill points</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IStatSkillJunkServerPacket.html"><code>IStatSkillJunkServerPacket</code></a></td>
+<td class="itemdesc">Response to resetting stats and skills at a skill master</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TStatSkillJunkServerPacket.html"><code>TStatSkillJunkServerPacket</code></a></td>
+<td class="itemdesc">Response to resetting stats and skills at a skill master</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeData.html"><code>IItemReplyServerPacketItemTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ItemType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeDataHeal.html"><code>IItemReplyServerPacketItemTypeDataHeal</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacketItemTypeDataHeal.html"><code>TItemReplyServerPacketItemTypeDataHeal</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeDataHairDye.html"><code>IItemReplyServerPacketItemTypeDataHairDye</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>24</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacketItemTypeDataHairDye.html"><code>TItemReplyServerPacketItemTypeDataHairDye</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>24</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeDataEffectPotion.html"><code>IItemReplyServerPacketItemTypeDataEffectPotion</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>23</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacketItemTypeDataEffectPotion.html"><code>TItemReplyServerPacketItemTypeDataEffectPotion</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>23</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeDataCureCurse.html"><code>IItemReplyServerPacketItemTypeDataCureCurse</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>25</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacketItemTypeDataCureCurse.html"><code>TItemReplyServerPacketItemTypeDataCureCurse</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>25</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacketItemTypeDataExpReward.html"><code>IItemReplyServerPacketItemTypeDataExpReward</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>6</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacketItemTypeDataExpReward.html"><code>TItemReplyServerPacketItemTypeDataExpReward</code></a></td>
+<td class="itemdesc">Data associated with <code>IItemReplyServerPacket.ItemType</code> value <code>6</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemReplyServerPacket.html"><code>IItemReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to using an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemReplyServerPacket.html"><code>TItemReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to using an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemDropServerPacket.html"><code>IItemDropServerPacket</code></a></td>
+<td class="itemdesc">Reply to dropping items on the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemDropServerPacket.html"><code>TItemDropServerPacket</code></a></td>
+<td class="itemdesc">Reply to dropping items on the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemAddServerPacket.html"><code>IItemAddServerPacket</code></a></td>
+<td class="itemdesc">Item appeared on the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemAddServerPacket.html"><code>TItemAddServerPacket</code></a></td>
+<td class="itemdesc">Item appeared on the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemRemoveServerPacket.html"><code>IItemRemoveServerPacket</code></a></td>
+<td class="itemdesc">Item disappeared from the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemRemoveServerPacket.html"><code>TItemRemoveServerPacket</code></a></td>
+<td class="itemdesc">Item disappeared from the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemJunkServerPacket.html"><code>IItemJunkServerPacket</code></a></td>
+<td class="itemdesc">Reply to junking items</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemJunkServerPacket.html"><code>TItemJunkServerPacket</code></a></td>
+<td class="itemdesc">Reply to junking items</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemGetServerPacket.html"><code>IItemGetServerPacket</code></a></td>
+<td class="itemdesc">Reply to taking items from the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemGetServerPacket.html"><code>TItemGetServerPacket</code></a></td>
+<td class="itemdesc">Reply to taking items from the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemObtainServerPacket.html"><code>IItemObtainServerPacket</code></a></td>
+<td class="itemdesc">Receive item (from quest)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemObtainServerPacket.html"><code>TItemObtainServerPacket</code></a></td>
+<td class="itemdesc">Receive item (from quest)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemKickServerPacket.html"><code>IItemKickServerPacket</code></a></td>
+<td class="itemdesc">Lose item (from quest)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemKickServerPacket.html"><code>TItemKickServerPacket</code></a></td>
+<td class="itemdesc">Lose item (from quest)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemAgreeServerPacket.html"><code>IItemAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to using an item that you don't have</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemAgreeServerPacket.html"><code>TItemAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to using an item that you don't have</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemSpecServerPacket.html"><code>IItemSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to take a protected item from the ground</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemSpecServerPacket.html"><code>TItemSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to take a protected item from the ground</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBoardPlayerServerPacket.html"><code>IBoardPlayerServerPacket</code></a></td>
+<td class="itemdesc">Reply to reading a post on a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBoardPlayerServerPacket.html"><code>TBoardPlayerServerPacket</code></a></td>
+<td class="itemdesc">Reply to reading a post on a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBoardOpenServerPacket.html"><code>IBoardOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening a town board</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBoardOpenServerPacket.html"><code>TBoardOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening a town board</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxAgreeServerPacket.html"><code>IJukeboxAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to successfully requesting a song</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxAgreeServerPacket.html"><code>TJukeboxAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to successfully requesting a song</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxReplyServerPacket.html"><code>IJukeboxReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to unsuccessfully requesting a song</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxReplyServerPacket.html"><code>TJukeboxReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to unsuccessfully requesting a song</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxOpenServerPacket.html"><code>IJukeboxOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening the jukebox listing</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxOpenServerPacket.html"><code>TJukeboxOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening the jukebox listing</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxMsgServerPacket.html"><code>IJukeboxMsgServerPacket</code></a></td>
+<td class="itemdesc">Someone playing a note with the bard skill nearby</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxMsgServerPacket.html"><code>TJukeboxMsgServerPacket</code></a></td>
+<td class="itemdesc">Someone playing a note with the bard skill nearby</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxPlayerServerPacket.html"><code>IJukeboxPlayerServerPacket</code></a></td>
+<td class="itemdesc">Play background music</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxPlayerServerPacket.html"><code>TJukeboxPlayerServerPacket</code></a></td>
+<td class="itemdesc">Play background music</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IJukeboxUseServerPacket.html"><code>IJukeboxUseServerPacket</code></a></td>
+<td class="itemdesc">Play jukebox music</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TJukeboxUseServerPacket.html"><code>TJukeboxUseServerPacket</code></a></td>
+<td class="itemdesc">Play jukebox music</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpRequestServerPacketWarpTypeData.html"><code>IWarpRequestServerPacketWarpTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>WarpType</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpRequestServerPacketWarpTypeDataMapSwitch.html"><code>IWarpRequestServerPacketWarpTypeDataMapSwitch</code></a></td>
+<td class="itemdesc">Data associated with <code>IWarpRequestServerPacket.WarpType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpRequestServerPacketWarpTypeDataMapSwitch.html"><code>TWarpRequestServerPacketWarpTypeDataMapSwitch</code></a></td>
+<td class="itemdesc">Data associated with <code>IWarpRequestServerPacket.WarpType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpRequestServerPacket.html"><code>IWarpRequestServerPacket</code></a></td>
+<td class="itemdesc">Warp request from server</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpRequestServerPacket.html"><code>TWarpRequestServerPacket</code></a></td>
+<td class="itemdesc">Warp request from server</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpAgreeServerPacketWarpTypeData.html"><code>IWarpAgreeServerPacketWarpTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>WarpType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpAgreeServerPacketWarpTypeDataMapSwitch.html"><code>IWarpAgreeServerPacketWarpTypeDataMapSwitch</code></a></td>
+<td class="itemdesc">Data associated with <code>IWarpAgreeServerPacket.WarpType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpAgreeServerPacketWarpTypeDataMapSwitch.html"><code>TWarpAgreeServerPacketWarpTypeDataMapSwitch</code></a></td>
+<td class="itemdesc">Data associated with <code>IWarpAgreeServerPacket.WarpType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IWarpAgreeServerPacket.html"><code>IWarpAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply after accepting a warp</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TWarpAgreeServerPacket.html"><code>TWarpAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply after accepting a warp</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPaperdollReplyServerPacket.html"><code>IPaperdollReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting a paperdoll</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPaperdollReplyServerPacket.html"><code>TPaperdollReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting a paperdoll</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPaperdollPingServerPacket.html"><code>IPaperdollPingServerPacket</code></a></td>
+<td class="itemdesc">Failed to equip an item due to being the incorrect class</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPaperdollPingServerPacket.html"><code>TPaperdollPingServerPacket</code></a></td>
+<td class="itemdesc">Failed to equip an item due to being the incorrect class</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPaperdollRemoveServerPacket.html"><code>IPaperdollRemoveServerPacket</code></a></td>
+<td class="itemdesc">Reply to unequipping an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPaperdollRemoveServerPacket.html"><code>TPaperdollRemoveServerPacket</code></a></td>
+<td class="itemdesc">Reply to unequipping an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPaperdollAgreeServerPacket.html"><code>IPaperdollAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to equipping an item</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPaperdollAgreeServerPacket.html"><code>TPaperdollAgreeServerPacket</code></a></td>
+<td class="itemdesc">Reply to equipping an item</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarAgreeServerPacket.html"><code>IAvatarAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player changed appearance</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarAgreeServerPacket.html"><code>TAvatarAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player changed appearance</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IBookReplyServerPacket.html"><code>IBookReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting a book</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TBookReplyServerPacket.html"><code>TBookReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to requesting a book</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMessagePongServerPacket.html"><code>IMessagePongServerPacket</code></a></td>
+<td class="itemdesc">#ping command reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMessagePongServerPacket.html"><code>TMessagePongServerPacket</code></a></td>
+<td class="itemdesc">#ping command reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersPingServerPacket.html"><code>IPlayersPingServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - offline</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersPingServerPacket.html"><code>TPlayersPingServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - offline</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersPongServerPacket.html"><code>IPlayersPongServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - same map</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersPongServerPacket.html"><code>TPlayersPongServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - same map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPlayersNet242ServerPacket.html"><code>IPlayersNet242ServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - different map</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPlayersNet242ServerPacket.html"><code>TPlayersNet242ServerPacket</code></a></td>
+<td class="itemdesc">#find command reply - different map</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDoorOpenServerPacket.html"><code>IDoorOpenServerPacket</code></a></td>
+<td class="itemdesc">Nearby door opening</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDoorOpenServerPacket.html"><code>TDoorOpenServerPacket</code></a></td>
+<td class="itemdesc">Nearby door opening</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html"><code>IDoorCloseServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to open a locked door</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TDoorCloseServerPacket.html"><code>TDoorCloseServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to open a locked door</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestOpenServerPacket.html"><code>IChestOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestOpenServerPacket.html"><code>TChestOpenServerPacket</code></a></td>
+<td class="itemdesc">Reply to opening a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestReplyServerPacket.html"><code>IChestReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to placing an item in to a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestReplyServerPacket.html"><code>TChestReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to placing an item in to a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestGetServerPacket.html"><code>IChestGetServerPacket</code></a></td>
+<td class="itemdesc">Reply to removing an item from a chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestGetServerPacket.html"><code>TChestGetServerPacket</code></a></td>
+<td class="itemdesc">Reply to removing an item from a chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestAgreeServerPacket.html"><code>IChestAgreeServerPacket</code></a></td>
+<td class="itemdesc">Chest contents updating</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestAgreeServerPacket.html"><code>TChestAgreeServerPacket</code></a></td>
+<td class="itemdesc">Chest contents updating</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestSpecServerPacket.html"><code>IChestSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to add an item to a full chest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestSpecServerPacket.html"><code>TChestSpecServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to add an item to a full chest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IChestCloseServerPacket.html"><code>IChestCloseServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to interact with a locked or &quot;broken&quot; chest.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TChestCloseServerPacket.html"><code>TChestCloseServerPacket</code></a></td>
+<td class="itemdesc">Reply to trying to interact with a locked or &quot;broken&quot; chest.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRefreshReplyServerPacket.html"><code>IRefreshReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for new info about nearby objects</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRefreshReplyServerPacket.html"><code>TRefreshReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to request for new info about nearby objects</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyRequestServerPacket.html"><code>IPartyRequestServerPacket</code></a></td>
+<td class="itemdesc">Received party invite / join request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyRequestServerPacket.html"><code>TPartyRequestServerPacket</code></a></td>
+<td class="itemdesc">Received party invite / join request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyReplyServerPacketReplyCodeData.html"><code>IPartyReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyReplyServerPacketReplyCodeDataAlreadyInAnotherParty.html"><code>IPartyReplyServerPacketReplyCodeDataAlreadyInAnotherParty</code></a></td>
+<td class="itemdesc">Data associated with <code>IPartyReplyServerPacket.ReplyCode</code> value <code>0</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyReplyServerPacketReplyCodeDataAlreadyInAnotherParty.html"><code>TPartyReplyServerPacketReplyCodeDataAlreadyInAnotherParty</code></a></td>
+<td class="itemdesc">Data associated with <code>IPartyReplyServerPacket.ReplyCode</code> value <code>0</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyReplyServerPacketReplyCodeDataAlreadyInYourParty.html"><code>IPartyReplyServerPacketReplyCodeDataAlreadyInYourParty</code></a></td>
+<td class="itemdesc">Data associated with <code>IPartyReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyReplyServerPacketReplyCodeDataAlreadyInYourParty.html"><code>TPartyReplyServerPacketReplyCodeDataAlreadyInYourParty</code></a></td>
+<td class="itemdesc">Data associated with <code>IPartyReplyServerPacket.ReplyCode</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyReplyServerPacket.html"><code>IPartyReplyServerPacket</code></a></td>
+<td class="itemdesc">Failed party invite / join request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyReplyServerPacket.html"><code>TPartyReplyServerPacket</code></a></td>
+<td class="itemdesc">Failed party invite / join request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyCreateServerPacket.html"><code>IPartyCreateServerPacket</code></a></td>
+<td class="itemdesc">Member list received when party is first joined</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyCreateServerPacket.html"><code>TPartyCreateServerPacket</code></a></td>
+<td class="itemdesc">Member list received when party is first joined</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyAddServerPacket.html"><code>IPartyAddServerPacket</code></a></td>
+<td class="itemdesc">New player joined the party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyAddServerPacket.html"><code>TPartyAddServerPacket</code></a></td>
+<td class="itemdesc">New player joined the party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyRemoveServerPacket.html"><code>IPartyRemoveServerPacket</code></a></td>
+<td class="itemdesc">Player left the party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyRemoveServerPacket.html"><code>TPartyRemoveServerPacket</code></a></td>
+<td class="itemdesc">Player left the party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyCloseServerPacket.html"><code>IPartyCloseServerPacket</code></a></td>
+<td class="itemdesc">Left / disbanded a party</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyCloseServerPacket.html"><code>TPartyCloseServerPacket</code></a></td>
+<td class="itemdesc">Left / disbanded a party</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyListServerPacket.html"><code>IPartyListServerPacket</code></a></td>
+<td class="itemdesc">Party member list update</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyListServerPacket.html"><code>TPartyListServerPacket</code></a></td>
+<td class="itemdesc">Party member list update</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyAgreeServerPacket.html"><code>IPartyAgreeServerPacket</code></a></td>
+<td class="itemdesc">Party member list update</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyAgreeServerPacket.html"><code>TPartyAgreeServerPacket</code></a></td>
+<td class="itemdesc">Party member list update</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html"><code>IPartyTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Updated experience and level-ups from party experience</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPartyTargetGroupServerPacket.html"><code>TPartyTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Updated experience and level-ups from party experience</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReplyServerPacketReplyCodeData.html"><code>IGuildReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReplyServerPacketReplyCodeDataCreateAdd.html"><code>IGuildReplyServerPacketReplyCodeDataCreateAdd</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>8</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReplyServerPacketReplyCodeDataCreateAdd.html"><code>TGuildReplyServerPacketReplyCodeDataCreateAdd</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>8</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReplyServerPacketReplyCodeDataCreateAddConfirm.html"><code>IGuildReplyServerPacketReplyCodeDataCreateAddConfirm</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReplyServerPacketReplyCodeDataCreateAddConfirm.html"><code>TGuildReplyServerPacketReplyCodeDataCreateAddConfirm</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>7</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReplyServerPacketReplyCodeDataJoinRequest.html"><code>IGuildReplyServerPacketReplyCodeDataJoinRequest</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>13</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReplyServerPacketReplyCodeDataJoinRequest.html"><code>TGuildReplyServerPacketReplyCodeDataJoinRequest</code></a></td>
+<td class="itemdesc">Data associated with <code>IGuildReplyServerPacket.ReplyCode</code> value <code>13</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReplyServerPacket.html"><code>IGuildReplyServerPacket</code></a></td>
+<td class="itemdesc">Generic guild reply messages</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReplyServerPacket.html"><code>TGuildReplyServerPacket</code></a></td>
+<td class="itemdesc">Generic guild reply messages</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildRequestServerPacket.html"><code>IGuildRequestServerPacket</code></a></td>
+<td class="itemdesc">Guild create request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildRequestServerPacket.html"><code>TGuildRequestServerPacket</code></a></td>
+<td class="itemdesc">Guild create request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildCreateServerPacket.html"><code>IGuildCreateServerPacket</code></a></td>
+<td class="itemdesc">Guild created</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildCreateServerPacket.html"><code>TGuildCreateServerPacket</code></a></td>
+<td class="itemdesc">Guild created</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildTakeServerPacket.html"><code>IGuildTakeServerPacket</code></a></td>
+<td class="itemdesc">Get guild description reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildTakeServerPacket.html"><code>TGuildTakeServerPacket</code></a></td>
+<td class="itemdesc">Get guild description reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildRankServerPacket.html"><code>IGuildRankServerPacket</code></a></td>
+<td class="itemdesc">Get guild rank list reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html"><code>TGuildRankServerPacket</code></a></td>
+<td class="itemdesc">Get guild rank list reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildSellServerPacket.html"><code>IGuildSellServerPacket</code></a></td>
+<td class="itemdesc">Get guild bank reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildSellServerPacket.html"><code>TGuildSellServerPacket</code></a></td>
+<td class="itemdesc">Get guild bank reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildBuyServerPacket.html"><code>IGuildBuyServerPacket</code></a></td>
+<td class="itemdesc">Deposit guild bank reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildBuyServerPacket.html"><code>TGuildBuyServerPacket</code></a></td>
+<td class="itemdesc">Deposit guild bank reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildOpenServerPacket.html"><code>IGuildOpenServerPacket</code></a></td>
+<td class="itemdesc">Talk to guild master NPC reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildOpenServerPacket.html"><code>TGuildOpenServerPacket</code></a></td>
+<td class="itemdesc">Talk to guild master NPC reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildTellServerPacket.html"><code>IGuildTellServerPacket</code></a></td>
+<td class="itemdesc">Get guild member list reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildTellServerPacket.html"><code>TGuildTellServerPacket</code></a></td>
+<td class="itemdesc">Get guild member list reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildReportServerPacket.html"><code>IGuildReportServerPacket</code></a></td>
+<td class="itemdesc">Get guild info reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildReportServerPacket.html"><code>TGuildReportServerPacket</code></a></td>
+<td class="itemdesc">Get guild info reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildAgreeServerPacket.html"><code>IGuildAgreeServerPacket</code></a></td>
+<td class="itemdesc">Joined guild info</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildAgreeServerPacket.html"><code>TGuildAgreeServerPacket</code></a></td>
+<td class="itemdesc">Joined guild info</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildAcceptServerPacket.html"><code>IGuildAcceptServerPacket</code></a></td>
+<td class="itemdesc">Update guild rank</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildAcceptServerPacket.html"><code>TGuildAcceptServerPacket</code></a></td>
+<td class="itemdesc">Update guild rank</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IGuildKickServerPacket.html"><code>IGuildKickServerPacket</code></a></td>
+<td class="itemdesc">Left the guild</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TGuildKickServerPacket.html"><code>TGuildKickServerPacket</code></a></td>
+<td class="itemdesc">Left the guild</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellRequestServerPacket.html"><code>ISpellRequestServerPacket</code></a></td>
+<td class="itemdesc">Nearby player chanting a spell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellRequestServerPacket.html"><code>TSpellRequestServerPacket</code></a></td>
+<td class="itemdesc">Nearby player chanting a spell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellTargetSelfServerPacket.html"><code>ISpellTargetSelfServerPacket</code></a></td>
+<td class="itemdesc">Nearby player self-casted a spell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellTargetSelfServerPacket.html"><code>TSpellTargetSelfServerPacket</code></a></td>
+<td class="itemdesc">Nearby player self-casted a spell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellPlayerServerPacket.html"><code>ISpellPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player raising their arm to cast a spell (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellPlayerServerPacket.html"><code>TSpellPlayerServerPacket</code></a></td>
+<td class="itemdesc">Nearby player raising their arm to cast a spell (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellErrorServerPacket.html"><code>ISpellErrorServerPacket</code></a></td>
+<td class="itemdesc">Show flood protection message (vestigial)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellErrorServerPacket.html"><code>TSpellErrorServerPacket</code></a></td>
+<td class="itemdesc">Show flood protection message (vestigial)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IAvatarAdminServerPacket.html"><code>IAvatarAdminServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by a damage spell from a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TAvatarAdminServerPacket.html"><code>TAvatarAdminServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by a damage spell from a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellTargetGroupServerPacket.html"><code>ISpellTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Nearby player(s) hit by a group heal spell from a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellTargetGroupServerPacket.html"><code>TSpellTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Nearby player(s) hit by a group heal spell from a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellTargetOtherServerPacket.html"><code>ISpellTargetOtherServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by a heal spell from a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellTargetOtherServerPacket.html"><code>TSpellTargetOtherServerPacket</code></a></td>
+<td class="itemdesc">Nearby player hit by a heal spell from a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ISpellReplyServerPacket.html"><code>ISpellReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character self-cast a targetable heal spell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TSpellReplyServerPacket.html"><code>TSpellReplyServerPacket</code></a></td>
+<td class="itemdesc">Your character self-cast a targetable heal spell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeRequestServerPacket.html"><code>ITradeRequestServerPacket</code></a></td>
+<td class="itemdesc">Trade request from another player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeRequestServerPacket.html"><code>TTradeRequestServerPacket</code></a></td>
+<td class="itemdesc">Trade request from another player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeOpenServerPacket.html"><code>ITradeOpenServerPacket</code></a></td>
+<td class="itemdesc">Trade window opens</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeOpenServerPacket.html"><code>TTradeOpenServerPacket</code></a></td>
+<td class="itemdesc">Trade window opens</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html"><code>ITradeReplyServerPacket</code></a></td>
+<td class="itemdesc">Trade updated (items changed)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeReplyServerPacket.html"><code>TTradeReplyServerPacket</code></a></td>
+<td class="itemdesc">Trade updated (items changed)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeAdminServerPacket.html"><code>ITradeAdminServerPacket</code></a></td>
+<td class="itemdesc">Trade updated (items changed while trade was accepted)</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeAdminServerPacket.html"><code>TTradeAdminServerPacket</code></a></td>
+<td class="itemdesc">Trade updated (items changed while trade was accepted)</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeUseServerPacket.html"><code>ITradeUseServerPacket</code></a></td>
+<td class="itemdesc">Trade completed</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeUseServerPacket.html"><code>TTradeUseServerPacket</code></a></td>
+<td class="itemdesc">Trade completed</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeSpecServerPacket.html"><code>ITradeSpecServerPacket</code></a></td>
+<td class="itemdesc">Own agree state updated</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeSpecServerPacket.html"><code>TTradeSpecServerPacket</code></a></td>
+<td class="itemdesc">Own agree state updated</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeAgreeServerPacket.html"><code>ITradeAgreeServerPacket</code></a></td>
+<td class="itemdesc">Partner agree state updated</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeAgreeServerPacket.html"><code>TTradeAgreeServerPacket</code></a></td>
+<td class="itemdesc">Partner agree state updated</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ITradeCloseServerPacket.html"><code>ITradeCloseServerPacket</code></a></td>
+<td class="itemdesc">Partner closed trade window</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TTradeCloseServerPacket.html"><code>TTradeCloseServerPacket</code></a></td>
+<td class="itemdesc">Partner closed trade window</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcReplyServerPacket.html"><code>INpcReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC hit by a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcReplyServerPacket.html"><code>TNpcReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC hit by a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICastReplyServerPacket.html"><code>ICastReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC hit by a spell from a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCastReplyServerPacket.html"><code>TCastReplyServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC hit by a spell from a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcSpecServerPacket.html"><code>INpcSpecServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcSpecServerPacket.html"><code>TNpcSpecServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcAcceptServerPacket.html"><code>INpcAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed and killer leveled up</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcAcceptServerPacket.html"><code>TNpcAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed and killer leveled up</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICastSpecServerPacket.html"><code>ICastSpecServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player spell</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCastSpecServerPacket.html"><code>TCastSpecServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player spell</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.ICastAcceptServerPacket.html"><code>ICastAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player spell and killer leveled up</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TCastAcceptServerPacket.html"><code>TCastAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby NPC killed by player spell and killer leveled up</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcJunkServerPacket.html"><code>INpcJunkServerPacket</code></a></td>
+<td class="itemdesc">Clearing all boss children</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcJunkServerPacket.html"><code>TNpcJunkServerPacket</code></a></td>
+<td class="itemdesc">Clearing all boss children</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcPlayerServerPacket.html"><code>INpcPlayerServerPacket</code></a></td>
+<td class="itemdesc">Main NPC update message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcPlayerServerPacket.html"><code>TNpcPlayerServerPacket</code></a></td>
+<td class="itemdesc">Main NPC update message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.INpcDialogServerPacket.html"><code>INpcDialogServerPacket</code></a></td>
+<td class="itemdesc">NPC chat message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TNpcDialogServerPacket.html"><code>TNpcDialogServerPacket</code></a></td>
+<td class="itemdesc">NPC chat message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestReportServerPacket.html"><code>IQuestReportServerPacket</code></a></td>
+<td class="itemdesc">NPC chat messages</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestReportServerPacket.html"><code>TQuestReportServerPacket</code></a></td>
+<td class="itemdesc">NPC chat messages</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestDialogServerPacket.html"><code>IQuestDialogServerPacket</code></a></td>
+<td class="itemdesc">Quest selection dialog</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestDialogServerPacket.html"><code>TQuestDialogServerPacket</code></a></td>
+<td class="itemdesc">Quest selection dialog</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestListServerPacketPageData.html"><code>IQuestListServerPacketPageData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>Page</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestListServerPacketPageDataProgress.html"><code>IQuestListServerPacketPageDataProgress</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestListServerPacket.Page</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestListServerPacketPageDataProgress.html"><code>TQuestListServerPacketPageDataProgress</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestListServerPacket.Page</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestListServerPacketPageDataHistory.html"><code>IQuestListServerPacketPageDataHistory</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestListServerPacket.Page</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestListServerPacketPageDataHistory.html"><code>TQuestListServerPacketPageDataHistory</code></a></td>
+<td class="itemdesc">Data associated with <code>IQuestListServerPacket.Page</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IQuestListServerPacket.html"><code>IQuestListServerPacket</code></a></td>
+<td class="itemdesc">Quest history / progress reply</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TQuestListServerPacket.html"><code>TQuestListServerPacket</code></a></td>
+<td class="itemdesc">Quest history / progress reply</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IItemAcceptServerPacket.html"><code>IItemAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby player leveled up from quest</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TItemAcceptServerPacket.html"><code>TItemAcceptServerPacket</code></a></td>
+<td class="itemdesc">Nearby player leveled up from quest</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IArenaDropServerPacket.html"><code>IArenaDropServerPacket</code></a></td>
+<td class="itemdesc">&quot;Arena is blocked&quot; message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TArenaDropServerPacket.html"><code>TArenaDropServerPacket</code></a></td>
+<td class="itemdesc">&quot;Arena is blocked&quot; message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IArenaUseServerPacket.html"><code>IArenaUseServerPacket</code></a></td>
+<td class="itemdesc">Arena start message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TArenaUseServerPacket.html"><code>TArenaUseServerPacket</code></a></td>
+<td class="itemdesc">Arena start message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IArenaSpecServerPacket.html"><code>IArenaSpecServerPacket</code></a></td>
+<td class="itemdesc">Arena kill message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TArenaSpecServerPacket.html"><code>TArenaSpecServerPacket</code></a></td>
+<td class="itemdesc">Arena kill message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IArenaAcceptServerPacket.html"><code>IArenaAcceptServerPacket</code></a></td>
+<td class="itemdesc">Arena win message</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TArenaAcceptServerPacket.html"><code>TArenaAcceptServerPacket</code></a></td>
+<td class="itemdesc">Arena win message</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMarriageOpenServerPacket.html"><code>IMarriageOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a law NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMarriageOpenServerPacket.html"><code>TMarriageOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a law NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMarriageReplyServerPacketReplyCodeData.html"><code>IMarriageReplyServerPacketReplyCodeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>ReplyCode</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMarriageReplyServerPacketReplyCodeDataSuccess.html"><code>IMarriageReplyServerPacketReplyCodeDataSuccess</code></a></td>
+<td class="itemdesc">Data associated with <code>IMarriageReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMarriageReplyServerPacketReplyCodeDataSuccess.html"><code>TMarriageReplyServerPacketReplyCodeDataSuccess</code></a></td>
+<td class="itemdesc">Data associated with <code>IMarriageReplyServerPacket.ReplyCode</code> value <code>3</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMarriageReplyServerPacket.html"><code>IMarriageReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Marriage-family packets</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMarriageReplyServerPacket.html"><code>TMarriageReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Marriage-family packets</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPriestOpenServerPacket.html"><code>IPriestOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a priest NPC</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPriestOpenServerPacket.html"><code>TPriestOpenServerPacket</code></a></td>
+<td class="itemdesc">Response from talking to a priest NPC</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPriestReplyServerPacket.html"><code>IPriestReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Priest-family packets</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPriestReplyServerPacket.html"><code>TPriestReplyServerPacket</code></a></td>
+<td class="itemdesc">Reply to client Priest-family packets</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IPriestRequestServerPacket.html"><code>IPriestRequestServerPacket</code></a></td>
+<td class="itemdesc">Wedding request</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TPriestRequestServerPacket.html"><code>TPriestRequestServerPacket</code></a></td>
+<td class="itemdesc">Wedding request</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRecoverPlayerServerPacket.html"><code>IRecoverPlayerServerPacket</code></a></td>
+<td class="itemdesc">HP/TP update</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRecoverPlayerServerPacket.html"><code>TRecoverPlayerServerPacket</code></a></td>
+<td class="itemdesc">HP/TP update</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRecoverAgreeServerPacket.html"><code>IRecoverAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player gained HP</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRecoverAgreeServerPacket.html"><code>TRecoverAgreeServerPacket</code></a></td>
+<td class="itemdesc">Nearby player gained HP</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRecoverListServerPacket.html"><code>IRecoverListServerPacket</code></a></td>
+<td class="itemdesc">Stats update</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRecoverListServerPacket.html"><code>TRecoverListServerPacket</code></a></td>
+<td class="itemdesc">Stats update</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRecoverReplyServerPacket.html"><code>IRecoverReplyServerPacket</code></a></td>
+<td class="itemdesc">Karma/experience update</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRecoverReplyServerPacket.html"><code>TRecoverReplyServerPacket</code></a></td>
+<td class="itemdesc">Karma/experience update</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IRecoverTargetGroupServerPacket.html"><code>IRecoverTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Updated stats when levelling up from party experience</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TRecoverTargetGroupServerPacket.html"><code>TRecoverTargetGroupServerPacket</code></a></td>
+<td class="itemdesc">Updated stats when levelling up from party experience</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectUseServerPacketEffectData.html"><code>IEffectUseServerPacketEffectData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>Effect</code> field.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectUseServerPacketEffectDataQuake.html"><code>IEffectUseServerPacketEffectDataQuake</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectUseServerPacket.Effect</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectUseServerPacketEffectDataQuake.html"><code>TEffectUseServerPacketEffectDataQuake</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectUseServerPacket.Effect</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectUseServerPacket.html"><code>IEffectUseServerPacket</code></a></td>
+<td class="itemdesc">Map effect</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectUseServerPacket.html"><code>TEffectUseServerPacket</code></a></td>
+<td class="itemdesc">Map effect</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectAgreeServerPacket.html"><code>IEffectAgreeServerPacket</code></a></td>
+<td class="itemdesc">Effects playing on nearby tiles</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectAgreeServerPacket.html"><code>TEffectAgreeServerPacket</code></a></td>
+<td class="itemdesc">Effects playing on nearby tiles</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectTargetOtherServerPacket.html"><code>IEffectTargetOtherServerPacket</code></a></td>
+<td class="itemdesc">Map drain damage</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectTargetOtherServerPacket.html"><code>TEffectTargetOtherServerPacket</code></a></td>
+<td class="itemdesc">Map drain damage</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectReportServerPacket.html"><code>IEffectReportServerPacket</code></a></td>
+<td class="itemdesc">Map spike timer</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectReportServerPacket.html"><code>TEffectReportServerPacket</code></a></td>
+<td class="itemdesc">Map spike timer</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectSpecServerPacketMapDamageTypeData.html"><code>IEffectSpecServerPacketMapDamageTypeData</code></a></td>
+<td class="itemdesc">Data associated with different values of the <code>MapDamageType</code> field.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectSpecServerPacketMapDamageTypeDataTpDrain.html"><code>IEffectSpecServerPacketMapDamageTypeDataTpDrain</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectSpecServerPacket.MapDamageType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectSpecServerPacketMapDamageTypeDataTpDrain.html"><code>TEffectSpecServerPacketMapDamageTypeDataTpDrain</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectSpecServerPacket.MapDamageType</code> value <code>1</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectSpecServerPacketMapDamageTypeDataSpikes.html"><code>IEffectSpecServerPacketMapDamageTypeDataSpikes</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectSpecServerPacket.MapDamageType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectSpecServerPacketMapDamageTypeDataSpikes.html"><code>TEffectSpecServerPacketMapDamageTypeDataSpikes</code></a></td>
+<td class="itemdesc">Data associated with <code>IEffectSpecServerPacket.MapDamageType</code> value <code>2</code>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectSpecServerPacket.html"><code>IEffectSpecServerPacket</code></a></td>
+<td class="itemdesc">Taking spike or tp drain damage</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectSpecServerPacket.html"><code>TEffectSpecServerPacket</code></a></td>
+<td class="itemdesc">Taking spike or tp drain damage</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IEffectAdminServerPacket.html"><code>IEffectAdminServerPacket</code></a></td>
+<td class="itemdesc">Nearby character taking spike damage</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TEffectAdminServerPacket.html"><code>TEffectAdminServerPacket</code></a></td>
+<td class="itemdesc">Nearby character taking spike damage</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.IMusicPlayerServerPacket.html"><code>IMusicPlayerServerPacket</code></a></td>
+<td class="itemdesc">Sound effect</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html"><code>TMusicPlayerServerPacket</code></a></td>
+<td class="itemdesc">Sound effect</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TInitReply">TInitReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TInitBanType">TInitBanType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TCharacterIcon">TCharacterIcon</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TAvatarChangeType">TAvatarChangeType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TTalkReply">TTalkReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TSitState">TSitState</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TMapEffect">TMapEffect</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TGuildReply">TGuildReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TInnUnsubscribeReply">TInnUnsubscribeReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TCharacterReply">TCharacterReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TSkillMasterReply">TSkillMasterReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TAccountReply">TAccountReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TLoginReply">TLoginReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TDialogEntryType">TDialogEntryType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TQuestRequirementIcon">TQuestRequirementIcon</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TWarpEffect">TWarpEffect</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TWarpType">TWarpType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TWelcomeCode">TWelcomeCode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TLoginMessageCode">TLoginMessageCode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TAdminMessageType">TAdminMessageType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TPlayerKilledState">TPlayerKilledState</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TNpcKillStealProtectionState">TNpcKillStealProtectionState</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TMapDamageType">TMapDamageType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TMarriageReply">TMarriageReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TPriestReply">TPriestReply</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.Server.html#TPartyReplyCode">TPartyReplyCode</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInitReply"></span><code><strong>TInitReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with INIT_INIT packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="OutOfDate">OutOfDate = 1</span></li>
+<li>
+<span id="Ok">Ok = 2</span></li>
+<li>
+<span id="Banned">Banned = 3</span>: The official client won't display a message until the connection from the server is closed</li>
+<li>
+<span id="WarpMap">WarpMap = 4</span></li>
+<li>
+<span id="FileEmf">FileEmf = 5</span></li>
+<li>
+<span id="FileEif">FileEif = 6</span></li>
+<li>
+<span id="FileEnf">FileEnf = 7</span></li>
+<li>
+<span id="FileEsf">FileEsf = 8</span></li>
+<li>
+<span id="PlayersList">PlayersList = 9</span></li>
+<li>
+<span id="MapMutation">MapMutation = 10</span></li>
+<li>
+<span id="PlayersListFriends">PlayersListFriends = 11</span></li>
+<li>
+<span id="FileEcf">FileEcf = 12</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInitBanType"></span><code><strong>TInitBanType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ban type sent with INIT_INIT packet. The official client treats a value &gt;= 2 as Permanent. Otherwise, it's Temporary.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Temporary">Temporary = 1</span></li>
+<li>
+<span id="Permanent">Permanent = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TCharacterIcon"></span><code><strong>TCharacterIcon</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Icon displayed in paperdolls, books, and the online list</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Player">Player = 1</span></li>
+<li>
+<span id="Gm">Gm = 4</span></li>
+<li>
+<span id="Hgm">Hgm = 5</span></li>
+<li>
+<span id="Party">Party = 6</span></li>
+<li>
+<span id="GmParty">GmParty = 9</span></li>
+<li>
+<span id="HgmParty">HgmParty = 10</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAvatarChangeType"></span><code><strong>TAvatarChangeType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+How a player's appearance is changing</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Equipment">Equipment = 1</span></li>
+<li>
+<span id="Hair">Hair = 2</span></li>
+<li>
+<span id="HairColor">HairColor = 3</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TTalkReply"></span><code><strong>TTalkReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with TALK_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="NotFound">NotFound = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSitState"></span><code><strong>TSitState</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indicates how a player is sitting (or not sitting)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Stand">Stand = 0</span></li>
+<li>
+<span id="Chair">Chair = 1</span></li>
+<li>
+<span id="Floor">Floor = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapEffect"></span><code><strong>TMapEffect</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+An effect that occurs for all players on a map</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Quake">Quake = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGuildReply"></span><code><strong>TGuildReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with GUILD_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Busy">Busy = 1</span></li>
+<li>
+<span id="NotApproved">NotApproved = 2</span></li>
+<li>
+<span id="AlreadyMember">AlreadyMember = 3</span></li>
+<li>
+<span id="NoCandidates">NoCandidates = 4</span></li>
+<li>
+<span id="Exists">Exists = 5</span></li>
+<li>
+<span id="CreateBegin">CreateBegin = 6</span></li>
+<li>
+<span id="CreateAddConfirm">CreateAddConfirm = 7</span></li>
+<li>
+<span id="CreateAdd">CreateAdd = 8</span></li>
+<li>
+<span id="RecruiterOffline">RecruiterOffline = 9</span></li>
+<li>
+<span id="RecruiterNotHere">RecruiterNotHere = 10</span></li>
+<li>
+<span id="RecruiterWrongGuild">RecruiterWrongGuild = 11</span></li>
+<li>
+<span id="NotRecruiter">NotRecruiter = 12</span></li>
+<li>
+<span id="JoinRequest">JoinRequest = 13</span></li>
+<li>
+<span id="NotPresent">NotPresent = 14</span></li>
+<li>
+<span id="AccountLow">AccountLow = 15</span></li>
+<li>
+<span id="Accepted">Accepted = 16</span></li>
+<li>
+<span id="NotFound">NotFound = 17</span></li>
+<li>
+<span id="Updated">Updated = 18</span></li>
+<li>
+<span id="RanksUpdated">RanksUpdated = 19</span></li>
+<li>
+<span id="RemoveLeader">RemoveLeader = 20</span></li>
+<li>
+<span id="RemoveNotMember">RemoveNotMember = 21</span></li>
+<li>
+<span id="Removed">Removed = 22</span></li>
+<li>
+<span id="RankingLeader">RankingLeader = 23</span></li>
+<li>
+<span id="RankingNotMember">RankingNotMember = 24</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TInnUnsubscribeReply"></span><code><strong>TInnUnsubscribeReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with CITIZEN_REMOVE packet. Indicates the result of trying to give up citizenship to a town.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="NotCitizen">NotCitizen = 0</span></li>
+<li>
+<span id="Unsubscribed">Unsubscribed = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TCharacterReply"></span><code><strong>TCharacterReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with CHARACTER_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Exists">Exists = 1</span></li>
+<li>
+<span id="Full">Full = 2</span>: Only sent in reply to Character_Create packets. Displays the same message as CharacterReply.Full3 in the official client.</li>
+<li>
+<span id="Full3">Full3 = 3</span>: Only sent in reply to Character_Request packets. Displays the same message as CharacterReply.Full in the official client.</li>
+<li>
+<span id="NotApproved">NotApproved = 4</span></li>
+<li>
+<span id="Ok">Ok = 5</span></li>
+<li>
+<span id="Deleted">Deleted = 6</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSkillMasterReply"></span><code><strong>TSkillMasterReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with STATSKILL_REPLY packet. Indicates why an action was unsuccessful.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="RemoveItems">RemoveItems = 1</span></li>
+<li>
+<span id="WrongClass">WrongClass = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAccountReply"></span><code><strong>TAccountReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with ACCOUNT_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Exists">Exists = 1</span></li>
+<li>
+<span id="NotApproved">NotApproved = 2</span></li>
+<li>
+<span id="Created">Created = 3</span></li>
+<li>
+<span id="ChangeFailed">ChangeFailed = 5</span></li>
+<li>
+<span id="Changed">Changed = 6</span></li>
+<li>
+<span id="RequestDenied">RequestDenied = 7</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoginReply"></span><code><strong>TLoginReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with LOGIN_REPLY packet. Indicates the result of a login attempt.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="WrongUser">WrongUser = 1</span></li>
+<li>
+<span id="WrongUserPassword">WrongUserPassword = 2</span></li>
+<li>
+<span id="Ok">Ok = 3</span></li>
+<li>
+<span id="Banned">Banned = 4</span>: The official client won't display a message until the connection from the server is closed</li>
+<li>
+<span id="LoggedIn">LoggedIn = 5</span></li>
+<li>
+<span id="Busy">Busy = 6</span>: The official client won't display a message until the connection from the server is closed</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDialogEntryType"></span><code><strong>TDialogEntryType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The type of an entry in a quest dialog</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Text">Text = 1</span></li>
+<li>
+<span id="Link">Link = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TQuestRequirementIcon"></span><code><strong>TQuestRequirementIcon</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Icon displayed for each quest in the Quest Progress window</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Item">Item = 3</span></li>
+<li>
+<span id="Talk">Talk = 5</span></li>
+<li>
+<span id="Kill">Kill = 8</span></li>
+<li>
+<span id="Step">Step = 10</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWarpEffect"></span><code><strong>TWarpEffect</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+An effect that accompanies a player warp</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="None">None = 0</span>: Does nothing</li>
+<li>
+<span id="Scroll">Scroll = 1</span>: Plays the scroll sound effect</li>
+<li>
+<span id="Admin">Admin = 2</span>: Plays the admin warp sound effect and animation</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWarpType"></span><code><strong>TWarpType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indicates whether a warp is within the current map, or switching to another map</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Local">Local = 1</span></li>
+<li>
+<span id="MapSwitch">MapSwitch = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWelcomeCode"></span><code><strong>TWelcomeCode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with WELCOME_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="SelectCharacter">SelectCharacter = 1</span></li>
+<li>
+<span id="EnterGame">EnterGame = 2</span></li>
+<li>
+<span id="ServerBusy">ServerBusy = 3</span></li>
+<li>
+<span id="LoggedIn">LoggedIn = 4</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TLoginMessageCode"></span><code><strong>TLoginMessageCode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Whether a warning message should be displayed upon entering the game</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="No">No = 0</span></li>
+<li>
+<span id="Yes">Yes = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAdminMessageType"></span><code><strong>TAdminMessageType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Type of message sent to admins via the Help menu</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Message">Message = 1</span></li>
+<li>
+<span id="Report">Report = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPlayerKilledState"></span><code><strong>TPlayerKilledState</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Flag to indicate that a player has been killed</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Alive">Alive = 1</span></li>
+<li>
+<span id="Killed">Killed = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TNpcKillStealProtectionState"></span><code><strong>TNpcKillStealProtectionState</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Flag to indicate whether you are able to attack an NPC</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Unprotected">Unprotected = 1</span></li>
+<li>
+<span id="Protected">Protected = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMapDamageType"></span><code><strong>TMapDamageType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Type of damage being caused by the environment</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="TpDrain">TpDrain = 1</span></li>
+<li>
+<span id="Spikes">Spikes = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMarriageReply"></span><code><strong>TMarriageReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with MARRIAGE_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="AlreadyMarried">AlreadyMarried = 1</span></li>
+<li>
+<span id="NotMarried">NotMarried = 2</span></li>
+<li>
+<span id="Success">Success = 3</span></li>
+<li>
+<span id="NotEnoughGold">NotEnoughGold = 4</span></li>
+<li>
+<span id="WrongName">WrongName = 5</span></li>
+<li>
+<span id="ServiceBusy">ServiceBusy = 6</span></li>
+<li>
+<span id="DivorceNotification">DivorceNotification = 7</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPriestReply"></span><code><strong>TPriestReply</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with PRIEST_REPLY packet</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="NotDressed">NotDressed = 1</span></li>
+<li>
+<span id="LowLevel">LowLevel = 2</span></li>
+<li>
+<span id="PartnerNotPresent">PartnerNotPresent = 3</span></li>
+<li>
+<span id="PartnerNotDressed">PartnerNotDressed = 4</span></li>
+<li>
+<span id="Busy">Busy = 5</span></li>
+<li>
+<span id="DoYou">DoYou = 6</span></li>
+<li>
+<span id="PartnerAlreadyMarried">PartnerAlreadyMarried = 7</span></li>
+<li>
+<span id="NoPermission">NoPermission = 8</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPartyReplyCode"></span><code><strong>TPartyReplyCode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reply code sent with PARTY_REPLY packet. Indicates why an invite or join request failed.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="AlreadyInAnotherParty">AlreadyInAnotherParty = 0</span></li>
+<li>
+<span id="AlreadyInYourParty">AlreadyInYourParty = 1</span></li>
+<li>
+<span id="PartyIsFull">PartyIsFull = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

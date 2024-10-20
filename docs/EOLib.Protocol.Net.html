@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Protocol.Net</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit EOLib.Protocol.Net</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Generated from the eo-protocol XML specification.
+
+<p>This file should not be modified. Changes will be lost when code is regenerated.</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="EOLib.Data.html">EOLib.Data</a></li><li>System.SysUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.TPacketFamilyHelper.html"><code>TPacketFamilyHelper</code></a></td>
+<td class="itemdesc">Helper for the TPacketFamily enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.TPacketActionHelper.html"><code>TPacketActionHelper</code></a></td>
+<td class="itemdesc">Helper for the TPacketAction enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.TQuestPageHelper.html"><code>TQuestPageHelper</code></a></td>
+<td class="itemdesc">Helper for the TQuestPage enum type.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="EOLib.Protocol.Net.TPartyRequestTypeHelper.html"><code>TPartyRequestTypeHelper</code></a></td>
+<td class="itemdesc">Helper for the TPartyRequestType enum type.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.IVersion.html"><code>IVersion</code></a></td>
+<td class="itemdesc">Client version</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TVersion.html"><code>TVersion</code></a></td>
+<td class="itemdesc">Client version</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.IWeight.html"><code>IWeight</code></a></td>
+<td class="itemdesc">Current carry weight and maximum carry capacity of a player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TWeight.html"><code>TWeight</code></a></td>
+<td class="itemdesc">Current carry weight and maximum carry capacity of a player</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.IItem.html"><code>IItem</code></a></td>
+<td class="itemdesc">An item reference with a 4-byte amount</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TItem.html"><code>TItem</code></a></td>
+<td class="itemdesc">An item reference with a 4-byte amount</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.IThreeItem.html"><code>IThreeItem</code></a></td>
+<td class="itemdesc">An item reference with a 3-byte amount.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TThreeItem.html"><code>TThreeItem</code></a></td>
+<td class="itemdesc">An item reference with a 3-byte amount.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.ICharItem.html"><code>ICharItem</code></a></td>
+<td class="itemdesc">An item reference with a 1-byte amount.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TCharItem.html"><code>TCharItem</code></a></td>
+<td class="itemdesc">An item reference with a 1-byte amount.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="EOLib.Protocol.Net.ISpell.html"><code>ISpell</code></a></td>
+<td class="itemdesc">A spell known by the player</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="EOLib.Protocol.Net.TSpell.html"><code>TSpell</code></a></td>
+<td class="itemdesc">A spell known by the player</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.html#TPacketFamily">TPacketFamily</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.html#TPacketAction">TPacketAction</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="EOLib.Protocol.Net.html#TPartyRequestType">TPartyRequestType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPacketFamily"></span><code><strong>TPacketFamily</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The type of operation that a packet performs. Part of the unique packet ID.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Connection">Connection = 1</span></li>
+<li>
+<span id="Account">Account = 2</span></li>
+<li>
+<span id="Character">Character = 3</span></li>
+<li>
+<span id="Login">Login = 4</span></li>
+<li>
+<span id="Welcome">Welcome = 5</span></li>
+<li>
+<span id="Walk">Walk = 6</span></li>
+<li>
+<span id="Face">Face = 7</span></li>
+<li>
+<span id="Chair">Chair = 8</span></li>
+<li>
+<span id="Emote">Emote = 9</span></li>
+<li>
+<span id="Attack">Attack = 11</span></li>
+<li>
+<span id="Spell">Spell = 12</span></li>
+<li>
+<span id="Shop">Shop = 13</span></li>
+<li>
+<span id="Item">Item = 14</span></li>
+<li>
+<span id="StatSkill">StatSkill = 16</span></li>
+<li>
+<span id="Global">Global = 17</span></li>
+<li>
+<span id="Talk">Talk = 18</span></li>
+<li>
+<span id="Warp">Warp = 19</span></li>
+<li>
+<span id="Jukebox">Jukebox = 21</span></li>
+<li>
+<span id="Players">Players = 22</span></li>
+<li>
+<span id="Avatar">Avatar = 23</span></li>
+<li>
+<span id="Party">Party = 24</span></li>
+<li>
+<span id="Refresh">Refresh = 25</span></li>
+<li>
+<span id="Npc">Npc = 26</span></li>
+<li>
+<span id="PlayerRange">PlayerRange = 27</span></li>
+<li>
+<span id="NpcRange">NpcRange = 28</span></li>
+<li>
+<span id="Range">Range = 29</span></li>
+<li>
+<span id="Paperdoll">Paperdoll = 30</span></li>
+<li>
+<span id="Effect">Effect = 31</span></li>
+<li>
+<span id="Trade">Trade = 32</span></li>
+<li>
+<span id="Chest">Chest = 33</span></li>
+<li>
+<span id="Door">Door = 34</span></li>
+<li>
+<span id="Message">Message = 35</span></li>
+<li>
+<span id="Bank">Bank = 36</span></li>
+<li>
+<span id="Locker">Locker = 37</span></li>
+<li>
+<span id="Barber">Barber = 38</span></li>
+<li>
+<span id="Guild">Guild = 39</span></li>
+<li>
+<span id="Music">Music = 40</span></li>
+<li>
+<span id="Sit">Sit = 41</span></li>
+<li>
+<span id="Recover">Recover = 42</span></li>
+<li>
+<span id="Board">Board = 43</span></li>
+<li>
+<span id="Cast">Cast = 44</span></li>
+<li>
+<span id="Arena">Arena = 45</span></li>
+<li>
+<span id="Priest">Priest = 46</span></li>
+<li>
+<span id="Marriage">Marriage = 47</span></li>
+<li>
+<span id="AdminInteract">AdminInteract = 48</span></li>
+<li>
+<span id="Citizen">Citizen = 49</span></li>
+<li>
+<span id="Quest">Quest = 50</span></li>
+<li>
+<span id="Book">Book = 51</span></li>
+<li>
+<span id="Error">Error = 250</span></li>
+<li>
+<span id="Init">Init = 255</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPacketAction"></span><code><strong>TPacketAction</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The specific action that a packet performs. Part of the unique packet ID.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Request">Request = 1</span></li>
+<li>
+<span id="Accept">Accept = 2</span></li>
+<li>
+<span id="Reply">Reply = 3</span></li>
+<li>
+<span id="Remove">Remove = 4</span></li>
+<li>
+<span id="Agree">Agree = 5</span></li>
+<li>
+<span id="Create">Create = 6</span></li>
+<li>
+<span id="Add">Add = 7</span></li>
+<li>
+<span id="Player">Player = 8</span></li>
+<li>
+<span id="Take">Take = 9</span></li>
+<li>
+<span id="Use">Use = 10</span></li>
+<li>
+<span id="Buy">Buy = 11</span></li>
+<li>
+<span id="Sell">Sell = 12</span></li>
+<li>
+<span id="Open">Open = 13</span></li>
+<li>
+<span id="Close">Close = 14</span></li>
+<li>
+<span id="Msg">Msg = 15</span></li>
+<li>
+<span id="Spec">Spec = 16</span></li>
+<li>
+<span id="Admin">Admin = 17</span></li>
+<li>
+<span id="List">List = 18</span></li>
+<li>
+<span id="Tell">Tell = 20</span></li>
+<li>
+<span id="Report">Report = 21</span></li>
+<li>
+<span id="Announce">Announce = 22</span></li>
+<li>
+<span id="Server">Server = 23</span></li>
+<li>
+<span id="Drop">Drop = 24</span></li>
+<li>
+<span id="Junk">Junk = 25</span></li>
+<li>
+<span id="Obtain">Obtain = 26</span></li>
+<li>
+<span id="Get">Get = 27</span></li>
+<li>
+<span id="Kick">Kick = 28</span></li>
+<li>
+<span id="Rank">Rank = 29</span></li>
+<li>
+<span id="TargetSelf">TargetSelf = 30</span></li>
+<li>
+<span id="TargetOther">TargetOther = 31</span></li>
+<li>
+<span id="TargetGroup">TargetGroup = 33</span></li>
+<li>
+<span id="Dialog">Dialog = 34</span></li>
+<li>
+<span id="Ping">Ping = 240</span></li>
+<li>
+<span id="Pong">Pong = 241</span></li>
+<li>
+<span id="Net242">Net242 = 242</span></li>
+<li>
+<span id="Net243">Net243 = 243</span></li>
+<li>
+<span id="Net244">Net244 = 244</span></li>
+<li>
+<span id="Error">Error = 250</span></li>
+<li>
+<span id="Init">Init = 255</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TQuestPage"></span><code><strong>TQuestPage</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A page in the Quest menu</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Progress">Progress = 1</span></li>
+<li>
+<span id="History">History = 2</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPartyRequestType"></span><code><strong>TPartyRequestType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Whether a player is requesting to join a party, or inviting someone to join theirs</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="Join">Join = 0</span></li>
+<li>
+<span id="Invite">Invite = 1</span></li>
+</ul>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>

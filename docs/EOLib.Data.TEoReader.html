@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EOLib.Data: Class TEoReader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0-snapshot">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+<link rel="icon" href="logo.svg"></head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">EOLib</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TEoReader"></span><h1 class="cio">Class TEoReader</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="EOLib.Data.html">EOLib.Data</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TEoReader = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+A class for reading EO data from a sequence of bytes.
+
+<p><code>TEoReader</code> features a chunked reading mode, which is important for accurate emulation of the official game client.
+
+<p>See <a href="https://github.com/Cirras/eo-protocol/blob/master/docs/chunks.md">Chunked Reading</a>.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TEoReader</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="EOLib.Data.TEoReader.html#Create">Create</a></strong>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="EOLib.Data.TEoReader.html#Create-TArrayByte-">Create</a></strong>(const Data: TArray&lt;Byte&gt;); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#Slice">Slice</a></strong>: <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#Slice-Cardinal-">Slice</a></strong>(Index: Cardinal): <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#Slice-Cardinal-Cardinal-">Slice</a></strong>(Index: Cardinal; Length: Cardinal): <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetByte">GetByte</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetBytes-Cardinal-">GetBytes</a></strong>(Length: Cardinal): TArray&lt;Byte&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetChar">GetChar</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetShort">GetShort</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetThree">GetThree</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetInt">GetInt</a></strong>: Cardinal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetString">GetString</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetFixedString-Cardinal-Boolean-">GetFixedString</a></strong>(Length: Cardinal; Padded: Boolean = False): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetEncodedString">GetEncodedString</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Data.TEoReader.html#GetFixedEncodedString-Cardinal-Boolean-">GetFixedEncodedString</a></strong>(Length: Cardinal; Padded: Boolean = False): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Data.TEoReader.html#NextChunk">NextChunk</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Data.TEoReader.html#ChunkedReadingMode">ChunkedReadingMode</a></strong>: Boolean read FChunkedReadingMode write SetChunkedReadingMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Data.TEoReader.html#Remaining">Remaining</a></strong>: Cardinal read GetRemaining;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Data.TEoReader.html#Position">Position</a></strong>: Cardinal read GetPosition;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoReader</code> instance with no data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create-TArrayByte-"></span><code>constructor <strong>Create</strong>(const Data: TArray&lt;Byte&gt;); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoReader</code> instance for the specified data.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Data</dt>
+<dd>The byte array containing the input data</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Slice"></span><code>function <strong>Slice</strong>: <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoReader</code> whose input data is a shared subsequence of this reader's data.
+
+<p>The input data of the new reader will start at this reader's current position and contain all remaining data. The two reader's position and chunked reading mode will be independent.
+
+<p>The new reader's position will be zero, and its chunked reading mode will be <code>False</code>.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The new reader</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Slice-Cardinal-"></span><code>function <strong>Slice</strong>(Index: Cardinal): <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoReader</code> whose input data is a shared subsequence of this reader's data.
+
+<p>The input data of the new reader will start at this reader's current position and contain all remaining data. The two reader's position and chunked reading mode will be independent.
+
+<p>The new reader's position will be zero, and its chunked reading mode will be <code>False</code>.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Index</dt>
+<dd>The position in this reader at which the data of the new reader will start</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The new reader</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Slice-Cardinal-Cardinal-"></span><code>function <strong>Slice</strong>(Index: Cardinal; Length: Cardinal): <a href="EOLib.Data.TEoReader.html">TEoReader</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a new <code>TEoReader</code> whose input data is a shared subsequence of this reader's data.
+
+<p>The input data of the new reader will start at this reader's current position and contain all remaining data. The two reader's position and chunked reading mode will be independent.
+
+<p>The new reader's position will be zero, and its chunked reading mode will be <code>False</code>.
+
+<p> 
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Index</dt>
+<dd>The position in this reader at which the data of the new reader will start</dd>
+<dt>Length</dt>
+<dd>The length of the shared subsequence of data to supply to the new reader</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The new reader</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetByte"></span><code>function <strong>GetByte</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads a raw byte from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A raw byte</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBytes-Cardinal-"></span><code>function <strong>GetBytes</strong>(Length: Cardinal): TArray&lt;Byte&gt;;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an array of raw bytes from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">An array of raw bytes</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetChar"></span><code>function <strong>GetChar</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded 1-byte integer from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded 1-byte integer</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetShort"></span><code>function <strong>GetShort</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded 2-byte integer from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded 2-byte integer</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetThree"></span><code>function <strong>GetThree</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded 3-byte integer from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded 3-byte integer</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetInt"></span><code>function <strong>GetInt</strong>: Cardinal;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded 4-byte integer from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded 4-byte integer</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetString"></span><code>function <strong>GetString</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads a string from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A string</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFixedString-Cardinal-Boolean-"></span><code>function <strong>GetFixedString</strong>(Length: Cardinal; Padded: Boolean = False): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads a string with a fixed length from the input data.
+
+<p> 
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Length</dt>
+<dd>The length of the string</dd>
+<dt>Padded</dt>
+<dd><code>True</code> if the string is padded with trailing <code>$FF</code> bytes</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">A string</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEncodedString"></span><code>function <strong>GetEncodedString</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded string from the input data.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded string</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFixedEncodedString-Cardinal-Boolean-"></span><code>function <strong>GetFixedEncodedString</strong>(Length: Cardinal; Padded: Boolean = False): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Reads an encoded string with a fixed length from the input data.
+
+<p> 
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Length</dt>
+<dd>The length of the string</dd>
+<dt>Padded</dt>
+<dd><code>True</code> if the string is padded with trailing <code>$FF</code> bytes</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">A decoded string</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NextChunk"></span><code>procedure <strong>NextChunk</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Moves the reader position to the start of the next chunk in the input data.
+
+<p></p>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>EInvalidOpException</code></dt>
+<dd>If not in chunked reading mode</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ChunkedReadingMode"></span><code>property <strong>ChunkedReadingMode</strong>: Boolean read FChunkedReadingMode write SetChunkedReadingMode;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Whether chunked reading mode is enabled for this reader.
+
+<p>In chunked reading mode: </p>
+
+<ul class="paragraph_spacing">
+  <li><p>The reader will treat <code>$FF</code> bytes as the end of the current chunk.</p></li>
+  <li><p><a class="normal" href="EOLib.Data.TEoReader.html#NextChunk">TEoReader.NextChunk</a> can be called to move to the next chunk.</p></li>
+</ul>
+
+<p></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Remaining"></span><code>property <strong>Remaining</strong>: Cardinal read GetRemaining;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If chunked reading mode is enabled, the number of bytes remaining in the current chunk. <br> Otherwise, the total number of bytes remaining in the input data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Position"></span><code>property <strong>Position</strong>: Cardinal read GetPosition;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The current position in the input data.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0-snapshot</a>. </em>
+</span>
+</div></div></body></html>
