@@ -98,7 +98,7 @@ var
   J: Integer;
 begin
   if Length(Data) = 0 then begin
-    Exit
+    Exit;
   end;
 
   SetLength(Buffer{%H-}, Length(Data));

@@ -124,7 +124,7 @@ end;
 function TOptional<T>.OrElse(Default: T): T;
 begin
   if FIsPresent then begin
-    Result := FValue
+    Result := FValue;
   end
   else begin
     Result := Default;
@@ -136,7 +136,7 @@ end;
 function TOptional<T>.OrElseGet(Supplier: TFunc<T>): T;
 begin
   if FIsPresent then begin
-    Result := FValue
+    Result := FValue;
   end
   else begin
     Result := Supplier();
