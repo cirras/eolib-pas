@@ -188,7 +188,7 @@ begin
   SequenceLength := 0;
 
   for I := 0 to Length(Data) do begin
-    if (I <> Length(Data)) and (Byte(Data[I]) mod Multiple = 0) then begin
+    if (I <> Length(Data)) and (Data[I] mod Multiple = 0) then begin
       Inc(SequenceLength);
     end
     else begin
