@@ -95,7 +95,7 @@ procedure Interleave(var Data: TArray<Byte>);
 var
   Buffer: TArray<Byte>;
   I: Integer;
-  II: Integer;
+  J: Integer;
 begin
   if Length(Data) = 0 then begin
     Exit
@@ -104,12 +104,12 @@ begin
   SetLength(Buffer{%H-}, Length(Data));
 
   I := 0;
-  II := 0;
+  J := 0;
 
   while I < Length(Data) do begin
-    Buffer[I] := Data[II];
+    Buffer[I] := Data[J];
     Inc(I, 2);
-    Inc(II);
+    Inc(J);
   end;
 
   Dec(I);
@@ -119,9 +119,9 @@ begin
   end;
 
   while I >= 0 do begin
-    Buffer[I] := Data[II];
+    Buffer[I] := Data[J];
     Dec(I, 2);
-    Inc(II);
+    Inc(J);
   end;
 
   System.Move(Buffer[0], Data[0], Length(Data));
@@ -131,7 +131,7 @@ procedure Deinterleave(var Data: TArray<Byte>);
 var
   Buffer: TArray<Byte>;
   I: Integer;
-  II: Integer;
+  J: Integer;
 begin
   if Length(Data) = 0 then begin
     Exit
@@ -140,12 +140,12 @@ begin
   SetLength(Buffer{%H-}, Length(Data));
 
   I := 0;
-  II := 0;
+  J := 0;
 
   while I < Length(Data) do begin
-    Buffer[II] := Data[I];
+    Buffer[J] := Data[I];
     Inc(I, 2);
-    Inc(II);
+    Inc(J);
   end;
 
   Dec(I);
@@ -155,9 +155,9 @@ begin
   end;
 
   while I >= 0 do begin
-    Buffer[II] := Data[I];
+    Buffer[J] := Data[I];
     Dec(I, 2);
-    Inc(II);
+    Inc(J);
   end;
 
   System.Move(Buffer[0], Data[0], Length(Data));
@@ -178,7 +178,7 @@ procedure SwapMultiples(var Data: TArray<Byte>; Multiple: Cardinal);
 var
   SequenceLength: Integer;
   I: Integer;
-  II: Integer;
+  J: Integer;
   B: Byte;
 begin
   if Multiple = 0 then begin
@@ -193,10 +193,10 @@ begin
     end
     else begin
       if SequenceLength > 1 then begin
-        for II := 0 to (SequenceLength div 2) - 1 do begin
-          B := Data[I - SequenceLength + II];
-          Data[I - SequenceLength + II] := Data[I - II - 1];
-          Data[I - II - 1] := B;
+        for J := 0 to (SequenceLength div 2) - 1 do begin
+          B := Data[I - SequenceLength + J];
+          Data[I - SequenceLength + J] := Data[I - J - 1];
+          Data[I - J - 1] := B;
         end;
       end;
 
