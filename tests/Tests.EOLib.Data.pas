@@ -14,6 +14,7 @@ type
   end;
 
   TTestEoReader = class(TTestCase)
+    procedure TestCreateEmpty;
     procedure TestSlice;
     procedure TestSliceOverRead;
     procedure TestGetByte;
@@ -250,6 +251,15 @@ begin
 end;
 
 { TEoReaderTest }
+
+procedure TTestEoReader.TestCreateEmpty;
+var
+  Reader: TEoReader;
+begin
+  Reader := TEoReader.Create;
+  CheckEquals(0, Reader.Remaining);
+  FreeAndNil(Reader);
+end;
 
 procedure TTestEoReader.TestSlice;
 var
