@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Incorrect (de)serialization of some data structures containing arrays with trailing delimiters.
+
 ## [1.0.0-RC1] - 2024-10-20
 
 ### Added

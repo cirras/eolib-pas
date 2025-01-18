@@ -473,10 +473,6 @@ begin
   else if FDelimited then begin
     raise ECodeGenerationError.Create('Only arrays can be delimited.');
   end;
-
-  if not FDelimited and FTrailingDelimiter then begin
-    raise ECodeGenerationError.Create('Only delimited arrays can have a trailing delimiter.');
-  end;
 end;
 
 procedure TFieldCodeGenerator.ValidateLengthField;
@@ -1801,7 +1797,7 @@ begin
       .Comment(GetComment(Instruction))
       .ArrayField(True)
       .Delimited(Delimited)
-      .TrailingDelimiter(GetBooleanAttribute(Instruction, 'trailing-delimiter'))
+      .TrailingDelimiter(GetBooleanAttribute(Instruction, 'trailing-delimiter', True))
       .Build;
 
   try
