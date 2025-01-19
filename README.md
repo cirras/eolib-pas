@@ -1,5 +1,6 @@
 # EOLib
 [![quality gate](https://sonar.cirras.dev/api/project_badges/measure?project=eolib-pas&metric=alert_status&token=sqb_a7fd9fa574d6eb68c0ef97b9fdb6939ba2775345)](https://sonar.cirras.dev/dashboard?id=eolib-pas)
+[![build](https://github.com/cirras/eolib-pas/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/cirras/eolib-pas/actions/workflows/build.yml)
 [![test](https://github.com/cirras/eolib-pas/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/cirras/eolib-pas/actions/workflows/test.yml)
 
 A core Pascal library for writing applications related to Endless Online.
