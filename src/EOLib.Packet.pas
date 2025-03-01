@@ -47,10 +47,10 @@ type
 
   public
     { Creates an instance of @code(TAccountReplySequenceStart) from the value sent with the
-     ACCOUNT_REPLY server packet.
+      ACCOUNT_REPLY server packet.
 
-     @param(Value The sequence_start char value sent with the ACCOUNT_REPLY server packet)
-     @seeAlso(TAccountReplyServerPacketReplyCodeDataDefault.SequenceStart) }
+      @param(Value The sequence_start char value sent with the ACCOUNT_REPLY server packet)
+      @seeAlso(TAccountReplyServerPacketReplyCodeDataDefault.SequenceStart) }
     class function FromValue(Value: Cardinal): TAccountReplySequenceStart; static;
 
     { Creates an instance of @code(TAccountReplySequenceStart) with a random value in the range
@@ -76,12 +76,12 @@ type
 
   public
     { Creates an instance of @code(TInitSequenceStart) from the values sent with the INIT_INIT
-     server packet.
+      server packet.
 
-     @param(Seq1 The seq1 byte value sent with the INIT_INIT server packet)
-     @param(Seq2 The seq2 byte value sent with the INIT_INIT server packet)
-     @seeAlso(TInitInitServerPacketReplyCodeDataOk.Seq1)
-     @seeAlso(TInitInitServerPacketReplyCodeDataOk.Seq2)}
+      @param(Seq1 The seq1 byte value sent with the INIT_INIT server packet)
+      @param(Seq2 The seq2 byte value sent with the INIT_INIT server packet)
+      @seeAlso(TInitInitServerPacketReplyCodeDataOk.Seq1)
+      @seeAlso(TInitInitServerPacketReplyCodeDataOk.Seq2)}
     class function FromInitValues(Seq1: Cardinal; Seq2: Cardinal): TInitSequenceStart; static;
 
     { Creates an instance of @code(TInitSequenceStart) with a random value in the range (0-1757).
@@ -116,12 +116,12 @@ type
 
   public
     { Creates an instance of @code(TPingSequenceStart) from the values sent with the
-     CONNECTION_PLAYER server packet.
+      CONNECTION_PLAYER server packet.
 
-     @param(Seq1 The seq1 short value sent with the CONNECTION_PLAYER server packet)
-     @param(Seq2 The seq2 char value sent with the CONNECTION_PLAYER server packet)
-     @seeAlso(TConnectionPlayerServerPacket.Seq1)
-     @seeAlso(TConnectionPlayerServerPacket.Seq2)}
+      @param(Seq1 The seq1 short value sent with the CONNECTION_PLAYER server packet)
+      @param(Seq2 The seq2 char value sent with the CONNECTION_PLAYER server packet)
+      @seeAlso(TConnectionPlayerServerPacket.Seq1)
+      @seeAlso(TConnectionPlayerServerPacket.Seq2)}
     class function FromPingValues(Seq1: Cardinal; Seq2: Cardinal): TPingSequenceStart; static;
 
     { Creates an instance of @code(TPingSequenceStart) with a random value in the range (0-1757).

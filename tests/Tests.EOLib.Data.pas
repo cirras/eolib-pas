@@ -89,42 +89,61 @@ type
 
 const
   Numbers: array[0..23] of TNumberData = (
-      (Decoded: 0; Encoded: [$01, $FE, $FE, $FE]),
-      (Decoded: 1; Encoded: [$02, $FE, $FE, $FE]),
-      (Decoded: 28; Encoded: [$1D, $FE, $FE, $FE]),
-      (Decoded: 100; Encoded: [$65, $FE, $FE, $FE]),
-      (Decoded: 128; Encoded: [$81, $FE, $FE, $FE]),
-      (Decoded: 252; Encoded: [$FD, $FE, $FE, $FE]),
-      (Decoded: 253; Encoded: [$01, $02, $FE, $FE]),
-      (Decoded: 254; Encoded: [$02, $02, $FE, $FE]),
-      (Decoded: 255; Encoded: [$03, $02, $FE, $FE]),
-      (Decoded: 32003; Encoded: [$7E, $7F, $FE, $FE]),
-      (Decoded: 32004; Encoded: [$7F, $7F, $FE, $FE]),
-      (Decoded: 32005; Encoded: [$80, $7F, $FE, $FE]),
-      (Decoded: 64008; Encoded: [$FD, $FD, $FE, $FE]),
-      (Decoded: 64009; Encoded: [$01, $01, $02, $FE]),
-      (Decoded: 64010; Encoded: [$02, $01, $02, $FE]),
-      (Decoded: 10000000; Encoded: [$B0, $3A, $9D, $FE]),
-      (Decoded: 16194276; Encoded: [$FD, $FD, $FD, $FE]),
-      (Decoded: 16194277; Encoded: [$01, $01, $01, $02]),
-      (Decoded: 16194278; Encoded: [$02, $01, $01, $02]),
-      (Decoded: 2048576039; Encoded: [$7E, $7F, $7F, $7F]),
-      (Decoded: 2048576040; Encoded: [$7F, $7F, $7F, $7F]),
-      (Decoded: 2048576041; Encoded: [$80, $7F, $7F, $7F]),
-      (Decoded: 4097152079; Encoded: [$FC, $FD, $FD, $FD]),
-      (Decoded: 4097152080; Encoded: [$FD, $FD, $FD, $FD])
+    // pasfmt off
+    (Decoded: 0;          Encoded: [$01, $FE, $FE, $FE]),
+    (Decoded: 1;          Encoded: [$02, $FE, $FE, $FE]),
+    (Decoded: 28;         Encoded: [$1D, $FE, $FE, $FE]),
+    (Decoded: 100;        Encoded: [$65, $FE, $FE, $FE]),
+    (Decoded: 128;        Encoded: [$81, $FE, $FE, $FE]),
+    (Decoded: 252;        Encoded: [$FD, $FE, $FE, $FE]),
+    (Decoded: 253;        Encoded: [$01, $02, $FE, $FE]),
+    (Decoded: 254;        Encoded: [$02, $02, $FE, $FE]),
+    (Decoded: 255;        Encoded: [$03, $02, $FE, $FE]),
+    (Decoded: 32003;      Encoded: [$7E, $7F, $FE, $FE]),
+    (Decoded: 32004;      Encoded: [$7F, $7F, $FE, $FE]),
+    (Decoded: 32005;      Encoded: [$80, $7F, $FE, $FE]),
+    (Decoded: 64008;      Encoded: [$FD, $FD, $FE, $FE]),
+    (Decoded: 64009;      Encoded: [$01, $01, $02, $FE]),
+    (Decoded: 64010;      Encoded: [$02, $01, $02, $FE]),
+    (Decoded: 10000000;   Encoded: [$B0, $3A, $9D, $FE]),
+    (Decoded: 16194276;   Encoded: [$FD, $FD, $FD, $FE]),
+    (Decoded: 16194277;   Encoded: [$01, $01, $01, $02]),
+    (Decoded: 16194278;   Encoded: [$02, $01, $01, $02]),
+    (Decoded: 2048576039; Encoded: [$7E, $7F, $7F, $7F]),
+    (Decoded: 2048576040; Encoded: [$7F, $7F, $7F, $7F]),
+    (Decoded: 2048576041; Encoded: [$80, $7F, $7F, $7F]),
+    (Decoded: 4097152079; Encoded: [$FC, $FD, $FD, $FD]),
+    (Decoded: 4097152080; Encoded: [$FD, $FD, $FD, $FD])
+    // pasfmt on
   );
 
   Strings: array[0..5] of TStringData = (
-      (Decoded: 'Hello, World!'; Encoded: '!;a-^H s^3a:)'),
-      (
-          Decoded: 'We''re ¼ of the way there, so ¾ is remaining.';
-          Encoded: 'C8_6_6l2h- ,d ¾ ^, sh-h7Y T>V h7Y g0 ¼ :[xhH'
-      ),
-      (Decoded: '64² = 4096'; Encoded: ';fAk b ²=i'),
-      (Decoded: '© FÒÖ BÃR BÅZ 2014'; Encoded: '=nAm EÅ] MÃ] ÖÒY ©'),
-      (Decoded: 'Öxxö Xööx "Lëïth Säë" - "Ÿ"'; Encoded: 'OŸO D OëäL 7YïëSO UööG öU''Ö'),
-      (Decoded: 'Padded with 0xFFÿÿÿÿÿÿÿÿ'; Encoded: 'ÿÿÿÿÿÿÿÿ+YUo 7Y6V i:i;lO')
+    // pasfmt off
+    (
+      Decoded: 'Hello, World!';
+      Encoded: '!;a-^H s^3a:)'
+    ),
+    (
+      Decoded: 'We''re ¼ of the way there, so ¾ is remaining.';
+      Encoded: 'C8_6_6l2h- ,d ¾ ^, sh-h7Y T>V h7Y g0 ¼ :[xhH'
+    ),
+    (
+      Decoded: '64² = 4096';
+      Encoded: ';fAk b ²=i'
+    ),
+    (
+      Decoded: '© FÒÖ BÃR BÅZ 2014';
+      Encoded: '=nAm EÅ] MÃ] ÖÒY ©'
+    ),
+    (
+      Decoded: 'Öxxö Xööx "Lëïth Säë" - "Ÿ"';
+      Encoded: 'OŸO D OëäL 7YïëSO UööG öU''Ö'
+    ),
+    (
+      Decoded: 'Padded with 0xFFÿÿÿÿÿÿÿÿ';
+      Encoded: 'ÿÿÿÿÿÿÿÿ+YUo 7Y6V i:i;lO'
+    )
+    // pasfmt on
   );
 
 function ToBytes(Str: string): TArray<Byte>;
@@ -393,33 +412,10 @@ begin
   Reader :=
       CreateReader(
           [
-              $01,
-              $FE,
-              $FE,
-              $02,
-              $FE,
-              $FE,
-              $80,
-              $FE,
-              $FE,
-              $FD,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $80,
-              $81,
-              $7F,
-              $7F,
-              $FE,
-              $FD,
-              $FD,
-              $FE,
-              $FD,
-              $FD,
-              $FD
+            // pasfmt off
+            $01, $FE, $FE, $02, $FE, $FE, $80, $FE, $FE, $FD, $FE, $FE, $FE, $FE, $FE, $FE, $80, $81, $7F, $7F, $FE,
+            $FD, $FD, $FE, $FD, $FD, $FD
+            // pasfmt on
           ]
       );
 
@@ -443,50 +439,11 @@ begin
   Reader :=
       CreateReader(
           [
-              $01,
-              $FE,
-              $FE,
-              $FE,
-              $02,
-              $FE,
-              $FE,
-              $FE,
-              $80,
-              $FE,
-              $FE,
-              $FE,
-              $FD,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $FE,
-              $80,
-              $81,
-              $82,
-              $7F,
-              $7F,
-              $FE,
-              $FE,
-              $FD,
-              $FD,
-              $FE,
-              $FE,
-              $FD,
-              $FD,
-              $FD,
-              $FE,
-              $7F,
-              $7F,
-              $7F,
-              $7F,
-              $FD,
-              $FD,
-              $FD,
-              $FD
+            // pasfmt off
+            $01, $FE, $FE, $FE, $02, $FE, $FE, $FE, $80, $FE, $FE, $FE, $FD, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE,
+            $80, $81, $82, $7F, $7F, $FE, $FE, $FD, $FD, $FE, $FE, $FD, $FD, $FD, $FE, $7F, $7F, $7F, $7F, $FD, $FD,
+            $FD, $FD
+            // pasfmt on
           ]
       );
 

@@ -666,8 +666,7 @@ begin
   ErrorMessage :=
       'Expected length of ' + EscapeKeyword(DelphiName) + ' to be ' + ExpectedLengthDescription + ', got %d.';
 
-  FData
-      .Serialize
+  (FData.Serialize)
       .AddLine(Format('if Length(F%s) %s %s then begin', [DelphiName, LengthCheckOperator, LengthExpression]))
       .Indent
       .AddLine(
@@ -837,8 +836,7 @@ begin
   ListVariableName := DelphiName + 'List';
   FData.AddDeserializeVar(ListVariableName, Format('TList<%s>', [GetDelphiTypeName(True)]));
 
-  FData
-      .Deserialize
+  (FData.Deserialize)
       .AddLine(Format('%s := TList<%s>.Create;', [ListVariableName, GetDelphiTypeName(True)]))
       .AddLine('try')
       .Indent
@@ -874,8 +872,7 @@ begin
     end;
   end;
 
-  FData
-      .Deserialize
+  (FData.Deserialize)
       .Unindent
       .AddLine('end;')
       .AddLine(Format('Result.F%s := %s.ToArray;', [DelphiName, ListVariableName]))
@@ -1164,8 +1161,7 @@ begin
 
   FData.ReadWriteMethodDeclarations.AddLine(Format('function Get%s: %s;', [DelphiName, DelphiTypeName]));
   FData.MethodImplementations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, DelphiName, DelphiTypeName]))
           .AddLine('begin')
           .Indent
@@ -1182,8 +1178,7 @@ begin
     );
 
     FData.MethodImplementations.Add(
-        TCodeBlock
-            .Create
+        (TCodeBlock.Create)
             .AddLine(
                 Format(
                     'procedure %s.Set%s(%s: %s);',
@@ -1228,7 +1223,12 @@ begin
 
     FData.Serialize.AddLine(Format('for I := 0 to %s do begin', [ForLoopFinalValue])).Indent;
     if FDelimited and not FTrailingDelimiter then begin
-      FData.Serialize.AddLine('if I > 0 then begin').Indent.AddLine('Writer.AddByte($FF);').Unindent.AddLine('end;');
+      (FData.Serialize) //
+          .AddLine('if I > 0 then begin')
+          .Indent
+          .AddLine('Writer.AddByte($FF);')
+          .Unindent
+          .AddLine('end;');
     end;
   end;
 
@@ -1563,8 +1563,7 @@ begin
   Slice := TPascalUnitSlice.Create;
 
   Slice.TypeDeclarations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine(Format('{ Data associated with different values of the @code(%s) field. }', [CaseDataProperty]))
           .AddLine(Format('%s = interface(IInterface)', [GetInterfaceTypeName]))
           .Indent
@@ -1592,14 +1591,12 @@ begin
 
   FData.Fields.AddLine(Format('F%s: %s;', [CaseDataFieldName, InterfaceTypeName]));
 
-  FData
-      .MethodDeclarations
+  (FData.MethodDeclarations)
       .AddLine(Format('function Get%s: %s;', [CaseDataFieldName, InterfaceTypeName]))
       .AddLine(Format('procedure Set%0:s(%0:s: %1:s);', [CaseDataFieldName, InterfaceTypeName]));
 
   FData.MethodImplementations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
           .AddLine('begin')
           .Indent
@@ -1609,8 +1606,7 @@ begin
   );
 
   FData.MethodImplementations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine(
               Format(
                   'procedure %0:s.Set%1:s(%1:s: %2:s);',
@@ -1623,8 +1619,7 @@ begin
           .AddLine('end;')
   );
 
-  FData
-      .Properties
+  (FData.Properties)
       .AddLine(Format('{ Data associated with the @code(%s) field. }', [SwitchFieldName]))
       .AddLine(Format('property %0:s: %1:s read Get%0:s write Set%0:s;', [CaseDataFieldName, InterfaceTypeName]));
 end;
@@ -1695,8 +1690,7 @@ begin
             [CaseDataFieldName, CaseFieldName, FieldValueExpression, CaseDataFieldName]
         );
 
-    FData
-        .Serialize
+    (FData.Serialize)
         .AddLine(Format('if Assigned(F%s) then begin', [CaseDataFieldName]))
         .Indent
         .AddLine(Format('raise ESerializationError.Create(%s);', [SerializationErrorMessage]))
@@ -1717,8 +1711,7 @@ begin
             [CaseDataFieldName, CaseDataTypeName, CaseFieldName, FieldValueExpression]
         );
 
-    FData
-        .Serialize
+    (FData.Serialize)
         .AddLine(Format('if not Supports(F%s, %s) then begin', [CaseDataFieldName, CaseDataTypeName]))
         .Indent
         .AddLine(Format('ErrorMessage := %s;', [SerializationErrorMessage]))
@@ -1938,7 +1931,12 @@ var
   CaseContext: TObjectGenerationContext;
 begin
   SwitchCodeGenerator :=
-      TSwitchCodeGenerator.Create(GetRequiredStringAttribute(Instruction, 'field'), FTypeFactory, FContext, FData);
+      TSwitchCodeGenerator.Create( //
+          GetRequiredStringAttribute(Instruction, 'field'),
+          FTypeFactory,
+          FContext,
+          FData
+      );
 
   ProtocolCases := GetElementsByTagName(Instruction, 'case');
 
@@ -2152,16 +2150,14 @@ begin
   end;
 
   MethodDeclarations :=
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine('function GetByteSize: Cardinal;')
           .AddCodeBlock(FData.ReadWriteMethodDeclarations)
           .AddLine
           .AddCodeBlock(FData.MethodDeclarations);
 
   Properties :=
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .AddLine('{ The size of the data that this object was deserialized from.')
           .AddLine('  @note(0 if the instance was not created by the @code(Deserialize) method.) }')
           .AddLine('property ByteSize: Cardinal read GetByteSize;')
@@ -2181,8 +2177,7 @@ begin
   ClassSlice := TPascalUnitSlice.Create;
 
   InterfaceSlice.TypeDeclarations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .Add(FData.PasDoc)
           .AddLine(Format('%s = interface%s', [FData.InterfaceTypeName, InterfaceAncestorList]))
           .Indent
@@ -2199,8 +2194,7 @@ begin
   );
 
   ClassSlice.TypeDeclarations.Add(
-      TCodeBlock
-          .Create
+      (TCodeBlock.Create)
           .Add(FData.PasDoc)
           .AddLine(Format('%s = class%s', [FData.ClassTypeName, ClassAncestorList]))
           .AddLine('strict private')
@@ -2230,8 +2224,7 @@ begin
   FreeAndNil(MethodDeclarations);
   FreeAndNil(Properties);
 
-  ClassSlice
-      .ImplementationBlock
+  (ClassSlice.ImplementationBlock)
       .AddLine(Format('{ %s }', [FData.ClassTypeName]))
       .AddLine
       .AddCodeBlock(ConstructorImplementation)
@@ -2249,8 +2242,7 @@ begin
     ClassSlice.ImplementationBlock.AddCodeBlock(Block).AddLine;
   end;
 
-  ClassSlice
-      .ImplementationBlock
+  (ClassSlice.ImplementationBlock)
       .AddLine(Format('procedure %s.Serialize(Writer: TEoWriter);', [FData.ClassTypeName]))
       .Add(VarDeclarations(FData.SerializeVars))
       .AddLine('begin')

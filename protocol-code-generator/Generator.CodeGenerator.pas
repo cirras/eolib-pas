@@ -310,8 +310,7 @@ begin
 
   Slice.TypeDeclarations.AddRange(
       [
-          TCodeBlock
-              .Create
+          (TCodeBlock.Create)
               .Add(GeneratePasDoc(GetComment(ProtocolEnum)))
               .AddLine(Format('%s = (', [EnumName]))
               .Indent
@@ -319,8 +318,7 @@ begin
               .AddLine
               .Unindent
               .AddLine(');'),
-          TCodeBlock
-              .Create
+          (TCodeBlock.Create)
               .AddLine(Format('{ Helper for the %s enum type. }', [EnumName]))
               .AddLine(Format('%0:sHelper = record helper for %0:s', [EnumName]))
               .Indent
@@ -343,8 +341,7 @@ begin
       ]
   );
 
-  Slice
-      .ImplementationBlock
+  (Slice.ImplementationBlock)
       .AddLine(Format('{ %sHelper }', [EnumName]))
       .AddLine
       .AddLine(Format('class function %0:sHelper.FromInt(Value: Cardinal): %0:s;', [EnumName]))
@@ -461,9 +458,7 @@ begin
       raise ECodeGenerationError.CreateFmt('Unknown packet action "%s"', [ActionName]);
     end;
 
-    ObjectCodeGenerator
-        .Data
-        .ClassMethodDeclarations
+    (ObjectCodeGenerator.Data.ClassMethodDeclarations)
         .AddLine('{ Returns the packet family associated with this packet.')
         .AddLine('  @returns(The packet family associated with this packet) }')
         .AddLine('class function PacketFamily: TPacketFamily;')
@@ -472,9 +467,7 @@ begin
         .AddLine('class function PacketAction: TPacketAction;')
         .AddUses('EOLib.Protocol.Packet');
 
-    ObjectCodeGenerator
-        .Data
-        .MethodDeclarations
+    (ObjectCodeGenerator.Data.MethodDeclarations)
         .AddLine('{ Returns the packet family associated with this packet.')
         .AddLine('  @returns(The packet family associated with this packet) }')
         .AddLine('function Family: TPacketFamily;')
@@ -484,24 +477,21 @@ begin
 
     ObjectCodeGenerator.Data.MethodImplementations.AddRange(
         [
-            TCodeBlock
-                .Create
+            (TCodeBlock.Create)
                 .AddLine(Format('function %s.Family: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
                 .AddLine('begin')
                 .Indent
                 .AddLine('Result := PacketFamily;')
                 .Unindent
                 .AddLine('end;'),
-            TCodeBlock
-                .Create
+            (TCodeBlock.Create)
                 .AddLine(Format('function %s.Action: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
                 .AddLine('begin')
                 .Indent
                 .AddLine('Result := PacketAction;')
                 .Unindent
                 .AddLine('end;'),
-            TCodeBlock
-                .Create
+            (TCodeBlock.Create)
                 .AddLine(
                     Format('class function %s.PacketFamily: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
                 .AddLine('begin')
@@ -509,8 +499,7 @@ begin
                 .AddLine(Format('Result := TPacketFamily.%s;', [FamilyName]))
                 .Unindent
                 .AddLine('end;'),
-            TCodeBlock
-                .Create
+            (TCodeBlock.Create)
                 .AddLine(
                     Format('class function %s.PacketAction: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
                 .AddLine('begin')
