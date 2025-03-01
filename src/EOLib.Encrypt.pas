@@ -5,6 +5,7 @@ unit EOLib.Encrypt;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 interface

@@ -5,6 +5,7 @@ unit EOLib.Protocol.Packet;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 interface

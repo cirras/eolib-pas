@@ -5,6 +5,7 @@ unit EOLib.Utils.Optional;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 interface

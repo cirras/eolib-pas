@@ -5,6 +5,7 @@ unit EOLib.Data;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 interface

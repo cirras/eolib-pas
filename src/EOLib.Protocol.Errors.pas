@@ -5,6 +5,7 @@ unit EOLib.Protocol.Errors;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 interface

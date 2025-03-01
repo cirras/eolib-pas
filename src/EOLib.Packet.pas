@@ -5,6 +5,7 @@ unit EOLib.Packet;
   {$MODE DELPHIUNICODE}
   {$H+}
   {$WARNINGS OFF}
+  {$HINTS OFF}
 {$ENDIF}
 
 {$R-}

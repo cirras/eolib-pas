@@ -226,6 +226,7 @@ procedure TPascalUnit.Write(OutputDirectory: string);
             + ('{$IFDEF FPC}' + CRLF)
             + ('  {$MODE DELPHIUNICODE}{$H+}' + CRLF)
             + ('  {$WARNINGS OFF}' + CRLF)
+            + ('  {$HINTS OFF}' + CRLF)
             + ('{$ENDIF}' + CRLF)
             + CRLF
             + ('{$SCOPEDENUMS ON}' + CRLF)
