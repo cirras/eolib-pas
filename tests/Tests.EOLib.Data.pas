@@ -1,5 +1,8 @@
 ﻿unit Tests.EOLib.Data;
 
+{$WARN 4104 OFF}
+{$WARN 5091 OFF}
+
 interface
 
 uses
