@@ -24,4 +24,4 @@ jobs:
         run: lazbuild tests\fpc\FPC.lpi
 
       - name: Run tests
-        run: .\tests\fpc\FPC.exe --all --format-plain
+        run: .\tests\fpc\FPC.exe --all --format=plain
