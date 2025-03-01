@@ -95,24 +95,10 @@ var
   Optional: TOptional<Integer>;
 begin
   Optional := TOptional<Integer>.From(60);
-  CheckEquals(
-    60,
-    Optional.OrElseGet(
-      function: Integer
-      begin
-        Result := 70;
-      end),
-    'Expected value to be 60.');
+  CheckEquals(60, Optional.OrElseGet(function: Integer begin Result := 70; end), 'Expected value to be 60.');
 
   Optional := TOptional<Integer>.Empty;
-  CheckEquals(
-    70,
-    Optional.OrElseGet(
-      function: Integer
-      begin
-        Result := 70;
-      end),
-    'Expected value to be 70.');
+  CheckEquals(70, Optional.OrElseGet(function: Integer begin Result := 70; end), 'Expected value to be 70.');
 end;
 
 procedure TTestOptional.TestIfPresent;
@@ -123,20 +109,17 @@ begin
   Called := False;
   Optional := TOptional<Integer>.From(80);
   Optional.IfPresent(
-    procedure(Value: Integer)
-    begin
-      Called := True;
-      CheckEquals(80, Value, 'Expected value to be 80.');
-    end);
+      procedure(Value: Integer)
+      begin
+        Called := True;
+        CheckEquals(80, Value, 'Expected value to be 80.');
+      end
+  );
   CheckTrue(Called, 'Expected consumer to be called.');
 
   Called := False;
   Optional := TOptional<Integer>.Empty;
-  Optional.IfPresent(
-    procedure(Value: Integer)
-    begin
-      Called := True;
-    end);
+  Optional.IfPresent(procedure(Value: Integer) begin Called := True; end);
   CheckFalse(Called, 'Expected consumer not to be called for empty optional.');
 end;
 
@@ -155,4 +138,3 @@ initialization
   RegisterTest(TTestOptional.Suite);
 
 end.
-

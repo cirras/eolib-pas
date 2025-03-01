@@ -2,7 +2,8 @@
 unit EOLib.Protocol.Packet;
 
 {$IFDEF FPC}
-  {$MODE DELPHIUNICODE}{$H+}
+  {$MODE DELPHIUNICODE}
+  {$H+}
   {$WARNINGS OFF}
 {$ENDIF}
 

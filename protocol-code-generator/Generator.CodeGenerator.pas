@@ -1,6 +1,7 @@
 ﻿unit Generator.CodeGenerator;
 
-{$MODE DELPHIUNICODE}{$H+}
+{$MODE DELPHIUNICODE}
+{$H+}
 
 interface
 
@@ -196,10 +197,11 @@ begin
   DeclaredPackets := THashSet<string>.Create;
   try
     for Element in PacketElements do begin
-      PacketIdentifier := Format(
-        '%s_%s',
-        [GetRequiredStringAttribute(Element, 'family'), GetRequiredStringAttribute(Element, 'action')]
-      );
+      PacketIdentifier :=
+          Format(
+              '%s_%s',
+              [GetRequiredStringAttribute(Element, 'family'), GetRequiredStringAttribute(Element, 'action')]
+          );
       if not DeclaredPackets.Add(PacketIdentifier) then begin
         raise Exception.CreateFmt('%s packet cannot be redefined in the same file.', [PacketIdentifier]);
       end;
@@ -306,69 +308,75 @@ begin
 
   Slice := TPascalUnitSlice.Create;
 
-  Slice.TypeDeclarations.AddRange([
-    TCodeBlock.Create
-      .Add(GeneratePasDoc(GetComment(ProtocolEnum)))
-      .AddLine(Format('%s = (', [EnumName]))
-      .Indent
-      .Add(GenerateEnumValues(EnumType as TEnumType))
+  Slice.TypeDeclarations.AddRange(
+      [
+          TCodeBlock
+              .Create
+              .Add(GeneratePasDoc(GetComment(ProtocolEnum)))
+              .AddLine(Format('%s = (', [EnumName]))
+              .Indent
+              .Add(GenerateEnumValues(EnumType as TEnumType))
+              .AddLine
+              .Unindent
+              .AddLine(');'),
+          TCodeBlock
+              .Create
+              .AddLine(Format('{ Helper for the %s enum type. }', [EnumName]))
+              .AddLine(Format('%0:sHelper = record helper for %0:s', [EnumName]))
+              .Indent
+              .AddLine(Format('{ Converts an ordinal value to a @link(%s) enum value.', [EnumName]))
+              .AddLine('  @param(Value The ordinal value to convert)')
+              .AddLine(Format('  @returns(A @link(%s) enum value from the given ordinal value) }', [EnumName]))
+              .AddLine(Format('class function FromInt(Value: Cardinal): %s; static; inline;', [EnumName]))
+              .AddLine(Format('{ Converts the @link(%s) enum value to its corresponding ordinal value.', [EnumName]))
+              .AddLine(Format('  @returns(The ordinal representation of the @link(%s) value)', [EnumName]))
+              .AddLine('  @note(')
+              .AddLine('    Protocol enums may hold out-of-bounds "unrecognized" values, which would cause')
+              .AddLine(
+                  '    range-checking errors with @code(Ord). @br @name is safe to use with range-checking enabled.) }')
+              .AddLine('function ToInt: Cardinal; inline;')
+              .AddLine(Format('{ Converts the @link(%s) enum value to its string representation.', [EnumName]))
+              .AddLine(Format('  @returns(The string representation of the %s value) }', [EnumName]))
+              .AddLine('function ToString: string;')
+              .Unindent
+              .AddLine('end;')
+      ]
+  );
+
+  Slice
+      .ImplementationBlock
+      .AddLine(Format('{ %sHelper }', [EnumName]))
       .AddLine
-      .Unindent
-      .AddLine(');'),
-    TCodeBlock.Create
-      .AddLine(Format('{ Helper for the %s enum type. }', [EnumName]))
-      .AddLine(Format('%0:sHelper = record helper for %0:s', [EnumName]))
+      .AddLine(Format('class function %0:sHelper.FromInt(Value: Cardinal): %0:s;', [EnumName]))
+      .AddLine('begin')
       .Indent
-      .AddLine(Format('{ Converts an ordinal value to a @link(%s) enum value.', [EnumName]))
-      .AddLine('  @param(Value The ordinal value to convert)')
-      .AddLine(Format('  @returns(A @link(%s) enum value from the given ordinal value) }', [EnumName]))
-      .AddLine(Format('class function FromInt(Value: Cardinal): %s; static; inline;', [EnumName]))
-      .AddLine(Format('{ Converts the @link(%s) enum value to its corresponding ordinal value.', [EnumName]))
-      .AddLine(Format('  @returns(The ordinal representation of the @link(%s) value)', [EnumName]))
-      .AddLine('  @note(')
-      .AddLine('    Protocol enums may hold out-of-bounds "unrecognized" values, which would cause')
-      .AddLine('    range-checking errors with @code(Ord). @br @name is safe to use with range-checking enabled.) }')
-      .AddLine('function ToInt: Cardinal; inline;')
-      .AddLine(Format('{ Converts the @link(%s) enum value to its string representation.', [EnumName]))
-      .AddLine(Format('  @returns(The string representation of the %s value) }', [EnumName]))
-      .AddLine('function ToString: string;')
+      .AddLine(Format('Result := %s(Value);', [EnumName]))
       .Unindent
       .AddLine('end;')
-  ]);
-
-  Slice.ImplementationBlock
-    .AddLine(Format('{ %sHelper }', [EnumName]))
-    .AddLine
-    .AddLine(Format('class function %0:sHelper.FromInt(Value: Cardinal): %0:s;', [EnumName]))
-    .AddLine('begin')
-    .Indent
-    .AddLine(Format('Result := %s(Value);', [EnumName]))
-    .Unindent
-    .AddLine('end;')
-    .AddLine
-    .AddLine(Format('function %0:sHelper.ToInt: Cardinal;', [EnumName]))
-    .AddLine('begin')
-    .Indent
-    .AddLine('Result := Cardinal(Self);')
-    .Unindent
-    .AddLine('end;')
-    .AddLine
-    .AddLine(Format('function %0:sHelper.ToString: string;', [EnumName]))
-    .AddLine('begin')
-    .Indent
-    .AddLine('case Self.ToInt of')
-    .Indent
-    .Add(GenerateToStringCases(EnumType as TEnumType))
-    .AddLine('else begin')
-    .Indent
-    .AddLine('Result := Format(''Unrecognized(%d)'', [Self.ToInt]);')
-    .Unindent
-    .AddLine('end;')
-    .Unindent
-    .AddLine('end;')
-    .Unindent
-    .AddLine('end;')
-    .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}');
+      .AddLine
+      .AddLine(Format('function %0:sHelper.ToInt: Cardinal;', [EnumName]))
+      .AddLine('begin')
+      .Indent
+      .AddLine('Result := Cardinal(Self);')
+      .Unindent
+      .AddLine('end;')
+      .AddLine
+      .AddLine(Format('function %0:sHelper.ToString: string;', [EnumName]))
+      .AddLine('begin')
+      .Indent
+      .AddLine('case Self.ToInt of')
+      .Indent
+      .Add(GenerateToStringCases(EnumType as TEnumType))
+      .AddLine('else begin')
+      .Indent
+      .AddLine('Result := Format(''Unrecognized(%d)'', [Self.ToInt]);')
+      .Unindent
+      .AddLine('end;')
+      .Unindent
+      .AddLine('end;')
+      .Unindent
+      .AddLine('end;')
+      .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}');
 
   PascalUnit.Add(Slice);
 end;
@@ -453,52 +461,65 @@ begin
       raise ECodeGenerationError.CreateFmt('Unknown packet action "%s"', [ActionName]);
     end;
 
-    ObjectCodeGenerator.Data.ClassMethodDeclarations
-      .AddLine('{ Returns the packet family associated with this packet.')
-      .AddLine('  @returns(The packet family associated with this packet) }')
-      .AddLine('class function PacketFamily: TPacketFamily;')
-      .AddLine('{ Returns the packet action associated with this packet.')
-      .AddLine('  @returns(The packet action associated with this packet) }')
-      .AddLine('class function PacketAction: TPacketAction;')
-      .AddUses('EOLib.Protocol.Packet');
+    ObjectCodeGenerator
+        .Data
+        .ClassMethodDeclarations
+        .AddLine('{ Returns the packet family associated with this packet.')
+        .AddLine('  @returns(The packet family associated with this packet) }')
+        .AddLine('class function PacketFamily: TPacketFamily;')
+        .AddLine('{ Returns the packet action associated with this packet.')
+        .AddLine('  @returns(The packet action associated with this packet) }')
+        .AddLine('class function PacketAction: TPacketAction;')
+        .AddUses('EOLib.Protocol.Packet');
 
-    ObjectCodeGenerator.Data.MethodDeclarations
-      .AddLine('{ Returns the packet family associated with this packet.')
-      .AddLine('  @returns(The packet family associated with this packet) }')
-      .AddLine('function Family: TPacketFamily;')
-      .AddLine('{ Returns the packet action associated with this packet.')
-      .AddLine('  @returns(The packet action associated with this packet) }')
-      .AddLine('function Action: TPacketAction;');
+    ObjectCodeGenerator
+        .Data
+        .MethodDeclarations
+        .AddLine('{ Returns the packet family associated with this packet.')
+        .AddLine('  @returns(The packet family associated with this packet) }')
+        .AddLine('function Family: TPacketFamily;')
+        .AddLine('{ Returns the packet action associated with this packet.')
+        .AddLine('  @returns(The packet action associated with this packet) }')
+        .AddLine('function Action: TPacketAction;');
 
-    ObjectCodeGenerator.Data.MethodImplementations.AddRange([
-    TCodeBlock.Create
-        .AddLine(Format('function %s.Family: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
-        .AddLine('begin')
-        .Indent
-        .AddLine('Result := PacketFamily;')
-        .Unindent
-        .AddLine('end;'),
-      TCodeBlock.Create
-        .AddLine(Format('function %s.Action: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
-        .AddLine('begin')
-        .Indent
-        .AddLine('Result := PacketAction;')
-        .Unindent
-        .AddLine('end;'),
-      TCodeBlock.Create
-        .AddLine(Format('class function %s.PacketFamily: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
-        .AddLine('begin')
-        .Indent
-        .AddLine(Format('Result := TPacketFamily.%s;', [FamilyName]))
-        .Unindent
-        .AddLine('end;'),
-      TCodeBlock.Create
-        .AddLine(Format('class function %s.PacketAction: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
-        .AddLine('begin')
-        .Indent
-        .AddLine(Format('Result := TPacketAction.%s;', [ActionName]))
-        .Unindent
-        .AddLine('end;')]);
+    ObjectCodeGenerator.Data.MethodImplementations.AddRange(
+        [
+            TCodeBlock
+                .Create
+                .AddLine(Format('function %s.Family: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
+                .AddLine('begin')
+                .Indent
+                .AddLine('Result := PacketFamily;')
+                .Unindent
+                .AddLine('end;'),
+            TCodeBlock
+                .Create
+                .AddLine(Format('function %s.Action: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
+                .AddLine('begin')
+                .Indent
+                .AddLine('Result := PacketAction;')
+                .Unindent
+                .AddLine('end;'),
+            TCodeBlock
+                .Create
+                .AddLine(
+                    Format('class function %s.PacketFamily: TPacketFamily;', [ObjectCodeGenerator.Data.ClassTypeName]))
+                .AddLine('begin')
+                .Indent
+                .AddLine(Format('Result := TPacketFamily.%s;', [FamilyName]))
+                .Unindent
+                .AddLine('end;'),
+            TCodeBlock
+                .Create
+                .AddLine(
+                    Format('class function %s.PacketAction: TPacketAction;', [ObjectCodeGenerator.Data.ClassTypeName]))
+                .AddLine('begin')
+                .Indent
+                .AddLine(Format('Result := TPacketAction.%s;', [ActionName]))
+                .Unindent
+                .AddLine('end;')
+        ]
+    );
 
     for Slice in ObjectCodeGenerator.GetTypes do begin
       PascalUnit.Add(Slice);
@@ -509,4 +530,3 @@ begin
 end;
 
 end.
-

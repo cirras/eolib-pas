@@ -2,7 +2,8 @@
 unit EOLib.Data;
 
 {$IFDEF FPC}
-  {$MODE DELPHIUNICODE}{$H+}
+  {$MODE DELPHIUNICODE}
+  {$H+}
   {$WARNINGS OFF}
 {$ENDIF}
 
@@ -315,7 +316,6 @@ uses
   System.Math;
 {$ENDIF}
 
-
 var
   Windows1252: TEncoding;
 
@@ -370,10 +370,14 @@ begin
     Dec(Value);
 
     case I of
-      0: Result := Result + Value;
-      1: Result := Result + EoCharMax * Value;
-      2: Result := Result + EoShortMax * Value;
-      3: Result := Result + EoThreeMax * Value;
+      0:
+        Result := Result + Value;
+      1:
+        Result := Result + EoCharMax * Value;
+      2:
+        Result := Result + EoShortMax * Value;
+      3:
+        Result := Result + EoThreeMax * Value;
     end;
   end;
 end;
@@ -607,7 +611,7 @@ function TEoReader.ReadBytes(Length: Cardinal): TArray<Byte>;
 begin
   Length := Min(Length, GetRemaining);
 
-  SetLength(Result{%H-}, Length);
+  SetLength(Result {%H-}, Length);
 
   if Length <> 0 then begin
     Move(FData[FOffset + FPosition], Result[0], Length);
@@ -621,7 +625,7 @@ var
 begin
   for I := 0 to High(Bytes) do begin
     if Bytes[I] = $FF then begin
-      SetLength(Result{%H-}, I);
+      SetLength(Result {%H-}, I);
       Move(Bytes[0], Result[0], I);
       Exit;
     end;
@@ -749,7 +753,7 @@ end;
 
 function TEoWriter.ToByteArray: TArray<Byte>;
 begin
-  SetLength(Result{%H-}, FLength);
+  SetLength(Result {%H-}, FLength);
   Move(FData[0], Result[0], FLength);
 end;
 
@@ -774,7 +778,7 @@ procedure TEoWriter.Expand(ExpandFactor: Cardinal);
 var
   Expanded: TArray<Byte>;
 begin
-  SetLength(Expanded{%H-}, Cardinal(System.Length(FData)) * ExpandFactor);
+  SetLength(Expanded {%H-}, Cardinal(System.Length(FData)) * ExpandFactor);
   Move(FData[0], Expanded[0], FLength);
   FData := Expanded;
 end;
@@ -821,13 +825,11 @@ begin
     if ExpectedLength >= Cardinal(System.Length(Str)) then begin
       Exit;
     end;
-    raise EArgumentException.CreateFmt(
-      'Padded string "%s" is too large for a length of %d.', [Str, ExpectedLength]);
+    raise EArgumentException.CreateFmt('Padded string "%s" is too large for a length of %d.', [Str, ExpectedLength]);
   end;
 
   if Cardinal(System.Length(Str)) <> ExpectedLength then begin
-    raise EArgumentException.CreateFmt(
-      'String "%s" does not have expected length of %d.', [Str, ExpectedLength]);
+    raise EArgumentException.CreateFmt('String "%s" does not have expected length of %d.', [Str, ExpectedLength]);
   end;
 end;
 
@@ -838,4 +840,3 @@ finalization
   FreeAndNil(Windows1252);
 
 end.
-

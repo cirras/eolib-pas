@@ -2,7 +2,8 @@
 unit EOLib.Packet;
 
 {$IFDEF FPC}
-  {$MODE DELPHIUNICODE}{$H+}
+  {$MODE DELPHIUNICODE}
+  {$H+}
   {$WARNINGS OFF}
 {$ENDIF}
 
@@ -45,7 +46,7 @@ type
     FValue: Cardinal;
 
   public
-   { Creates an instance of @code(TAccountReplySequenceStart) from the value sent with the
+    { Creates an instance of @code(TAccountReplySequenceStart) from the value sent with the
      ACCOUNT_REPLY server packet.
 
      @param(Value The sequence_start char value sent with the ACCOUNT_REPLY server packet)
@@ -74,7 +75,7 @@ type
     FSeq2: Cardinal;
 
   public
-   { Creates an instance of @code(TInitSequenceStart) from the values sent with the INIT_INIT
+    { Creates an instance of @code(TInitSequenceStart) from the values sent with the INIT_INIT
      server packet.
 
      @param(Seq1 The seq1 byte value sent with the INIT_INIT server packet)
@@ -114,7 +115,7 @@ type
     FSeq2: Cardinal;
 
   public
-   { Creates an instance of @code(TPingSequenceStart) from the values sent with the
+    { Creates an instance of @code(TPingSequenceStart) from the values sent with the
      CONNECTION_PLAYER server packet.
 
      @param(Seq1 The seq1 short value sent with the CONNECTION_PLAYER server packet)

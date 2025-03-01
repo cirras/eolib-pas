@@ -89,57 +89,42 @@ type
 
 const
   Numbers: array[0..23] of TNumberData = (
-    (Decoded: 0;          Encoded: [$01, $FE, $FE, $FE]),
-    (Decoded: 1;          Encoded: [$02, $FE, $FE, $FE]),
-    (Decoded: 28;         Encoded: [$1D, $FE, $FE, $FE]),
-    (Decoded: 100;        Encoded: [$65, $FE, $FE, $FE]),
-    (Decoded: 128;        Encoded: [$81, $FE, $FE, $FE]),
-    (Decoded: 252;        Encoded: [$FD, $FE, $FE, $FE]),
-    (Decoded: 253;        Encoded: [$01, $02, $FE, $FE]),
-    (Decoded: 254;        Encoded: [$02, $02, $FE, $FE]),
-    (Decoded: 255;        Encoded: [$03, $02, $FE, $FE]),
-    (Decoded: 32003;      Encoded: [$7E, $7F, $FE, $FE]),
-    (Decoded: 32004;      Encoded: [$7F, $7F, $FE, $FE]),
-    (Decoded: 32005;      Encoded: [$80, $7F, $FE, $FE]),
-    (Decoded: 64008;      Encoded: [$FD, $FD, $FE, $FE]),
-    (Decoded: 64009;      Encoded: [$01, $01, $02, $FE]),
-    (Decoded: 64010;      Encoded: [$02, $01, $02, $FE]),
-    (Decoded: 10000000;   Encoded: [$B0, $3A, $9D, $FE]),
-    (Decoded: 16194276;   Encoded: [$FD, $FD, $FD, $FE]),
-    (Decoded: 16194277;   Encoded: [$01, $01, $01, $02]),
-    (Decoded: 16194278;   Encoded: [$02, $01, $01, $02]),
-    (Decoded: 2048576039; Encoded: [$7E, $7F, $7F, $7F]),
-    (Decoded: 2048576040; Encoded: [$7F, $7F, $7F, $7F]),
-    (Decoded: 2048576041; Encoded: [$80, $7F, $7F, $7F]),
-    (Decoded: 4097152079; Encoded: [$FC, $FD, $FD, $FD]),
-    (Decoded: 4097152080; Encoded: [$FD, $FD, $FD, $FD])
+      (Decoded: 0; Encoded: [$01, $FE, $FE, $FE]),
+      (Decoded: 1; Encoded: [$02, $FE, $FE, $FE]),
+      (Decoded: 28; Encoded: [$1D, $FE, $FE, $FE]),
+      (Decoded: 100; Encoded: [$65, $FE, $FE, $FE]),
+      (Decoded: 128; Encoded: [$81, $FE, $FE, $FE]),
+      (Decoded: 252; Encoded: [$FD, $FE, $FE, $FE]),
+      (Decoded: 253; Encoded: [$01, $02, $FE, $FE]),
+      (Decoded: 254; Encoded: [$02, $02, $FE, $FE]),
+      (Decoded: 255; Encoded: [$03, $02, $FE, $FE]),
+      (Decoded: 32003; Encoded: [$7E, $7F, $FE, $FE]),
+      (Decoded: 32004; Encoded: [$7F, $7F, $FE, $FE]),
+      (Decoded: 32005; Encoded: [$80, $7F, $FE, $FE]),
+      (Decoded: 64008; Encoded: [$FD, $FD, $FE, $FE]),
+      (Decoded: 64009; Encoded: [$01, $01, $02, $FE]),
+      (Decoded: 64010; Encoded: [$02, $01, $02, $FE]),
+      (Decoded: 10000000; Encoded: [$B0, $3A, $9D, $FE]),
+      (Decoded: 16194276; Encoded: [$FD, $FD, $FD, $FE]),
+      (Decoded: 16194277; Encoded: [$01, $01, $01, $02]),
+      (Decoded: 16194278; Encoded: [$02, $01, $01, $02]),
+      (Decoded: 2048576039; Encoded: [$7E, $7F, $7F, $7F]),
+      (Decoded: 2048576040; Encoded: [$7F, $7F, $7F, $7F]),
+      (Decoded: 2048576041; Encoded: [$80, $7F, $7F, $7F]),
+      (Decoded: 4097152079; Encoded: [$FC, $FD, $FD, $FD]),
+      (Decoded: 4097152080; Encoded: [$FD, $FD, $FD, $FD])
   );
 
   Strings: array[0..5] of TStringData = (
-    (
-      Decoded: 'Hello, World!';
-      Encoded: '!;a-^H s^3a:)'
-    ),
-    (
-      Decoded: 'We''re ¼ of the way there, so ¾ is remaining.';
-      Encoded: 'C8_6_6l2h- ,d ¾ ^, sh-h7Y T>V h7Y g0 ¼ :[xhH'
-    ),
-    (
-      Decoded: '64² = 4096';
-      Encoded: ';fAk b ²=i'
-    ),
-    (
-      Decoded: '© FÒÖ BÃR BÅZ 2014';
-      Encoded: '=nAm EÅ] MÃ] ÖÒY ©'
-    ),
-    (
-      Decoded: 'Öxxö Xööx "Lëïth Säë" - "Ÿ"';
-      Encoded: 'OŸO D OëäL 7YïëSO UööG öU''Ö'
-    ),
-    (
-      Decoded: 'Padded with 0xFFÿÿÿÿÿÿÿÿ';
-      Encoded: 'ÿÿÿÿÿÿÿÿ+YUo 7Y6V i:i;lO'
-    )
+      (Decoded: 'Hello, World!'; Encoded: '!;a-^H s^3a:)'),
+      (
+          Decoded: 'We''re ¼ of the way there, so ¾ is remaining.';
+          Encoded: 'C8_6_6l2h- ,d ¾ ^, sh-h7Y T>V h7Y g0 ¼ :[xhH'
+      ),
+      (Decoded: '64² = 4096'; Encoded: ';fAk b ²=i'),
+      (Decoded: '© FÒÖ BÃR BÅZ 2014'; Encoded: '=nAm EÅ] MÃ] ÖÒY ©'),
+      (Decoded: 'Öxxö Xööx "Lëïth Säë" - "Ÿ"'; Encoded: 'OŸO D OëäL 7YïëSO UööG öU''Ö'),
+      (Decoded: 'Padded with 0xFFÿÿÿÿÿÿÿÿ'; Encoded: 'ÿÿÿÿÿÿÿÿ+YUo 7Y6V i:i;lO')
   );
 
 function ToBytes(Str: string): TArray<Byte>;
@@ -166,7 +151,7 @@ var
   I: Integer;
   Reader: TEoReader;
 begin
-  SetLength(Data{%H-}, Length(Bytes) + 20);
+  SetLength(Data {%H-}, Length(Bytes) + 20);
   for I := 0 to High(Bytes) do begin
     Data[10 + I] := Bytes[I];
   end;
@@ -184,7 +169,7 @@ end;
 
 function TNumberData.EncodedToString: string;
 begin
-  Result := {%H-}Format('[%x, %x, %x, %x]', [Encoded[0], Encoded[1], Encoded[2], Encoded[3]]);
+  Result := {%H-} Format('[%x, %x, %x, %x]', [Encoded[0], Encoded[1], Encoded[2], Encoded[3]]);
 end;
 
 { TTestEncodingUtilities }
@@ -195,8 +180,8 @@ var
 begin
   for Number in Numbers do begin
     Check(
-      CompareMem(@EncodeNumber(Number.Decoded)[0], @Number.Encoded[0], 4),
-      Format('%d should encode to %s', [Number.Decoded, Number.EncodedToString])
+        CompareMem(@EncodeNumber(Number.Decoded)[0], @Number.Encoded[0], 4),
+        Format('%d should encode to %s', [Number.Decoded, Number.EncodedToString])
     );
   end;
 end;
@@ -207,9 +192,9 @@ var
 begin
   for Number in Numbers do begin
     CheckEquals(
-      Number.Decoded,
-      DecodeNumber(Number.Encoded),
-      Format('%s should decode to %d', [Number.EncodedToString, Number.Decoded])
+        Number.Decoded,
+        DecodeNumber(Number.Encoded),
+        Format('%s should decode to %d', [Number.EncodedToString, Number.Decoded])
     );
   end;
 end;
@@ -224,11 +209,7 @@ begin
 
     EncodeString(Bytes);
 
-    CheckEquals(
-      Str.Encoded,
-      FromBytes(Bytes),
-      Format('''%s'' should encode to ''%s''', [Str.Decoded, Str.Encoded])
-    );
+    CheckEquals(Str.Encoded, FromBytes(Bytes), Format('''%s'' should encode to ''%s''', [Str.Decoded, Str.Encoded]));
   end;
 end;
 
@@ -242,11 +223,7 @@ begin
 
     DecodeString(Bytes);
 
-    CheckEquals(
-      Str.Decoded,
-      FromBytes(Bytes),
-      Format('''%s'' should decode to ''%s''', [Str.Encoded, Str.Decoded])
-    );
+    CheckEquals(Str.Decoded, FromBytes(Bytes), Format('''%s'' should decode to ''%s''', [Str.Encoded, Str.Decoded]));
   end;
 end;
 
@@ -395,9 +372,7 @@ procedure TTestEoReader.TestGetShort;
 var
   Reader: TEoReader;
 begin
-  Reader := CreateReader([
-    $01, $FE, $02, $FE, $80, $FE, $FD, $FE, $FE, $FE, $FE, $80, $7F, $7F, $FD, $FD
-  ]);
+  Reader := CreateReader([$01, $FE, $02, $FE, $80, $FE, $FD, $FE, $FE, $FE, $FE, $80, $7F, $7F, $FD, $FD]);
 
   CheckEquals(0, Reader.GetShort);
   CheckEquals(1, Reader.GetShort);
@@ -415,10 +390,38 @@ procedure TTestEoReader.TestGetThree;
 var
   Reader: TEoReader;
 begin
-  Reader := CreateReader([
-    $01, $FE, $FE, $02, $FE, $FE, $80, $FE, $FE, $FD, $FE, $FE, $FE, $FE, $FE, $FE, $80, $81, $7F,
-    $7F, $FE, $FD, $FD, $FE, $FD, $FD, $FD
-  ]);
+  Reader :=
+      CreateReader(
+          [
+              $01,
+              $FE,
+              $FE,
+              $02,
+              $FE,
+              $FE,
+              $80,
+              $FE,
+              $FE,
+              $FD,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $80,
+              $81,
+              $7F,
+              $7F,
+              $FE,
+              $FD,
+              $FD,
+              $FE,
+              $FD,
+              $FD,
+              $FD
+          ]
+      );
 
   CheckEquals(0, Reader.GetThree);
   CheckEquals(1, Reader.GetThree);
@@ -437,11 +440,55 @@ procedure TTestEoReader.TestGetInt;
 var
   Reader: TEoReader;
 begin
-  Reader := CreateReader([
-    $01, $FE, $FE, $FE, $02, $FE, $FE, $FE, $80, $FE, $FE, $FE, $FD, $FE, $FE, $FE, $FE, $FE, $FE,
-    $FE, $FE, $80, $81, $82, $7F, $7F, $FE, $FE, $FD, $FD, $FE, $FE, $FD, $FD, $FD, $FE, $7F, $7F,
-    $7F, $7F, $FD, $FD, $FD, $FD
-  ]);
+  Reader :=
+      CreateReader(
+          [
+              $01,
+              $FE,
+              $FE,
+              $FE,
+              $02,
+              $FE,
+              $FE,
+              $FE,
+              $80,
+              $FE,
+              $FE,
+              $FE,
+              $FD,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $FE,
+              $80,
+              $81,
+              $82,
+              $7F,
+              $7F,
+              $FE,
+              $FE,
+              $FD,
+              $FD,
+              $FE,
+              $FE,
+              $FD,
+              $FD,
+              $FD,
+              $FE,
+              $7F,
+              $7F,
+              $7F,
+              $7F,
+              $FD,
+              $FD,
+              $FD,
+              $FD
+          ]
+      );
 
   CheckEquals(0, Reader.GetInt);
   CheckEquals(1, Reader.GetInt);
@@ -1160,4 +1207,3 @@ initialization
   RegisterTest(TTestEoWriter.Suite);
 
 end.
-

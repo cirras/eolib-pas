@@ -2,7 +2,8 @@
 unit EOLib.Protocol.Errors;
 
 {$IFDEF FPC}
-  {$MODE DELPHIUNICODE}{$H+}
+  {$MODE DELPHIUNICODE}
+  {$H+}
   {$WARNINGS OFF}
 {$ENDIF}
 
@@ -14,7 +15,6 @@ uses
 {$ELSE}
   System.SysUtils;
 {$ENDIF}
-
 
 type
   { @name is raised when an error occurs during the serialization of a protocol data structure. }

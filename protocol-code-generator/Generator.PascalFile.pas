@@ -1,6 +1,7 @@
 ﻿unit Generator.PascalFile;
 
-{$MODE DELPHIUNICODE}{$H+}
+{$MODE DELPHIUNICODE}
+{$H+}
 
 interface
 
@@ -215,21 +216,21 @@ procedure TPascalUnit.Write(OutputDirectory: string);
   function FileHeaderSection: string;
   begin
     Result :=
-      ('// Generated from the eo-protocol XML specification.' + CRLF) +
-      ('//' + CRLF) +
-      ('// This file should not be modified.' + CRLF) +
-      ('// Changes will be lost when code is regenerated.' + CRLF) +
-      CRLF +
-      ('unit ' + FUnitName + ';' + CRLF) +
-      CRLF +
-      ('{$IFDEF FPC}' + CRLF) +
-      ('  {$MODE DELPHIUNICODE}{$H+}' + CRLF) +
-      ('  {$WARNINGS OFF}' + CRLF) +
-      ('{$ENDIF}' + CRLF) +
-      CRLF +
-      ('{$SCOPEDENUMS ON}' + CRLF) +
-      ('{$MINENUMSIZE 4}' + CRLF) +
-      CRLF;
+        ('// Generated from the eo-protocol XML specification.' + CRLF)
+            + ('//' + CRLF)
+            + ('// This file should not be modified.' + CRLF)
+            + ('// Changes will be lost when code is regenerated.' + CRLF)
+            + CRLF
+            + ('unit ' + FUnitName + ';' + CRLF)
+            + CRLF
+            + ('{$IFDEF FPC}' + CRLF)
+            + ('  {$MODE DELPHIUNICODE}{$H+}' + CRLF)
+            + ('  {$WARNINGS OFF}' + CRLF)
+            + ('{$ENDIF}' + CRLF)
+            + CRLF
+            + ('{$SCOPEDENUMS ON}' + CRLF)
+            + ('{$MINENUMSIZE 4}' + CRLF)
+            + CRLF;
   end;
 
   function InterfaceSection: string;
@@ -326,4 +327,3 @@ begin
 end;
 
 end.
-

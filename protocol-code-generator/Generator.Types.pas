@@ -1,6 +1,7 @@
 ﻿unit Generator.Types;
 
-{$MODE DELPHIUNICODE}{$H+}
+{$MODE DELPHIUNICODE}
+{$H+}
 
 interface
 
@@ -115,16 +116,17 @@ type
   end;
 
   TEnumType = class(TCustomType, IHasUnderlyingType)
-  public type
-    TEnumValue = record
-    strict private
-      FOrdinalValue: Integer;
-      FName: string;
-    public
-      constructor Create(OrdinalValue: Integer; Name: string);
-      property OrdinalValue: Integer read FOrdinalValue;
-      property Name: string read FName;
-    end;
+  public
+    type
+      TEnumValue = record
+      strict private
+        FOrdinalValue: Integer;
+        FName: string;
+      public
+        constructor Create(OrdinalValue: Integer; Name: string);
+        property OrdinalValue: Integer read FOrdinalValue;
+        property Name: string read FName;
+      end;
   strict private
     FName: string;
     FUnitName: string;
@@ -137,10 +139,11 @@ type
     function IsBounded: Boolean; override;
   public
     constructor Create(
-      Name: string;
-      UnitName: string;
-      UnderlyingType: TIntegerType;
-      Values: TArray<TEnumType.TEnumValue>);
+        Name: string;
+        UnitName: string;
+        UnderlyingType: TIntegerType;
+        Values: TArray<TEnumType.TEnumValue>
+    );
     function UnderlyingType: TIntegerType;
     function FindEnumValueByOrdinal(OrdinalValue: Integer): TNullable<TEnumType.TEnumValue>;
     function FindEnumValueByName(Name: string): TNullable<TEnumType.TEnumValue>;
@@ -356,10 +359,11 @@ begin
 end;
 
 constructor TEnumType.Create(
-  Name: string;
-  UnitName: string;
-  UnderlyingType: TIntegerType;
-  Values: TArray<TEnumType.TEnumValue>);
+    Name: string;
+    UnitName: string;
+    UnderlyingType: TIntegerType;
+    Values: TArray<TEnumType.TEnumValue>
+);
 begin
   FName := Name;
   FUnitName := UnitName;
@@ -420,11 +424,7 @@ begin
   Result := FBounded;
 end;
 
-constructor TStructType.Create(
-  Name: string;
-  FixedSize: TNullable<Integer>;
-  Bounded: Boolean;
-  UnitName: string);
+constructor TStructType.Create(Name: string; FixedSize: TNullable<Integer>; Bounded: Boolean; UnitName: string);
 begin
   FName := Name;
   FFixedSize := FixedSize;
@@ -518,9 +518,8 @@ begin
   if Assigned(UnderlyingType) and not (Result is IHasUnderlyingType) then begin
     FreeAndNil(Result);
     raise ETypeError.CreateFmt(
-      '%s has no underlying type, so %s is not allowed as an underlying type override.',
-      [Name, UnderlyingType.Name]
-    );
+        '%s has no underlying type, so %s is not allowed as an underlying type override.',
+        [Name, UnderlyingType.Name]);
   end;
 end;
 
@@ -534,7 +533,8 @@ begin
   NameParts := SplitString(Name, ':');
 
   case Length(NameParts) of
-    1: Result := nil;
+    1:
+      Result := nil;
     2: begin
       TypeName := NameParts[0];
       UnderlyingTypeName := NameParts[1];
@@ -546,9 +546,8 @@ begin
       UnderlyingType := GetType(UnderlyingTypeName);
       if not (UnderlyingType is TIntegerType) then begin
         raise ETypeError.CreateFmt(
-          '%s is not a numeric type, so it cannot be specified as an underlying type.',
-          [UnderlyingType.Name]
-        );
+            '%s is not a numeric type, so it cannot be specified as an underlying type.',
+            [UnderlyingType.Name]);
       end;
 
       Result := UnderlyingType as TIntegerType;
@@ -582,7 +581,10 @@ begin
 end;
 
 function TTypeFactory.CreateEnumType(
-  TypeXml: TDOMElement; UnderlyingTypeOverride: TIntegerType; UnitName: string): TType;
+    TypeXml: TDOMElement;
+    UnderlyingTypeOverride: TIntegerType;
+    UnitName: string
+): TType;
 var
   UnderlyingType: TIntegerType;
   DefaultUnderlyingType: TType;
@@ -608,9 +610,8 @@ begin
     DefaultUnderlyingType := GetType(UnderlyingTypeName);
     if not (DefaultUnderlyingType is TIntegerType) then begin
       raise ETypeError.CreateFmt(
-        '%s is not a numeric type, so it cannot be specified as an underlying type.',
-        [DefaultUnderlyingType.Name]
-      );
+          '%s is not a numeric type, so it cannot be specified as an underlying type.',
+          [DefaultUnderlyingType.Name]);
     end;
 
     UnderlyingType := DefaultUnderlyingType as TIntegerType;
@@ -631,8 +632,8 @@ begin
       end;
 
       if not Ordinals.Add(ValueOrdinal.Value) then begin
-        raise ETypeError.CreateFmt(
-          '%s.%s cannot redefine ordinal value %d.', [EnumName, ValueName, ValueOrdinal.Value]);
+        raise ETypeError
+            .CreateFmt('%s.%s cannot redefine ordinal value %d.', [EnumName, ValueName, ValueOrdinal.Value]);
       end;
 
       if not Names.Add(ValueName) then begin
@@ -652,12 +653,13 @@ end;
 
 function TTypeFactory.CreateStructType(TypeXml: TDOMElement; UnitName: string): TType;
 begin
-  Result := TStructType.Create(
-    GetRequiredStringAttribute(TypeXml, 'name'),
-    CalculateFixedStructSize(TypeXml),
-    IsBounded(TypeXml),
-    UnitName
-  );
+  Result :=
+      TStructType.Create(
+          GetRequiredStringAttribute(TypeXml, 'name'),
+          CalculateFixedStructSize(TypeXml),
+          IsBounded(TypeXml),
+          UnitName
+      );
 end;
 
 function FlattenInstructions(Element: TDOMElement): TArray<TDOMElement>;
@@ -856,9 +858,8 @@ begin
   end
   else begin
     raise ETypeError.CreateFmt(
-      '%s type with length %s is invalid. (Only string types may specify a length)',
-      [Name, Length.ToString]
-    )
+        '%s type with length %s is invalid. (Only string types may specify a length)',
+        [Name, Length.ToString])
   end;
 end;
 
@@ -869,4 +870,3 @@ begin
 end;
 
 end.
-

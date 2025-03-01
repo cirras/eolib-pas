@@ -1,6 +1,7 @@
 ﻿unit Generator.GuidUtils;
 
-{$MODE DELPHIUNICODE}{$H+}
+{$MODE DELPHIUNICODE}
+{$H+}
 
 interface
 
@@ -50,4 +51,3 @@ begin
 end;
 
 end.
-

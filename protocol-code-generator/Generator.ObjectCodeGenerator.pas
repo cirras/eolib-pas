@@ -1,6 +1,7 @@
 ﻿unit Generator.ObjectCodeGenerator;
 
-{$MODE DELPHIUNICODE}{$H+}
+{$MODE DELPHIUNICODE}
+{$H+}
 
 interface
 
@@ -52,7 +53,7 @@ type
     property ReachedDummy: Boolean read FReachedDummy write FReachedDummy;
     property AccessibleFields: TDictionary<string, TFieldData> read FAccessibleFields write FAccessibleFields;
     property LengthFieldReferencedMap: TDictionary<string, Boolean>
-      read FLengthFieldReferencedMap write FLengthFieldReferencedMap;
+        read FLengthFieldReferencedMap write FLengthFieldReferencedMap;
   end;
 
   TObjectGenerationData = class(TObject)
@@ -136,10 +137,11 @@ type
     function GetWriteStatement: string;
     function GetWriteValueExpression: string;
     class function GetWriteStatementForBasicType(
-      Type_: TBasicType;
-      ValueExpression: string;
-      LengthExpression: string;
-      Padded: Boolean): string;
+        Type_: TBasicType;
+        ValueExpression: string;
+        LengthExpression: string;
+        Padded: Boolean
+    ): string;
 
     procedure GenerateDeserializeArray;
     function GetReadStatement: string;
@@ -157,63 +159,65 @@ type
 
   public
     constructor Create(
-      TypeFactory: TTypeFactory;
-      Context: TObjectGenerationContext;
-      Data: TObjectGenerationData;
-      Name: string;
-      TypeString: string;
-      LengthString: string;
-      Padded: Boolean;
-      Optional: Boolean;
-      HardcodedValue: string;
-      Comment: string;
-      ArrayField: Boolean;
-      Delimited: Boolean;
-      TrailingDelimiter: Boolean;
-      LengthField: Boolean;
-      LengthFieldBackReference: string;
-      Offset: Integer);
+        TypeFactory: TTypeFactory;
+        Context: TObjectGenerationContext;
+        Data: TObjectGenerationData;
+        Name: string;
+        TypeString: string;
+        LengthString: string;
+        Padded: Boolean;
+        Optional: Boolean;
+        HardcodedValue: string;
+        Comment: string;
+        ArrayField: Boolean;
+        Delimited: Boolean;
+        TrailingDelimiter: Boolean;
+        LengthField: Boolean;
+        LengthFieldBackReference: string;
+        Offset: Integer
+    );
 
     procedure GenerateField;
     procedure GenerateSerialize;
     procedure GenerateDeserialize;
 
-  public type
-    TBuilder = record
-    strict private
-      FTypeFactory: TTypeFactory;
-      FContext: TObjectGenerationContext;
-      FData: TObjectGenerationData;
-      FName: string;
-      FType: string;
-      FLength: string;
-      FOffset: Integer;
-      FPadded: Boolean;
-      FOptional: Boolean;
-      FHardcodedValue: string;
-      FComment: string;
-      FArrayField: Boolean;
-      FLengthField: Boolean;
-      FLengthFieldBackReference: string;
-      FDelimited: Boolean;
-      FTrailingDelimiter: Boolean;
-    public
-      constructor Create(TypeFactory: TTypeFactory; Context: TObjectGenerationContext; Data: TObjectGenerationData);
-      function Name(Name: string): TBuilder;
-      function Type_(Type_: string): TBuilder;
-      function Length(Length: string): TBuilder;
-      function Offset(Offset: Integer): TBuilder;
-      function Padded(Padded: Boolean): TBuilder;
-      function Optional(Optional: Boolean): TBuilder;
-      function HardcodedValue(HardcodedValue: string): TBuilder;
-      function Comment(Comment: string): TBuilder;
-      function ArrayField(ArrayField: Boolean): TBuilder;
-      function LengthField(LengthField: Boolean): TBuilder;
-      function LengthFieldBackReference(LengthFieldBackReference: string): TBuilder;
-      function Delimited(Delimited: Boolean): TBuilder;
-      function TrailingDelimiter(TrailingDelimiter: Boolean): TBuilder;
-      function Build: TFieldCodeGenerator;
-    end;
+  public
+    type
+      TBuilder = record
+      strict private
+        FTypeFactory: TTypeFactory;
+        FContext: TObjectGenerationContext;
+        FData: TObjectGenerationData;
+        FName: string;
+        FType: string;
+        FLength: string;
+        FOffset: Integer;
+        FPadded: Boolean;
+        FOptional: Boolean;
+        FHardcodedValue: string;
+        FComment: string;
+        FArrayField: Boolean;
+        FLengthField: Boolean;
+        FLengthFieldBackReference: string;
+        FDelimited: Boolean;
+        FTrailingDelimiter: Boolean;
+      public
+        constructor Create(TypeFactory: TTypeFactory; Context: TObjectGenerationContext; Data: TObjectGenerationData);
+        function Name(Name: string): TBuilder;
+        function Type_(Type_: string): TBuilder;
+        function Length(Length: string): TBuilder;
+        function Offset(Offset: Integer): TBuilder;
+        function Padded(Padded: Boolean): TBuilder;
+        function Optional(Optional: Boolean): TBuilder;
+        function HardcodedValue(HardcodedValue: string): TBuilder;
+        function Comment(Comment: string): TBuilder;
+        function ArrayField(ArrayField: Boolean): TBuilder;
+        function LengthField(LengthField: Boolean): TBuilder;
+        function LengthFieldBackReference(LengthFieldBackReference: string): TBuilder;
+        function Delimited(Delimited: Boolean): TBuilder;
+        function TrailingDelimiter(TrailingDelimiter: Boolean): TBuilder;
+        function Build: TFieldCodeGenerator;
+      end;
   end;
 
   TSwitchCodeGenerator = class(TObject)
@@ -232,10 +236,11 @@ type
     function GetCaseValueExpression(ProtocolCase: TDOMElement): string;
   public
     constructor Create(
-      FieldName: string;
-      TypeFactory: TTypeFactory;
-      Context: TObjectGenerationContext;
-      Data: TObjectGenerationData);
+        FieldName: string;
+        TypeFactory: TTypeFactory;
+        Context: TObjectGenerationContext;
+        Data: TObjectGenerationData
+    );
     procedure GenerateCaseDataInterface;
     procedure GenerateCaseDataField;
     procedure GenerateSwitchStart;
@@ -263,10 +268,11 @@ type
     procedure CheckOptionalField(Optional: Boolean);
   public
     constructor Create(
-      ClassTypeName: string;
-      InterfaceTypeName: string;
-      TypeFactory: TTypeFactory;
-      Context: TObjectGenerationContext = nil);
+        ClassTypeName: string;
+        InterfaceTypeName: string;
+        TypeFactory: TTypeFactory;
+        Context: TObjectGenerationContext = nil
+    );
     destructor Destroy; override;
     procedure GenerateInstructions(Instructions: TArray<TDOMElement>);
     function GetTypes: TArray<TPascalUnitSlice>;
@@ -465,9 +471,8 @@ begin
       raise ECodeGenerationError.Create('Array fields may not specify hardcoded values.');
     end;
     if not FDelimited and not GetType.Bounded then begin
-      raise ECodeGenerationError.CreateFmt(
-        'Unbounded element type %s forbidden in non-delimited array.',
-        [FTypeString]);
+      raise ECodeGenerationError
+          .CreateFmt('Unbounded element type %s forbidden in non-delimited array.', [FTypeString]);
     end;
   end
   else if FDelimited then begin
@@ -491,9 +496,8 @@ begin
     end;
     FieldType := GetType;
     if not (FieldType is TIntegerType) then begin
-      raise ECodeGenerationError.CreateFmt(
-        '%s is not a numeric type, so it is not allowed for a length field.',
-        [FieldType.Name]);
+      raise ECodeGenerationError
+          .CreateFmt('%s is not a numeric type, so it is not allowed for a length field.', [FieldType.Name]);
     end;
   end
   else if FOffset <> 0 then begin
@@ -524,16 +528,14 @@ begin
     if FieldType is TStringType then begin
       LengthInt := TryParseInt(FLengthString);
       if LengthInt.HasValue and (LengthInt.Value <> Length(FHardcodedValue)) then begin
-        raise ECodeGenerationError.CreateFmt(
-          'Expected length of %s for hardcoded string value "%s".',
-          [LengthInt.Value, FHardcodedValue]);
+        raise ECodeGenerationError
+            .CreateFmt('Expected length of %s for hardcoded string value "%s".', [LengthInt.Value, FHardcodedValue]);
       end;
     end;
 
     if not (FieldType is TBasicType) then begin
-      raise ECodeGenerationError.CreateFmt(
-        'Hardcoded field values are not allowed for %s fields (must be a basic type).',
-        [FieldType.Name]);
+      raise ECodeGenerationError
+          .CreateFmt('Hardcoded field values are not allowed for %s fields (must be a basic type).', [FieldType.Name]);
     end;
   end;
 end;
@@ -551,15 +553,13 @@ var
 begin
   if FLengthString <> '' then begin
     if not IsInteger(FLengthString) and not FContext.LengthFieldReferencedMap.ContainsKey(FLengthString) then begin
-      raise ECodeGenerationError.CreateFmt(
-        'Length attribute "%s" must be a numeric literal, or refer to a length field.',
-        [FLengthString]);
+      raise ECodeGenerationError
+          .CreateFmt('Length attribute "%s" must be a numeric literal, or refer to a length field.', [FLengthString]);
     end;
 
     if FContext.LengthFieldReferencedMap.TryGetValue(FLengthString, AlreadyReferenced) and AlreadyReferenced then begin
-      raise ECodeGenerationError.CreateFmt(
-        'Length field "%s" must not be referenced by multiple fields.',
-        [FLengthString]);
+      raise ECodeGenerationError
+          .CreateFmt('Length field "%s" must not be referenced by multiple fields.', [FLengthString]);
     end;
   end;
 end;
@@ -610,7 +610,8 @@ begin
 
   if FContext.ReachedOptionalField then begin
     FData.Serialize.AddLine(
-      Format('ReachedEmptyOptional := ReachedEmptyOptional or F%s.IsEmpty;', [GetDelphiFieldName]));
+        Format('ReachedEmptyOptional := ReachedEmptyOptional or F%s.IsEmpty;', [GetDelphiFieldName])
+    );
   end
   else begin
     FData.Serialize.AddLine(Format('ReachedEmptyOptional := F%s.IsEmpty;', [GetDelphiFieldName]));
@@ -663,18 +664,20 @@ begin
   ExpectedLengthDescription := IfThen(VariableSize, '%d or less', 'exactly %d');
 
   ErrorMessage :=
-    'Expected length of ' + EscapeKeyword(DelphiName) + ' to be ' + ExpectedLengthDescription + ', got %d.';
+      'Expected length of ' + EscapeKeyword(DelphiName) + ' to be ' + ExpectedLengthDescription + ', got %d.';
 
-  FData.Serialize
-    .AddLine(Format('if Length(F%s) %s %s then begin', [DelphiName, LengthCheckOperator, LengthExpression]))
-    .Indent
-    .AddLine(
-      Format(
-        'raise ESerializationError.CreateFmt(''%s'', [%s, Length(F%s)]);',
-        [ErrorMessage, LengthExpression, DelphiName]))
-    .Unindent
-    .AddLine('end;')
-    .AddUses('EOLib.Protocol.Errors');
+  FData
+      .Serialize
+      .AddLine(Format('if Length(F%s) %s %s then begin', [DelphiName, LengthCheckOperator, LengthExpression]))
+      .Indent
+      .AddLine(
+          Format(
+              'raise ESerializationError.CreateFmt(''%s'', [%s, Length(F%s)]);',
+              [ErrorMessage, LengthExpression, DelphiName]
+          ))
+      .Unindent
+      .AddLine('end;')
+      .AddUses('EOLib.Protocol.Errors');
 end;
 
 function TFieldCodeGenerator.GetWriteStatement: string;
@@ -693,8 +696,8 @@ begin
   ValueExpression := GetWriteValueExpression + GetLengthOffsetExpression(-FOffset);
 
   if Type_ is TBasicType then begin
-    Result := GetWriteStatementForBasicType(
-      Type_ as TBasicType, ValueExpression, GetSerializeLengthExpression, FPadded);
+    Result :=
+        GetWriteStatementForBasicType(Type_ as TBasicType, ValueExpression, GetSerializeLengthExpression, FPadded);
   end
   else if Type_ is TBlobType then begin
     Result := Format('Writer.AddBytes(%s);', [ValueExpression]);
@@ -763,10 +766,11 @@ begin
 end;
 
 class function TFieldCodeGenerator.GetWriteStatementForBasicType(
-  Type_: TBasicType;
-  ValueExpression: string;
-  LengthExpression: string;
-  Padded: Boolean): string;
+    Type_: TBasicType;
+    ValueExpression: string;
+    LengthExpression: string;
+    Padded: Boolean
+): string;
 begin
   if SameStr(Type_.Name, 'byte') then begin
     Result := Format('Writer.AddByte(%s);', [ValueExpression]);
@@ -785,21 +789,23 @@ begin
   end
   else if SameStr(Type_.Name, 'string') then begin
     if LengthExpression = '' then begin
-       Result := Format('Writer.AddString(%s);', [ValueExpression]);
+      Result := Format('Writer.AddString(%s);', [ValueExpression]);
     end
     else begin
-       Result := Format(
-         'Writer.AddFixedString(%s, %s, %s);', [ValueExpression, LengthExpression, BoolToStr(Padded, True)]);
+      Result :=
+          Format('Writer.AddFixedString(%s, %s, %s);', [ValueExpression, LengthExpression, BoolToStr(Padded, True)]);
     end;
   end
   else if SameStr(Type_.Name, 'encoded_string') then begin
     if LengthExpression = '' then begin
-       Result := Format('Writer.AddEncodedString(%s);', [ValueExpression]);
+      Result := Format('Writer.AddEncodedString(%s);', [ValueExpression]);
     end
     else begin
-       Result := Format(
-         'Writer.AddFixedEncodedString(%s, %s, %s);',
-         [ValueExpression, LengthExpression, BoolToStr(Padded, True)]);
+      Result :=
+          Format(
+              'Writer.AddFixedEncodedString(%s, %s, %s);',
+              [ValueExpression, LengthExpression, BoolToStr(Padded, True)]
+          );
     end;
   end
   else begin
@@ -831,11 +837,12 @@ begin
   ListVariableName := DelphiName + 'List';
   FData.AddDeserializeVar(ListVariableName, Format('TList<%s>', [GetDelphiTypeName(True)]));
 
-  FData.Deserialize
-    .AddLine(Format('%s := TList<%s>.Create;', [ListVariableName, GetDelphiTypeName(True)]))
-    .AddLine('try')
-    .Indent
-    .AddUses('Generics.Collections');
+  FData
+      .Deserialize
+      .AddLine(Format('%s := TList<%s>.Create;', [ListVariableName, GetDelphiTypeName(True)]))
+      .AddLine('try')
+      .Indent
+      .AddUses('Generics.Collections');
 
   if ArrayLengthExpression = '' then begin
     FData.Deserialize.AddLine('while Reader.Remaining > 0 do begin').Indent;
@@ -867,17 +874,18 @@ begin
     end;
   end;
 
-  FData.Deserialize
-    .Unindent
-    .AddLine('end;')
-    .AddLine(Format('Result.F%s := %s.ToArray;', [DelphiName, ListVariableName]))
-    .Unindent
-    .AddLine('finally')
-    .Indent
-    .AddLine(Format('FreeAndNil(%s);', [ListVariableName]))
-    .Unindent
-    .AddLine('end;')
-    .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}')
+  FData
+      .Deserialize
+      .Unindent
+      .AddLine('end;')
+      .AddLine(Format('Result.F%s := %s.ToArray;', [DelphiName, ListVariableName]))
+      .Unindent
+      .AddLine('finally')
+      .Indent
+      .AddLine(Format('FreeAndNil(%s);', [ListVariableName]))
+      .Unindent
+      .AddLine('end;')
+      .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}')
 end;
 
 function TFieldCodeGenerator.GetReadStatement: string;
@@ -942,9 +950,10 @@ begin
 end;
 
 class function TFieldCodeGenerator.GetReadStatementForBasicType(
-  Type_: TBasicType;
-  LengthExpression: string;
-  Padded: Boolean): string;
+    Type_: TBasicType;
+    LengthExpression: string;
+    Padded: Boolean
+): string;
 begin
   if SameStr(Type_.Name, 'byte') then begin
     Result := 'Reader.GetByte';
@@ -1065,22 +1074,23 @@ begin
 end;
 
 constructor TFieldCodeGenerator.Create(
-  TypeFactory: TTypeFactory;
-  Context: TObjectGenerationContext;
-  Data: TObjectGenerationData;
-  Name: string;
-  TypeString: string;
-  LengthString: string;
-  Padded: Boolean;
-  Optional: Boolean;
-  HardcodedValue: string;
-  Comment: string;
-  ArrayField: Boolean;
-  Delimited: Boolean;
-  TrailingDelimiter: Boolean;
-  LengthField: Boolean;
-  LengthFieldBackReference: string;
-  Offset: Integer);
+    TypeFactory: TTypeFactory;
+    Context: TObjectGenerationContext;
+    Data: TObjectGenerationData;
+    Name: string;
+    TypeString: string;
+    LengthString: string;
+    Padded: Boolean;
+    Optional: Boolean;
+    HardcodedValue: string;
+    Comment: string;
+    ArrayField: Boolean;
+    Delimited: Boolean;
+    TrailingDelimiter: Boolean;
+    LengthField: Boolean;
+    LengthFieldBackReference: string;
+    Offset: Integer
+);
 begin
   FTypeFactory := TypeFactory;
   FContext := Context;
@@ -1154,29 +1164,37 @@ begin
 
   FData.ReadWriteMethodDeclarations.AddLine(Format('function Get%s: %s;', [DelphiName, DelphiTypeName]));
   FData.MethodImplementations.Add(
-    TCodeBlock.Create
-     .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, DelphiName, DelphiTypeName]))
-     .AddLine('begin')
-     .Indent
-     .AddLine(Format('Result := F%s;', [DelphiName]))
-     .Unindent
-     .AddLine('end;'));
+      TCodeBlock
+          .Create
+          .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, DelphiName, DelphiTypeName]))
+          .AddLine('begin')
+          .Indent
+          .AddLine(Format('Result := F%s;', [DelphiName]))
+          .Unindent
+          .AddLine('end;')
+  );
 
   PropertyDeclaration := Format('property %s: %s read Get%s', [EscapedDelphiName, DelphiTypeName, DelphiName]);
 
   if FHardcodedValue = '' then begin
-    FData.ReadWriteMethodDeclarations
-      .AddLine(Format('procedure Set%s(%s: %s);', [DelphiName, EscapedDelphiName, DelphiTypeName]));
+    FData.ReadWriteMethodDeclarations.AddLine(
+        Format('procedure Set%s(%s: %s);', [DelphiName, EscapedDelphiName, DelphiTypeName])
+    );
 
     FData.MethodImplementations.Add(
-      TCodeBlock.Create
-       .AddLine(
-         Format('procedure %s.Set%s(%s: %s);', [FData.ClassTypeName, DelphiName, EscapedDelphiName, DelphiTypeName]))
-       .AddLine('begin')
-       .Indent
-       .AddLine(Format('F%s := %s;', [DelphiName, EscapedDelphiName]))
-       .Unindent
-       .AddLine('end;'));
+        TCodeBlock
+            .Create
+            .AddLine(
+                Format(
+                    'procedure %s.Set%s(%s: %s);',
+                    [FData.ClassTypeName, DelphiName, EscapedDelphiName, DelphiTypeName]
+                ))
+            .AddLine('begin')
+            .Indent
+            .AddLine(Format('F%s := %s;', [DelphiName, EscapedDelphiName]))
+            .Unindent
+            .AddLine('end;')
+    );
 
     PropertyDeclaration := Format('%s write Set%s', [PropertyDeclaration, DelphiName]);
   end;
@@ -1210,12 +1228,7 @@ begin
 
     FData.Serialize.AddLine(Format('for I := 0 to %s do begin', [ForLoopFinalValue])).Indent;
     if FDelimited and not FTrailingDelimiter then begin
-      FData.Serialize
-        .AddLine('if I > 0 then begin')
-        .Indent
-        .AddLine('Writer.AddByte($FF);')
-        .Unindent
-        .AddLine('end;');
+      FData.Serialize.AddLine('if I > 0 then begin').Indent.AddLine('Writer.AddByte($FF);').Unindent.AddLine('end;');
     end;
   end;
 
@@ -1254,9 +1267,10 @@ end;
 { TFieldCodeGenerator.TBuilder }
 
 constructor TFieldCodeGenerator.TBuilder.Create(
-  TypeFactory: TTypeFactory;
-  Context: TObjectGenerationContext;
-  Data: TObjectGenerationData);
+    TypeFactory: TTypeFactory;
+    Context: TObjectGenerationContext;
+    Data: TObjectGenerationData
+);
 begin
   FTypeFactory := TypeFactory;
   FContext := Context;
@@ -1356,23 +1370,25 @@ end;
 
 function TFieldCodeGenerator.TBuilder.Build: TFieldCodeGenerator;
 begin
-  Result := TFieldCodeGenerator.Create(
-    FTypeFactory,
-    FContext,
-    FData,
-    FName,
-    FType,
-    FLength,
-    FPadded,
-    FOptional,
-    FHardcodedValue,
-    FComment,
-    FArrayField,
-    FDelimited,
-    FTrailingDelimiter,
-    FLengthField,
-    FLengthFieldBackReference,
-    FOffset);
+  Result :=
+      TFieldCodeGenerator.Create(
+          FTypeFactory,
+          FContext,
+          FData,
+          FName,
+          FType,
+          FLength,
+          FPadded,
+          FOptional,
+          FHardcodedValue,
+          FComment,
+          FArrayField,
+          FDelimited,
+          FTrailingDelimiter,
+          FLengthField,
+          FLengthFieldBackReference,
+          FOffset
+      );
 end;
 
 { TSwitchCodeGenerator }
@@ -1399,9 +1415,11 @@ begin
       PasDoc := Format('Default data associated with @code(%s.%s).', [FData.InterfaceTypeName, CasePropertyName]);
     end
     else begin
-      PasDoc := Format(
-        'Data associated with @code(%s.%s) value @code(%s).',
-        [FData.InterfaceTypeName, CasePropertyName, GetCaseValueExpression(ProtocolCase)]);
+      PasDoc :=
+          Format(
+              'Data associated with @code(%s.%s) value @code(%s).',
+              [FData.InterfaceTypeName, CasePropertyName, GetCaseValueExpression(ProtocolCase)]
+          );
     end;
 
     ProtocolComment := GetComment(ProtocolCase);
@@ -1500,8 +1518,8 @@ begin
       EnumValue := EnumType.FindEnumValueByOrdinal(OrdinalValue.Value);
       if EnumValue.HasValue then begin
         raise ECodeGenerationError.CreateFmt(
-          '%s value %s must be referred to by name (%s)',
-          [EnumType.Name, CaseValue, EnumValue.Value.Name]);
+            '%s value %s must be referred to by name (%s)',
+            [EnumType.Name, CaseValue, EnumValue.Value.Name]);
       end;
       Result := CaseValue;
     end
@@ -1516,17 +1534,17 @@ begin
     end;
   end
   else begin
-    raise ECodeGenerationError.CreateFmt(
-      '%s field referenced by switch must be a numeric or enumeration type.',
-      [FFieldName]);
+    raise ECodeGenerationError
+        .CreateFmt('%s field referenced by switch must be a numeric or enumeration type.', [FFieldName]);
   end;
 end;
 
 constructor TSwitchCodeGenerator.Create(
-  FieldName: string;
-  TypeFactory: TTypeFactory;
-  Context: TObjectGenerationContext;
-  Data: TObjectGenerationData);
+    FieldName: string;
+    TypeFactory: TTypeFactory;
+    Context: TObjectGenerationContext;
+    Data: TObjectGenerationData
+);
 begin
   FFieldName := FieldName;
   FTypeFactory := TypeFactory;
@@ -1545,17 +1563,19 @@ begin
   Slice := TPascalUnitSlice.Create;
 
   Slice.TypeDeclarations.Add(
-    TCodeBlock.Create
-      .AddLine(Format('{ Data associated with different values of the @code(%s) field. }', [CaseDataProperty]))
-      .AddLine(Format('%s = interface(IInterface)', [GetInterfaceTypeName]))
-      .Indent
-      .AddLine(Format('[''%s'']', [Guid.ToString]))
-      .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
-      .AddLine('  @param(Writer The writer that this object will be serialized to) }')
-      .AddLine('procedure Serialize(Writer: TEoWriter);')
-      .Unindent
-      .AddLine('end;')
-      .AddUses('EOLib.Data'));
+      TCodeBlock
+          .Create
+          .AddLine(Format('{ Data associated with different values of the @code(%s) field. }', [CaseDataProperty]))
+          .AddLine(Format('%s = interface(IInterface)', [GetInterfaceTypeName]))
+          .Indent
+          .AddLine(Format('[''%s'']', [Guid.ToString]))
+          .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
+          .AddLine('  @param(Writer The writer that this object will be serialized to) }')
+          .AddLine('procedure Serialize(Writer: TEoWriter);')
+          .Unindent
+          .AddLine('end;')
+          .AddUses('EOLib.Data')
+  );
 
   FData.AuxillaryTypes.Add(Slice);
 end;
@@ -1572,32 +1592,41 @@ begin
 
   FData.Fields.AddLine(Format('F%s: %s;', [CaseDataFieldName, InterfaceTypeName]));
 
-  FData.MethodDeclarations
-    .AddLine(Format('function Get%s: %s;', [CaseDataFieldName, InterfaceTypeName]))
-    .AddLine(Format('procedure Set%0:s(%0:s: %1:s);', [CaseDataFieldName, InterfaceTypeName]));
+  FData
+      .MethodDeclarations
+      .AddLine(Format('function Get%s: %s;', [CaseDataFieldName, InterfaceTypeName]))
+      .AddLine(Format('procedure Set%0:s(%0:s: %1:s);', [CaseDataFieldName, InterfaceTypeName]));
 
   FData.MethodImplementations.Add(
-    TCodeBlock.Create
-      .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
-      .AddLine('begin')
-      .Indent
-      .AddLine(Format('Result := F%s;', [CaseDataFieldName]))
-      .Unindent
-      .AddLine('end;'));
+      TCodeBlock
+          .Create
+          .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
+          .AddLine('begin')
+          .Indent
+          .AddLine(Format('Result := F%s;', [CaseDataFieldName]))
+          .Unindent
+          .AddLine('end;')
+  );
 
   FData.MethodImplementations.Add(
-    TCodeBlock.Create
-      .AddLine(
-        Format('procedure %0:s.Set%1:s(%1:s: %2:s);', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
-      .AddLine('begin')
-      .Indent
-      .AddLine(Format('F%0:s := %0:s;', [CaseDataFieldName]))
-      .Unindent
-      .AddLine('end;'));
+      TCodeBlock
+          .Create
+          .AddLine(
+              Format(
+                  'procedure %0:s.Set%1:s(%1:s: %2:s);',
+                  [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]
+              ))
+          .AddLine('begin')
+          .Indent
+          .AddLine(Format('F%0:s := %0:s;', [CaseDataFieldName]))
+          .Unindent
+          .AddLine('end;')
+  );
 
-  FData.Properties
-    .AddLine(Format('{ Data associated with the @code(%s) field. }', [SwitchFieldName]))
-    .AddLine(Format('property %0:s: %1:s read Get%0:s write Set%0:s;', [CaseDataFieldName, InterfaceTypeName]));
+  FData
+      .Properties
+      .AddLine(Format('{ Data associated with the @code(%s) field. }', [SwitchFieldName]))
+      .AddLine(Format('property %0:s: %1:s read Get%0:s write Set%0:s;', [CaseDataFieldName, InterfaceTypeName]));
 end;
 
 procedure TSwitchCodeGenerator.GenerateSwitchStart;
@@ -1636,9 +1665,8 @@ begin
     CaseStart := 'else begin';
   end
   else begin
-    CaseStart := Format(
-      '%s {%s}: begin',
-      [GetCaseValueExpression(ProtocolCase), GetCaseValueDocsExpression(ProtocolCase)]);
+    CaseStart :=
+        Format('%s {%s}: begin', [GetCaseValueExpression(ProtocolCase), GetCaseValueDocsExpression(ProtocolCase)]);
   end;
 
   FData.Serialize.AddLine(CaseStart).Indent;
@@ -1661,17 +1689,20 @@ begin
   end;
 
   if Length(GetInstructions(ProtocolCase)) = 0 then begin
-    SerializationErrorMessage := Format(
-      '''Expected %s to be nil for %s '' + %s + '', but was instance of '' + (F%s as TObject).ClassName + ''.''',
-      [CaseDataFieldName, CaseFieldName, FieldValueExpression, CaseDataFieldName]);
+    SerializationErrorMessage :=
+        Format(
+            '''Expected %s to be nil for %s '' + %s + '', but was instance of '' + (F%s as TObject).ClassName + ''.''',
+            [CaseDataFieldName, CaseFieldName, FieldValueExpression, CaseDataFieldName]
+        );
 
-    FData.Serialize
-      .AddLine(Format('if Assigned(F%s) then begin', [CaseDataFieldName]))
-      .Indent
-      .AddLine(Format('raise ESerializationError.Create(%s);', [SerializationErrorMessage]))
-      .Unindent
-      .AddLine('end;')
-      .AddUses('EOLib.Protocol.Errors');
+    FData
+        .Serialize
+        .AddLine(Format('if Assigned(F%s) then begin', [CaseDataFieldName]))
+        .Indent
+        .AddLine(Format('raise ESerializationError.Create(%s);', [SerializationErrorMessage]))
+        .Unindent
+        .AddLine('end;')
+        .AddUses('EOLib.Protocol.Errors');
 
     FData.Deserialize.AddLine(Format('Result.F%s := nil;', [CaseDataFieldName]));
   end
@@ -1680,34 +1711,41 @@ begin
 
     GenerateCaseDataType(ProtocolCase, Result);
 
-    SerializationErrorMessage := Format(
-      '''Expected %s to be instance of %s for %s '' + %s + '', but was ''',
-      [CaseDataFieldName, CaseDataTypeName, CaseFieldName, FieldValueExpression]);
+    SerializationErrorMessage :=
+        Format(
+            '''Expected %s to be instance of %s for %s '' + %s + '', but was ''',
+            [CaseDataFieldName, CaseDataTypeName, CaseFieldName, FieldValueExpression]
+        );
 
-    FData.Serialize
-      .AddLine(Format('if not Supports(F%s, %s) then begin', [CaseDataFieldName, CaseDataTypeName]))
-      .Indent
-      .AddLine(Format('ErrorMessage := %s;', [SerializationErrorMessage]))
-      .AddLine(Format('if Assigned(F%s) then begin', [CaseDataFieldName]))
-      .Indent
-      .AddLine(Format('ErrorMessage := ErrorMessage + ''instance of '' + (F%s as TObject).ClassName + ''.'';', [CaseDataFieldName]))
-      .Unindent
-      .AddLine('end')
-      .AddLine('else begin')
-      .Indent
-      .AddLine('ErrorMessage := ErrorMessage + ''nil.'';')
-      .Unindent
-      .AddLine('end;')
-      .AddLine('raise ESerializationError.Create(ErrorMessage);')
-      .Unindent
-      .AddLine('end;')
-      .AddLine(Format('F%s.Serialize(Writer);', [CaseDataFieldName]))
-      .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}')
-      .AddUses('EOLib.Protocol.Errors');
+    FData
+        .Serialize
+        .AddLine(Format('if not Supports(F%s, %s) then begin', [CaseDataFieldName, CaseDataTypeName]))
+        .Indent
+        .AddLine(Format('ErrorMessage := %s;', [SerializationErrorMessage]))
+        .AddLine(Format('if Assigned(F%s) then begin', [CaseDataFieldName]))
+        .Indent
+        .AddLine(
+            Format(
+                'ErrorMessage := ErrorMessage + ''instance of '' + (F%s as TObject).ClassName + ''.'';',
+                [CaseDataFieldName]
+            ))
+        .Unindent
+        .AddLine('end')
+        .AddLine('else begin')
+        .Indent
+        .AddLine('ErrorMessage := ErrorMessage + ''nil.'';')
+        .Unindent
+        .AddLine('end;')
+        .AddLine('raise ESerializationError.Create(ErrorMessage);')
+        .Unindent
+        .AddLine('end;')
+        .AddLine(Format('F%s.Serialize(Writer);', [CaseDataFieldName]))
+        .AddUses('{$IFDEF FPC}SysUtils{$ELSE}System.SysUtils{$ENDIF}')
+        .AddUses('EOLib.Protocol.Errors');
 
-    FData.Deserialize
-      .AddLine(
-        Format('Result.F%s := %s.Deserialize(Reader);', [CaseDatafieldName, GetCaseDataClassTypeName(ProtocolCase)]));
+    FData.Deserialize.AddLine(
+        Format('Result.F%s := %s.Deserialize(Reader);', [CaseDatafieldName, GetCaseDataClassTypeName(ProtocolCase)])
+    );
   end;
 
   FData.Serialize.Unindent.AddLine('end;');
@@ -1717,10 +1755,11 @@ end;
 { TObjectCodeGenerator }
 
 constructor TObjectCodeGenerator.Create(
-  ClassTypeName: string;
-  InterfaceTypeName: string;
-  TypeFactory: TTypeFactory;
-  Context: TObjectGenerationContext);
+    ClassTypeName: string;
+    InterfaceTypeName: string;
+    TypeFactory: TTypeFactory;
+    Context: TObjectGenerationContext
+);
 begin
   if not Assigned(Context) then begin
     Context := TObjectGenerationContext.Create;
@@ -1750,15 +1789,15 @@ begin
   CheckOptionalField(Optional);
 
   FieldCodeGenerator :=
-    FieldCodeGeneratorBuilder
-      .Name(GetStringAttribute(Instruction, 'name'))
-      .Type_(GetRequiredStringAttribute(Instruction, 'type'))
-      .Length(GetStringAttribute(Instruction, 'length'))
-      .Padded(GetBooleanAttribute(Instruction, 'padded'))
-      .Optional(Optional)
-      .HardcodedValue(GetText(Instruction))
-      .Comment(GetComment(Instruction))
-      .Build;
+      FieldCodeGeneratorBuilder
+          .Name(GetStringAttribute(Instruction, 'name'))
+          .Type_(GetRequiredStringAttribute(Instruction, 'type'))
+          .Length(GetStringAttribute(Instruction, 'length'))
+          .Padded(GetBooleanAttribute(Instruction, 'padded'))
+          .Optional(Optional)
+          .HardcodedValue(GetText(Instruction))
+          .Comment(GetComment(Instruction))
+          .Build;
 
   try
     FieldCodeGenerator.GenerateField;
@@ -1785,20 +1824,20 @@ begin
   Delimited := GetBooleanAttribute(Instruction, 'delimited');
   if Delimited and not FContext.ChunkedReadingEnabled then begin
     raise ECodeGenerationError.Create(
-      'Cannot generate a delimited array instruction unless chunked reading is enabled.');
+        'Cannot generate a delimited array instruction unless chunked reading is enabled.');
   end;
 
   FieldCodeGenerator :=
-    FieldCodeGeneratorBuilder
-      .Name(GetRequiredStringAttribute(Instruction, 'name'))
-      .Type_(GetRequiredStringAttribute(Instruction, 'type'))
-      .Length(GetStringAttribute(Instruction, 'length'))
-      .Optional(Optional)
-      .Comment(GetComment(Instruction))
-      .ArrayField(True)
-      .Delimited(Delimited)
-      .TrailingDelimiter(GetBooleanAttribute(Instruction, 'trailing-delimiter', True))
-      .Build;
+      FieldCodeGeneratorBuilder
+          .Name(GetRequiredStringAttribute(Instruction, 'name'))
+          .Type_(GetRequiredStringAttribute(Instruction, 'type'))
+          .Length(GetStringAttribute(Instruction, 'length'))
+          .Optional(Optional)
+          .Comment(GetComment(Instruction))
+          .ArrayField(True)
+          .Delimited(Delimited)
+          .TrailingDelimiter(GetBooleanAttribute(Instruction, 'trailing-delimiter', True))
+          .Build;
 
   try
     FieldCodeGenerator.GenerateField;
@@ -1814,7 +1853,9 @@ begin
 end;
 
 procedure TObjectCodeGenerator.GenerateLength(
-  Instruction: TDOMElement; LengthFieldBackReferences: TDictionary<string, string>);
+    Instruction: TDOMElement;
+    LengthFieldBackReferences: TDictionary<string, string>
+);
 var
   Name: string;
   Optional: Boolean;
@@ -1825,15 +1866,15 @@ begin
   CheckOptionalField(Optional);
 
   FieldCodeGenerator :=
-    FieldCodeGeneratorBuilder
-      .Name(Name)
-      .Type_(GetRequiredStringAttribute(Instruction, 'type'))
-      .Offset(GetIntAttribute(Instruction, 'offset'))
-      .LengthField(True)
-      .LengthFieldBackReference(LengthFieldBackReferences[Name])
-      .Optional(Optional)
-      .Comment(GetComment(Instruction))
-      .Build;
+      FieldCodeGeneratorBuilder
+          .Name(Name)
+          .Type_(GetRequiredStringAttribute(Instruction, 'type'))
+          .Offset(GetIntAttribute(Instruction, 'offset'))
+          .LengthField(True)
+          .LengthFieldBackReference(LengthFieldBackReferences[Name])
+          .Optional(Optional)
+          .Comment(GetComment(Instruction))
+          .Build;
 
   try
     FieldCodeGenerator.GenerateField;
@@ -1854,11 +1895,11 @@ var
   NeedsIfGuards: Boolean;
 begin
   FieldCodeGenerator :=
-    FieldCodeGeneratorBuilder
-      .Type_(GetRequiredStringAttribute(Instruction, 'type'))
-      .HardcodedValue(GetText(Instruction))
-      .Comment(GetComment(Instruction))
-      .Build;
+      FieldCodeGeneratorBuilder
+          .Type_(GetRequiredStringAttribute(Instruction, 'type'))
+          .HardcodedValue(GetText(Instruction))
+          .Comment(GetComment(Instruction))
+          .Build;
 
   NeedsIfGuards := not Data.Serialize.Empty or not Data.Deserialize.Empty;
 
@@ -1896,12 +1937,8 @@ var
   Start: Boolean;
   CaseContext: TObjectGenerationContext;
 begin
-  SwitchCodeGenerator := TSwitchCodeGenerator.Create(
-    GetRequiredStringAttribute(Instruction, 'field'),
-    FTypeFactory,
-    FContext,
-    FData
-  );
+  SwitchCodeGenerator :=
+      TSwitchCodeGenerator.Create(GetRequiredStringAttribute(Instruction, 'field'), FTypeFactory, FContext, FData);
 
   ProtocolCases := GetElementsByTagName(Instruction, 'case');
 
@@ -1928,7 +1965,9 @@ begin
 end;
 
 procedure TObjectCodeGenerator.GenerateChunked(
-  Instruction: TDOMElement; LengthFieldBackReferences: TDictionary<string, string>);
+    Instruction: TDOMElement;
+    LengthFieldBackReferences: TDictionary<string, string>
+);
 var
   WasAlreadyEnabled: Boolean;
   ChunkedInstruction: TDOMElement;
@@ -1964,7 +2003,9 @@ begin
 end;
 
 procedure TObjectCodeGenerator.GenerateInstruction(
-  Instruction: TDOMElement; LengthFieldBackReferences: TDictionary<string, string>);
+    Instruction: TDOMElement;
+    LengthFieldBackReferences: TDictionary<string, string>
+);
 var
   Tag: string;
 begin
@@ -2101,26 +2142,30 @@ begin
   if not FData.Constructor_.Empty then begin
     ConstructorDeclaration := 'constructor Create;' + CRLF;
     ConstructorImplementation
-      .AddLine(Format('constructor %s.Create;', [FData.ClassTypeName]))
-      .AddLine('begin')
-      .Indent
-      .AddCodeBlock(FData.Constructor_)
-      .Unindent
-      .AddLine('end;')
-      .AddLine;
+        .AddLine(Format('constructor %s.Create;', [FData.ClassTypeName]))
+        .AddLine('begin')
+        .Indent
+        .AddCodeBlock(FData.Constructor_)
+        .Unindent
+        .AddLine('end;')
+        .AddLine;
   end;
 
-  MethodDeclarations := TCodeBlock.Create
-    .AddLine('function GetByteSize: Cardinal;')
-    .AddCodeBlock(FData.ReadWriteMethodDeclarations)
-    .AddLine
-    .AddCodeBlock(FData.MethodDeclarations);
+  MethodDeclarations :=
+      TCodeBlock
+          .Create
+          .AddLine('function GetByteSize: Cardinal;')
+          .AddCodeBlock(FData.ReadWriteMethodDeclarations)
+          .AddLine
+          .AddCodeBlock(FData.MethodDeclarations);
 
-  Properties := TCodeBlock.Create
-    .AddLine('{ The size of the data that this object was deserialized from.')
-    .AddLine('  @note(0 if the instance was not created by the @code(Deserialize) method.) }')
-    .AddLine('property ByteSize: Cardinal read GetByteSize;')
-    .AddCodeBlock(FData.Properties);
+  Properties :=
+      TCodeBlock
+          .Create
+          .AddLine('{ The size of the data that this object was deserialized from.')
+          .AddLine('  @note(0 if the instance was not created by the @code(Deserialize) method.) }')
+          .AddLine('property ByteSize: Cardinal read GetByteSize;')
+          .AddCodeBlock(FData.Properties);
 
   Guid := CreateInterfaceGuid(FData.UnitName + '.' + FData.InterfaceTypeName, FData.FieldSignatures.ToArray);
 
@@ -2129,69 +2174,74 @@ begin
     InterfaceAncestorList := Format('(%s)', [Join(FData.AncestorInterfaces, ', ')]);
   end;
 
-  ClassAncestorList := Format(
-    '(%s)', [Join(Concat(['TInterfacedObject'], FData.AncestorInterfaces, [FData.InterfaceTypeName]), ', ')]);
+  ClassAncestorList :=
+      Format('(%s)', [Join(Concat(['TInterfacedObject'], FData.AncestorInterfaces, [FData.InterfaceTypeName]), ', ')]);
 
   InterfaceSlice := TPascalUnitSlice.Create;
   ClassSlice := TPascalUnitSlice.Create;
 
   InterfaceSlice.TypeDeclarations.Add(
-    TCodeBlock.Create
-      .Add(FData.PasDoc)
-      .AddLine(Format('%s = interface%s', [FData.InterfaceTypeName, InterfaceAncestorList]))
-      .Indent
-      .AddLine(Format('[''%s'']', [Guid.ToString]))
-      .AddCodeBlock(MethodDeclarations)
-      .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
-      .AddLine('  @param(Writer The writer that this object will be serialized to) }')
-      .AddLine('procedure Serialize(Writer: TEoWriter);')
-      .AddLine
-      .AddCodeBlock(Properties)
-      .Unindent
-      .AddLine('end;')
-      .AddUses('EOLib.Data'));
+      TCodeBlock
+          .Create
+          .Add(FData.PasDoc)
+          .AddLine(Format('%s = interface%s', [FData.InterfaceTypeName, InterfaceAncestorList]))
+          .Indent
+          .AddLine(Format('[''%s'']', [Guid.ToString]))
+          .AddCodeBlock(MethodDeclarations)
+          .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
+          .AddLine('  @param(Writer The writer that this object will be serialized to) }')
+          .AddLine('procedure Serialize(Writer: TEoWriter);')
+          .AddLine
+          .AddCodeBlock(Properties)
+          .Unindent
+          .AddLine('end;')
+          .AddUses('EOLib.Data')
+  );
 
   ClassSlice.TypeDeclarations.Add(
-    TCodeBlock.Create
-      .Add(FData.PasDoc)
-      .AddLine(Format('%s = class%s', [FData.ClassTypeName, ClassAncestorList]))
-      .AddLine('strict private')
-      .Indent
-      .AddLine('FByteSize: Cardinal;')
-      .AddCodeBlock(FData.Fields)
-      .Unindent
-      .AddLine('public')
-      .Indent
-      .Add(ConstructorDeclaration)
-      .AddCodeBlock(MethodDeclarations)
-      .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
-      .AddLine('  @param(Writer The writer that this object will be serialized to) }')
-      .AddLine('procedure Serialize(Writer: TEoWriter);')
-      .AddLine
-      .AddCodeBlock(FData.ClassMethodDeclarations)
-      .AddLine('{ Deserializes an instance of @classname from the provided @link(TEoReader).')
-      .AddLine('  @param(Reader The reader that the object will be deserialized from)')
-      .AddLine('  @returns(The deserialized object) }')
-      .AddLine(Format('class function Deserialize(Reader: TEoReader): %s;', [FData.ClassTypeName]))
-      .AddLine
-      .AddCodeBlock(Properties)
-      .Unindent
-      .AddLine('end;'));
+      TCodeBlock
+          .Create
+          .Add(FData.PasDoc)
+          .AddLine(Format('%s = class%s', [FData.ClassTypeName, ClassAncestorList]))
+          .AddLine('strict private')
+          .Indent
+          .AddLine('FByteSize: Cardinal;')
+          .AddCodeBlock(FData.Fields)
+          .Unindent
+          .AddLine('public')
+          .Indent
+          .Add(ConstructorDeclaration)
+          .AddCodeBlock(MethodDeclarations)
+          .AddLine('{ Serializes this @classname object to the provided @link(TEoWriter).')
+          .AddLine('  @param(Writer The writer that this object will be serialized to) }')
+          .AddLine('procedure Serialize(Writer: TEoWriter);')
+          .AddLine
+          .AddCodeBlock(FData.ClassMethodDeclarations)
+          .AddLine('{ Deserializes an instance of @classname from the provided @link(TEoReader).')
+          .AddLine('  @param(Reader The reader that the object will be deserialized from)')
+          .AddLine('  @returns(The deserialized object) }')
+          .AddLine(Format('class function Deserialize(Reader: TEoReader): %s;', [FData.ClassTypeName]))
+          .AddLine
+          .AddCodeBlock(Properties)
+          .Unindent
+          .AddLine('end;')
+  );
 
   FreeAndNil(MethodDeclarations);
   FreeAndNil(Properties);
 
-  ClassSlice.ImplementationBlock
-    .AddLine(Format('{ %s }', [FData.ClassTypeName]))
-    .AddLine
-    .AddCodeBlock(ConstructorImplementation)
-    .AddLine(Format('function %s.GetByteSize: Cardinal;', [FData.ClassTypeName]))
-    .AddLine('begin')
-    .Indent
-    .AddLine('Result := FByteSize;')
-    .Unindent
-    .AddLine('end;')
-    .AddLine;
+  ClassSlice
+      .ImplementationBlock
+      .AddLine(Format('{ %s }', [FData.ClassTypeName]))
+      .AddLine
+      .AddCodeBlock(ConstructorImplementation)
+      .AddLine(Format('function %s.GetByteSize: Cardinal;', [FData.ClassTypeName]))
+      .AddLine('begin')
+      .Indent
+      .AddLine('Result := FByteSize;')
+      .Unindent
+      .AddLine('end;')
+      .AddLine;
 
   FreeAndNil(ConstructorImplementation);
 
@@ -2199,57 +2249,57 @@ begin
     ClassSlice.ImplementationBlock.AddCodeBlock(Block).AddLine;
   end;
 
-  ClassSlice.ImplementationBlock
-    .AddLine(Format('procedure %s.Serialize(Writer: TEoWriter);', [FData.ClassTypeName]))
-    .Add(VarDeclarations(FData.SerializeVars))
-    .AddLine('begin')
-    .Indent
-    .AddLine('OldStringSanitizationMode := Writer.StringSanitizationMode;')
-    .Add(VarInitializations(FData.SerializeVars))
-    .AddLine('try')
-    .Indent
-    .AddCodeBlock(FData.Serialize)
-    .Unindent
-    .AddLine('finally')
-    .Indent
-    .AddLine('Writer.StringSanitizationMode := OldStringSanitizationMode;')
-    .Unindent
-    .AddLine('end;')
-    .Unindent
-    .AddLine('end;')
-    .AddLine
-    .AddLine(Format('class function %0:s.Deserialize(Reader: TEoReader): %0:s;', [FData.ClassTypeName]))
-    .Add(VarDeclarations(FData.DeserializeVars))
-    .AddLine('begin')
-    .Indent
-    .AddLine('OldChunkedReadingMode := Reader.ChunkedReadingMode;')
-    .Add(VarInitializations(FData.DeserializeVars))
-    .AddLine(Format('Result := %s.Create;', [FData.ClassTypeName]))
-    .AddLine('try')
-    .Indent
-    .AddLine('try')
-    .Indent
-    .AddLine('ReaderStartPosition := Reader.Position;')
-    .AddCodeBlock(FData.Deserialize)
-    .AddLine('Result.FByteSize := Reader.Position - ReaderStartPosition;')
-    .Unindent
-    .AddLine('except')
-    .Indent
-    .AddLine('Result.Free;')
-    .AddLine('raise;')
-    .Unindent
-    .AddLine('end;')
-    .Unindent
-    .AddLine('finally')
-    .Indent
-    .AddLine('Reader.ChunkedReadingMode := OldChunkedReadingMode;')
-    .Unindent
-    .AddLine('end;')
-    .Unindent
-    .AddLine('end;');
+  ClassSlice
+      .ImplementationBlock
+      .AddLine(Format('procedure %s.Serialize(Writer: TEoWriter);', [FData.ClassTypeName]))
+      .Add(VarDeclarations(FData.SerializeVars))
+      .AddLine('begin')
+      .Indent
+      .AddLine('OldStringSanitizationMode := Writer.StringSanitizationMode;')
+      .Add(VarInitializations(FData.SerializeVars))
+      .AddLine('try')
+      .Indent
+      .AddCodeBlock(FData.Serialize)
+      .Unindent
+      .AddLine('finally')
+      .Indent
+      .AddLine('Writer.StringSanitizationMode := OldStringSanitizationMode;')
+      .Unindent
+      .AddLine('end;')
+      .Unindent
+      .AddLine('end;')
+      .AddLine
+      .AddLine(Format('class function %0:s.Deserialize(Reader: TEoReader): %0:s;', [FData.ClassTypeName]))
+      .Add(VarDeclarations(FData.DeserializeVars))
+      .AddLine('begin')
+      .Indent
+      .AddLine('OldChunkedReadingMode := Reader.ChunkedReadingMode;')
+      .Add(VarInitializations(FData.DeserializeVars))
+      .AddLine(Format('Result := %s.Create;', [FData.ClassTypeName]))
+      .AddLine('try')
+      .Indent
+      .AddLine('try')
+      .Indent
+      .AddLine('ReaderStartPosition := Reader.Position;')
+      .AddCodeBlock(FData.Deserialize)
+      .AddLine('Result.FByteSize := Reader.Position - ReaderStartPosition;')
+      .Unindent
+      .AddLine('except')
+      .Indent
+      .AddLine('Result.Free;')
+      .AddLine('raise;')
+      .Unindent
+      .AddLine('end;')
+      .Unindent
+      .AddLine('finally')
+      .Indent
+      .AddLine('Reader.ChunkedReadingMode := OldChunkedReadingMode;')
+      .Unindent
+      .AddLine('end;')
+      .Unindent
+      .AddLine('end;');
 
   Result := GetAuxillaryTypes + [InterfaceSlice, ClassSlice];
 end;
 
 end.
-

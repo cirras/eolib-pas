@@ -2,7 +2,8 @@
 unit EOLib.Encrypt;
 
 {$IFDEF FPC}
-  {$MODE DELPHIUNICODE}{$H+}
+  {$MODE DELPHIUNICODE}
+  {$H+}
   {$WARNINGS OFF}
 {$ENDIF}
 
@@ -101,7 +102,7 @@ begin
     Exit;
   end;
 
-  SetLength(Buffer{%H-}, Length(Data));
+  SetLength(Buffer {%H-}, Length(Data));
 
   I := 0;
   J := 0;
@@ -137,7 +138,7 @@ begin
     Exit;
   end;
 
-  SetLength(Buffer{%H-}, Length(Data));
+  SetLength(Buffer {%H-}, Length(Data));
 
   I := 0;
   J := 0;
@@ -208,10 +209,10 @@ end;
 function ServerVerificationHash(Challenge: Cardinal): Integer;
 begin
   Inc(Challenge);
-  Result := 110905 +
-    (Challenge mod 9 + 1) * ((Int64(11092004) - Challenge) mod ((Challenge mod 11 + 1) * 119)) * 119 +
-    Challenge mod 2004;
+  Result :=
+      110905
+          + (Challenge mod 9 + 1) * ((Int64(11092004) - Challenge) mod ((Challenge mod 11 + 1) * 119)) * 119
+          + Challenge mod 2004;
 end;
 
 end.
-

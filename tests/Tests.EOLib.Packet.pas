@@ -18,10 +18,11 @@ type
   end;
 
   TTestInitSequenceStart = class(TTestCase)
-  private const
-    Value = 1511;
-    Seq1 = 184;
-    Seq2 = 236;
+  private
+    const
+      Value = 1511;
+      Seq1 = 184;
+      Seq2 = 236;
   published
     procedure TestFromInitValues;
     procedure TestGenerate;
@@ -29,10 +30,11 @@ type
   end;
 
   TTestPingSequenceStart = class(TTestCase)
-  private const
-    Value = 1511;
-    Seq1 = 1531;
-    Seq2 = 20;
+  private
+    const
+      Value = 1511;
+      Seq1 = 1531;
+      Seq2 = 20;
   published
     procedure TestFromPingValues;
     procedure TestGenerate;
@@ -188,4 +190,3 @@ initialization
   RegisterTest(TTestPingSequenceStart.Suite);
 
 end.
-
