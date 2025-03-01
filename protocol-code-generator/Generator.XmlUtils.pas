@@ -80,13 +80,14 @@ begin
   Instructions := TList<TDOMElement>.Create;
   Child := Element.FirstChild;
   while Assigned(Child) do begin
-    if (Child.NodeType = ELEMENT_NODE) and (Child.NodeName = 'field')
-        or (Child.NodeName = 'array')
-        or (Child.NodeName = 'length')
-        or (Child.NodeName = 'dummy')
-        or (Child.NodeName = 'switch')
-        or (Child.NodeName = 'chunked')
-        or (Child.NodeName = 'break') then
+    if (Child.NodeType = ELEMENT_NODE)
+        and ((Child.NodeName = 'field')
+            or (Child.NodeName = 'array')
+            or (Child.NodeName = 'length')
+            or (Child.NodeName = 'dummy')
+            or (Child.NodeName = 'switch')
+            or (Child.NodeName = 'chunked')
+            or (Child.NodeName = 'break')) then
     begin
       Instructions.Add(Child as TDomElement);
     end;
