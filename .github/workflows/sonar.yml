@@ -33,15 +33,15 @@ jobs:
           STANDARD_LIBRARY_DOWNLOAD_URL: ${{ secrets.STANDARD_LIBRARY_DOWNLOAD_URL }}
 
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v3
+        uses: sonarsource/sonarqube-scan-action@v5
         with:
           args: >
             -Dsonar.projectKey=eolib-pas
-            -Dsonar.projectVersion=${{steps.read-version.outputs.version}}
+            -Dsonar.projectVersion=${{ steps.read-version.outputs.version }}
             -Dsonar.sources=src
             -Dsonar.tests=tests
             -Dsonar.test.exclusions=tests/fpc/*
-            -Dsonar.delphi.installationPath=${{steps.setup-standard-library.outputs.bds-path}}
+            -Dsonar.delphi.installationPath=${{ steps.setup-standard-library.outputs.bds-path }}
             -Dsonar.delphi.compilerVersion=VER350
             -Dsonar.delphi.unitAliases="Generics.Collections=System.Generics.Collections"
         env:
