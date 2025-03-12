@@ -533,8 +533,7 @@ begin
   NameParts := SplitString(Name, ':');
 
   case Length(NameParts) of
-    1:
-      Result := nil;
+    1: Result := nil;
     2: begin
       TypeName := NameParts[0];
       UnderlyingTypeName := NameParts[1];

@@ -371,14 +371,10 @@ begin
     Dec(Value);
 
     case I of
-      0:
-        Result := Result + Value;
-      1:
-        Result := Result + EoCharMax * Value;
-      2:
-        Result := Result + EoShortMax * Value;
-      3:
-        Result := Result + EoThreeMax * Value;
+      0: Result := Result + Value;
+      1: Result := Result + EoCharMax * Value;
+      2: Result := Result + EoShortMax * Value;
+      3: Result := Result + EoThreeMax * Value;
     end;
   end;
 end;
