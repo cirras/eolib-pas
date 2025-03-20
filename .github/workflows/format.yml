@@ -17,4 +17,4 @@ jobs:
       - name: Run pasfmt
         uses: integrated-application-development/pasfmt-action@v1
         with:
-          release-name: v0.4.0-rc2
+          release-name: v0.4.0
