@@ -34,15 +34,15 @@ Requesting info about nearby players</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetPlayerIds">GetPlayerIds</a></strong>: TArray&lt;Cardinal&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetPlayerIds">_GetPlayerIds</a></strong>: TArray&lt;Cardinal&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#SetPlayerIds-TArrayCardinal-">SetPlayerIds</a></strong>(PlayerIds: TArray&lt;Cardinal&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_SetPlayerIds-TArrayCardinal-">_SetPlayerIds</a></strong>(PlayerIds: TArray&lt;Cardinal&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Requesting info about nearby players</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#PlayerIds">PlayerIds</a></strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetPlayerIds">GetPlayerIds</a> write <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#SetPlayerIds-TArrayCardinal-">SetPlayerIds</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#PlayerIds">PlayerIds</a></strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetPlayerIds">_GetPlayerIds</a> write <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_SetPlayerIds-TArrayCardinal-">_SetPlayerIds</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Requesting info about nearby players</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Requesting info about nearby players</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetPlayerIds"></span><code>function <strong>GetPlayerIds</strong>: TArray&lt;Cardinal&gt;;</code></td>
+<td class="itemcode"><span id="_GetPlayerIds"></span><code>function <strong>_GetPlayerIds</strong>: TArray&lt;Cardinal&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Requesting info about nearby players</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetPlayerIds-TArrayCardinal-"></span><code>procedure <strong>SetPlayerIds</strong>(PlayerIds: TArray&lt;Cardinal&gt;);</code></td>
+<td class="itemcode"><span id="_SetPlayerIds-TArrayCardinal-"></span><code>procedure <strong>_SetPlayerIds</strong>(PlayerIds: TArray&lt;Cardinal&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>IPlayerRangeRequestClientPacket</code> object to the provi
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="PlayerIds"></span><code>property <strong>PlayerIds</strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#GetPlayerIds">GetPlayerIds</a> write <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#SetPlayerIds-TArrayCardinal-">SetPlayerIds</a>;</code></td>
+<td class="itemcode"><span id="PlayerIds"></span><code>property <strong>PlayerIds</strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_GetPlayerIds">_GetPlayerIds</a> write <a href="EOLib.Protocol.Net.Client.IPlayerRangeRequestClientPacket.html#_SetPlayerIds-TArrayCardinal-">_SetPlayerIds</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

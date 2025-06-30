@@ -34,15 +34,15 @@ Reply to trying to open a locked door</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetKey">GetKey</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetKey">_GetKey</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#SetKey-Cardinal-">SetKey</a></strong>(Key: Cardinal);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_SetKey-Cardinal-">_SetKey</a></strong>(Key: Cardinal);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Reply to trying to open a locked door</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#Key">Key</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetKey">GetKey</a> write <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#SetKey-Cardinal-">SetKey</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#Key">Key</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetKey">_GetKey</a> write <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_SetKey-Cardinal-">_SetKey</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Reply to trying to open a locked door</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Reply to trying to open a locked door</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetKey"></span><code>function <strong>GetKey</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetKey"></span><code>function <strong>_GetKey</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Reply to trying to open a locked door</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetKey-Cardinal-"></span><code>procedure <strong>SetKey</strong>(Key: Cardinal);</code></td>
+<td class="itemcode"><span id="_SetKey-Cardinal-"></span><code>procedure <strong>_SetKey</strong>(Key: Cardinal);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>IDoorCloseServerPacket</code> object to the provided <a cl
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Key"></span><code>property <strong>Key</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#GetKey">GetKey</a> write <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#SetKey-Cardinal-">SetKey</a>;</code></td>
+<td class="itemcode"><span id="Key"></span><code>property <strong>Key</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_GetKey">_GetKey</a> write <a href="EOLib.Protocol.Net.Server.IDoorCloseServerPacket.html#_SetKey-Cardinal-">_SetKey</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

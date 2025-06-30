@@ -34,15 +34,15 @@ Trade updated (items changed)</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetTradeData">GetTradeData</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetTradeData">_GetTradeData</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#SetTradeData-TArrayITradeItemData-">SetTradeData</a></strong>(TradeData: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_SetTradeData-TArrayITradeItemData-">_SetTradeData</a></strong>(TradeData: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Trade updated (items changed)</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#TradeData">TradeData</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetTradeData">GetTradeData</a> write <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#SetTradeData-TArrayITradeItemData-">SetTradeData</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#TradeData">TradeData</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetTradeData">_GetTradeData</a> write <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_SetTradeData-TArrayITradeItemData-">_SetTradeData</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Trade updated (items changed)</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Trade updated (items changed)</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetTradeData"></span><code>function <strong>GetTradeData</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;;</code></td>
+<td class="itemcode"><span id="_GetTradeData"></span><code>function <strong>_GetTradeData</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Trade updated (items changed)</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetTradeData-TArrayITradeItemData-"></span><code>procedure <strong>SetTradeData</strong>(TradeData: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;);</code></td>
+<td class="itemcode"><span id="_SetTradeData-TArrayITradeItemData-"></span><code>procedure <strong>_SetTradeData</strong>(TradeData: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>ITradeReplyServerPacket</code> object to the provided <a c
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="TradeData"></span><code>property <strong>TradeData</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#GetTradeData">GetTradeData</a> write <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#SetTradeData-TArrayITradeItemData-">SetTradeData</a>;</code></td>
+<td class="itemcode"><span id="TradeData"></span><code>property <strong>TradeData</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.ITradeItemData.html">ITradeItemData</a>&gt; read <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_GetTradeData">_GetTradeData</a> write <a href="EOLib.Protocol.Net.Server.ITradeReplyServerPacket.html#_SetTradeData-TArrayITradeItemData-">_SetTradeData</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

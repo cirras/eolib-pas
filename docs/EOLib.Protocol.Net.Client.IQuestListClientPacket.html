@@ -34,15 +34,15 @@ Quest history / progress request</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetPage">GetPage</a></strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetPage">_GetPage</a></strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#SetPage-TQuestPage-">SetPage</a></strong>(Page: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_SetPage-TQuestPage-">_SetPage</a></strong>(Page: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Quest history / progress request</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#Page">Page</a></strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a> read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetPage">GetPage</a> write <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#SetPage-TQuestPage-">SetPage</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#Page">Page</a></strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a> read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetPage">_GetPage</a> write <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_SetPage-TQuestPage-">_SetPage</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Quest history / progress request</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Quest history / progress request</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetPage"></span><code>function <strong>GetPage</strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>;</code></td>
+<td class="itemcode"><span id="_GetPage"></span><code>function <strong>_GetPage</strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Quest history / progress request</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetPage-TQuestPage-"></span><code>procedure <strong>SetPage</strong>(Page: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>);</code></td>
+<td class="itemcode"><span id="_SetPage-TQuestPage-"></span><code>procedure <strong>_SetPage</strong>(Page: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a>);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>IQuestListClientPacket</code> object to the provided <a cl
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Page"></span><code>property <strong>Page</strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a> read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#GetPage">GetPage</a> write <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#SetPage-TQuestPage-">SetPage</a>;</code></td>
+<td class="itemcode"><span id="Page"></span><code>property <strong>Page</strong>: <a href="EOLib.Protocol.Net.html#TQuestPage">TQuestPage</a> read <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_GetPage">_GetPage</a> write <a href="EOLib.Protocol.Net.Client.IQuestListClientPacket.html#_SetPage-TQuestPage-">_SetPage</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

@@ -33,15 +33,15 @@ Get guild rank list reply</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetRanks">GetRanks</a></strong>: TArray&lt;string&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetRanks">_GetRanks</a></strong>: TArray&lt;string&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#SetRanks-TArraystring-">SetRanks</a></strong>(Ranks: TArray&lt;string&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_SetRanks-TArraystring-">_SetRanks</a></strong>(Ranks: TArray&lt;string&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -72,11 +72,11 @@ Get guild rank list reply</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#Ranks">Ranks</a></strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetRanks">GetRanks</a> write <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#SetRanks-TArraystring-">SetRanks</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#Ranks">Ranks</a></strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetRanks">_GetRanks</a> write <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_SetRanks-TArraystring-">_SetRanks</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -84,7 +84,7 @@ Get guild rank list reply</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -92,7 +92,7 @@ Get guild rank list reply</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetRanks"></span><code>function <strong>GetRanks</strong>: TArray&lt;string&gt;;</code></td>
+<td class="itemcode"><span id="_GetRanks"></span><code>function <strong>_GetRanks</strong>: TArray&lt;string&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -100,7 +100,7 @@ Get guild rank list reply</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetRanks-TArraystring-"></span><code>procedure <strong>SetRanks</strong>(Ranks: TArray&lt;string&gt;);</code></td>
+<td class="itemcode"><span id="_SetRanks-TArraystring-"></span><code>procedure <strong>_SetRanks</strong>(Ranks: TArray&lt;string&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -184,7 +184,7 @@ Deserializes an instance of <code>TGuildRankServerPacket</code> from the provide
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,7 +194,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Ranks"></span><code>property <strong>Ranks</strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#GetRanks">GetRanks</a> write <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#SetRanks-TArraystring-">SetRanks</a>;</code></td>
+<td class="itemcode"><span id="Ranks"></span><code>property <strong>Ranks</strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_GetRanks">_GetRanks</a> write <a href="EOLib.Protocol.Net.Server.TGuildRankServerPacket.html#_SetRanks-TArraystring-">_SetRanks</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

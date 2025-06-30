@@ -33,15 +33,15 @@ Sound effect</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetSoundId">GetSoundId</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetSoundId">_GetSoundId</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#SetSoundId-Cardinal-">SetSoundId</a></strong>(SoundId: Cardinal);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_SetSoundId-Cardinal-">_SetSoundId</a></strong>(SoundId: Cardinal);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -72,11 +72,11 @@ Sound effect</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#SoundId">SoundId</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetSoundId">GetSoundId</a> write <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#SetSoundId-Cardinal-">SetSoundId</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#SoundId">SoundId</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetSoundId">_GetSoundId</a> write <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_SetSoundId-Cardinal-">_SetSoundId</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -84,7 +84,7 @@ Sound effect</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -92,7 +92,7 @@ Sound effect</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetSoundId"></span><code>function <strong>GetSoundId</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetSoundId"></span><code>function <strong>_GetSoundId</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -100,7 +100,7 @@ Sound effect</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetSoundId-Cardinal-"></span><code>procedure <strong>SetSoundId</strong>(SoundId: Cardinal);</code></td>
+<td class="itemcode"><span id="_SetSoundId-Cardinal-"></span><code>procedure <strong>_SetSoundId</strong>(SoundId: Cardinal);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -184,7 +184,7 @@ Deserializes an instance of <code>TMusicPlayerServerPacket</code> from the provi
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,7 +194,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SoundId"></span><code>property <strong>SoundId</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#GetSoundId">GetSoundId</a> write <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#SetSoundId-Cardinal-">SetSoundId</a>;</code></td>
+<td class="itemcode"><span id="SoundId"></span><code>property <strong>SoundId</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_GetSoundId">_GetSoundId</a> write <a href="EOLib.Protocol.Net.Server.TMusicPlayerServerPacket.html#_SetSoundId-Cardinal-">_SetSoundId</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

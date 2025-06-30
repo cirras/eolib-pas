@@ -33,15 +33,15 @@ Information about online players. Sent in reply to friends list requests.</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetPlayers">GetPlayers</a></strong>: TArray&lt;string&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetPlayers">_GetPlayers</a></strong>: TArray&lt;string&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#SetPlayers-TArraystring-">SetPlayers</a></strong>(Players: TArray&lt;string&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_SetPlayers-TArraystring-">_SetPlayers</a></strong>(Players: TArray&lt;string&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -56,11 +56,11 @@ Information about online players. Sent in reply to friends list requests.</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#Players">Players</a></strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetPlayers">GetPlayers</a> write <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#SetPlayers-TArraystring-">SetPlayers</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#Players">Players</a></strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetPlayers">_GetPlayers</a> write <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_SetPlayers-TArraystring-">_SetPlayers</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -68,7 +68,7 @@ Information about online players. Sent in reply to friends list requests.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -76,7 +76,7 @@ Information about online players. Sent in reply to friends list requests.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetPlayers"></span><code>function <strong>GetPlayers</strong>: TArray&lt;string&gt;;</code></td>
+<td class="itemcode"><span id="_GetPlayers"></span><code>function <strong>_GetPlayers</strong>: TArray&lt;string&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -84,7 +84,7 @@ Information about online players. Sent in reply to friends list requests.</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetPlayers-TArraystring-"></span><code>procedure <strong>SetPlayers</strong>(Players: TArray&lt;string&gt;);</code></td>
+<td class="itemcode"><span id="_SetPlayers-TArraystring-"></span><code>procedure <strong>_SetPlayers</strong>(Players: TArray&lt;string&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -124,7 +124,7 @@ Deserializes an instance of <code>TPlayersListFriends</code> from the provided <
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -134,7 +134,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Players"></span><code>property <strong>Players</strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#GetPlayers">GetPlayers</a> write <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#SetPlayers-TArraystring-">SetPlayers</a>;</code></td>
+<td class="itemcode"><span id="Players"></span><code>property <strong>Players</strong>: TArray&lt;string&gt; read <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_GetPlayers">_GetPlayers</a> write <a href="EOLib.Protocol.Net.Server.TPlayersListFriends.html#_SetPlayers-TArraystring-">_SetPlayers</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

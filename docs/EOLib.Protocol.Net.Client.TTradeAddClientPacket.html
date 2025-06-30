@@ -33,15 +33,15 @@ Add an item to the trade screen</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetAddItem">GetAddItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetAddItem">_GetAddItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#SetAddItem-IItem-">SetAddItem</a></strong>(AddItem: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_SetAddItem-IItem-">_SetAddItem</a></strong>(AddItem: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -72,11 +72,11 @@ Add an item to the trade screen</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#AddItem">AddItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetAddItem">GetAddItem</a> write <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#SetAddItem-IItem-">SetAddItem</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#AddItem">AddItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetAddItem">_GetAddItem</a> write <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_SetAddItem-IItem-">_SetAddItem</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -84,7 +84,7 @@ Add an item to the trade screen</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -92,7 +92,7 @@ Add an item to the trade screen</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetAddItem"></span><code>function <strong>GetAddItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
+<td class="itemcode"><span id="_GetAddItem"></span><code>function <strong>_GetAddItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -100,7 +100,7 @@ Add an item to the trade screen</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetAddItem-IItem-"></span><code>procedure <strong>SetAddItem</strong>(AddItem: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
+<td class="itemcode"><span id="_SetAddItem-IItem-"></span><code>procedure <strong>_SetAddItem</strong>(AddItem: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -184,7 +184,7 @@ Deserializes an instance of <code>TTradeAddClientPacket</code> from the provided
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,7 +194,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="AddItem"></span><code>property <strong>AddItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#GetAddItem">GetAddItem</a> write <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#SetAddItem-IItem-">SetAddItem</a>;</code></td>
+<td class="itemcode"><span id="AddItem"></span><code>property <strong>AddItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_GetAddItem">_GetAddItem</a> write <a href="EOLib.Protocol.Net.Client.TTradeAddClientPacket.html#_SetAddItem-IItem-">_SetAddItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

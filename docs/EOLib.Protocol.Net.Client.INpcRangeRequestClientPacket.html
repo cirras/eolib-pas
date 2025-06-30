@@ -34,15 +34,15 @@ Requesting info about nearby NPCs</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetNpcIndexes">GetNpcIndexes</a></strong>: TArray&lt;Cardinal&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetNpcIndexes">_GetNpcIndexes</a></strong>: TArray&lt;Cardinal&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#SetNpcIndexes-TArrayCardinal-">SetNpcIndexes</a></strong>(NpcIndexes: TArray&lt;Cardinal&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_SetNpcIndexes-TArrayCardinal-">_SetNpcIndexes</a></strong>(NpcIndexes: TArray&lt;Cardinal&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Requesting info about nearby NPCs</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#NpcIndexes">NpcIndexes</a></strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetNpcIndexes">GetNpcIndexes</a> write <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#SetNpcIndexes-TArrayCardinal-">SetNpcIndexes</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#NpcIndexes">NpcIndexes</a></strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetNpcIndexes">_GetNpcIndexes</a> write <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_SetNpcIndexes-TArrayCardinal-">_SetNpcIndexes</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Requesting info about nearby NPCs</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Requesting info about nearby NPCs</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetNpcIndexes"></span><code>function <strong>GetNpcIndexes</strong>: TArray&lt;Cardinal&gt;;</code></td>
+<td class="itemcode"><span id="_GetNpcIndexes"></span><code>function <strong>_GetNpcIndexes</strong>: TArray&lt;Cardinal&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Requesting info about nearby NPCs</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetNpcIndexes-TArrayCardinal-"></span><code>procedure <strong>SetNpcIndexes</strong>(NpcIndexes: TArray&lt;Cardinal&gt;);</code></td>
+<td class="itemcode"><span id="_SetNpcIndexes-TArrayCardinal-"></span><code>procedure <strong>_SetNpcIndexes</strong>(NpcIndexes: TArray&lt;Cardinal&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>INpcRangeRequestClientPacket</code> object to the provided
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="NpcIndexes"></span><code>property <strong>NpcIndexes</strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#GetNpcIndexes">GetNpcIndexes</a> write <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#SetNpcIndexes-TArrayCardinal-">SetNpcIndexes</a>;</code></td>
+<td class="itemcode"><span id="NpcIndexes"></span><code>property <strong>NpcIndexes</strong>: TArray&lt;Cardinal&gt; read <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_GetNpcIndexes">_GetNpcIndexes</a> write <a href="EOLib.Protocol.Net.Client.INpcRangeRequestClientPacket.html#_SetNpcIndexes-TArrayCardinal-">_SetNpcIndexes</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

@@ -34,15 +34,15 @@ Updated experience and level-ups from party experience</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetGains">GetGains</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetGains">_GetGains</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#SetGains-TArrayIPartyExpShare-">SetGains</a></strong>(Gains: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_SetGains-TArrayIPartyExpShare-">_SetGains</a></strong>(Gains: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Updated experience and level-ups from party experience</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#Gains">Gains</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt; read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetGains">GetGains</a> write <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#SetGains-TArrayIPartyExpShare-">SetGains</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#Gains">Gains</a></strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt; read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetGains">_GetGains</a> write <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_SetGains-TArrayIPartyExpShare-">_SetGains</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Updated experience and level-ups from party experience</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Updated experience and level-ups from party experience</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetGains"></span><code>function <strong>GetGains</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;;</code></td>
+<td class="itemcode"><span id="_GetGains"></span><code>function <strong>_GetGains</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Updated experience and level-ups from party experience</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetGains-TArrayIPartyExpShare-"></span><code>procedure <strong>SetGains</strong>(Gains: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;);</code></td>
+<td class="itemcode"><span id="_SetGains-TArrayIPartyExpShare-"></span><code>procedure <strong>_SetGains</strong>(Gains: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt;);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>IPartyTargetGroupServerPacket</code> object to the provide
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Gains"></span><code>property <strong>Gains</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt; read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#GetGains">GetGains</a> write <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#SetGains-TArrayIPartyExpShare-">SetGains</a>;</code></td>
+<td class="itemcode"><span id="Gains"></span><code>property <strong>Gains</strong>: TArray&lt;<a href="EOLib.Protocol.Net.Server.IPartyExpShare.html">IPartyExpShare</a>&gt; read <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_GetGains">_GetGains</a> write <a href="EOLib.Protocol.Net.Server.IPartyTargetGroupServerPacket.html#_SetGains-TArrayIPartyExpShare-">_SetGains</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

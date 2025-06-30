@@ -33,15 +33,15 @@ Junking items</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetItem">GetItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetItem">_GetItem</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#SetItem-IItem-">SetItem</a></strong>(Item: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_SetItem-IItem-">_SetItem</a></strong>(Item: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -72,11 +72,11 @@ Junking items</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#Item">Item</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetItem">GetItem</a> write <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#SetItem-IItem-">SetItem</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#Item">Item</a></strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetItem">_GetItem</a> write <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_SetItem-IItem-">_SetItem</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -84,7 +84,7 @@ Junking items</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -92,7 +92,7 @@ Junking items</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetItem"></span><code>function <strong>GetItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
+<td class="itemcode"><span id="_GetItem"></span><code>function <strong>_GetItem</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -100,7 +100,7 @@ Junking items</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetItem-IItem-"></span><code>procedure <strong>SetItem</strong>(Item: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
+<td class="itemcode"><span id="_SetItem-IItem-"></span><code>procedure <strong>_SetItem</strong>(Item: <a href="EOLib.Protocol.Net.IItem.html">IItem</a>);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -184,7 +184,7 @@ Deserializes an instance of <code>TItemJunkClientPacket</code> from the provided
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,7 +194,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Item"></span><code>property <strong>Item</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#GetItem">GetItem</a> write <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#SetItem-IItem-">SetItem</a>;</code></td>
+<td class="itemcode"><span id="Item"></span><code>property <strong>Item</strong>: <a href="EOLib.Protocol.Net.IItem.html">IItem</a> read <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_GetItem">_GetItem</a> write <a href="EOLib.Protocol.Net.Client.TItemJunkClientPacket.html#_SetItem-IItem-">_SetItem</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>

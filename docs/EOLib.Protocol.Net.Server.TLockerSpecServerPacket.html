@@ -33,15 +33,15 @@ Reply to trying to add an item to a full locker</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetLockerMaxItems">GetLockerMaxItems</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetLockerMaxItems">_GetLockerMaxItems</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#SetLockerMaxItems-Cardinal-">SetLockerMaxItems</a></strong>(LockerMaxItems: Cardinal);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_SetLockerMaxItems-Cardinal-">_SetLockerMaxItems</a></strong>(LockerMaxItems: Cardinal);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -72,11 +72,11 @@ Reply to trying to add an item to a full locker</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#LockerMaxItems">LockerMaxItems</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetLockerMaxItems">GetLockerMaxItems</a> write <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#SetLockerMaxItems-Cardinal-">SetLockerMaxItems</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#LockerMaxItems">LockerMaxItems</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetLockerMaxItems">_GetLockerMaxItems</a> write <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_SetLockerMaxItems-Cardinal-">_SetLockerMaxItems</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -84,7 +84,7 @@ Reply to trying to add an item to a full locker</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -92,7 +92,7 @@ Reply to trying to add an item to a full locker</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetLockerMaxItems"></span><code>function <strong>GetLockerMaxItems</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetLockerMaxItems"></span><code>function <strong>_GetLockerMaxItems</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -100,7 +100,7 @@ Reply to trying to add an item to a full locker</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetLockerMaxItems-Cardinal-"></span><code>procedure <strong>SetLockerMaxItems</strong>(LockerMaxItems: Cardinal);</code></td>
+<td class="itemcode"><span id="_SetLockerMaxItems-Cardinal-"></span><code>procedure <strong>_SetLockerMaxItems</strong>(LockerMaxItems: Cardinal);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -184,7 +184,7 @@ Deserializes an instance of <code>TLockerSpecServerPacket</code> from the provid
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -194,7 +194,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="LockerMaxItems"></span><code>property <strong>LockerMaxItems</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#GetLockerMaxItems">GetLockerMaxItems</a> write <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#SetLockerMaxItems-Cardinal-">SetLockerMaxItems</a>;</code></td>
+<td class="itemcode"><span id="LockerMaxItems"></span><code>property <strong>LockerMaxItems</strong>: Cardinal read <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_GetLockerMaxItems">_GetLockerMaxItems</a> write <a href="EOLib.Protocol.Net.Server.TLockerSpecServerPacket.html#_SetLockerMaxItems-Cardinal-">_SetLockerMaxItems</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>

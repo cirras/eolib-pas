@@ -34,15 +34,15 @@ Using an item</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetByteSize">GetByteSize</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetByteSize">_GetByteSize</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetItemId">GetItemId</a></strong>: Cardinal;</code></td>
+<td class="itemcode"><code>function <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetItemId">_GetItemId</a></strong>: Cardinal;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#SetItemId-Cardinal-">SetItemId</a></strong>(ItemId: Cardinal);</code></td>
+<td class="itemcode"><code>procedure <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_SetItemId-Cardinal-">_SetItemId</a></strong>(ItemId: Cardinal);</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
@@ -61,11 +61,11 @@ Using an item</p>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#ByteSize">ByteSize</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#ItemId">ItemId</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetItemId">GetItemId</a> write <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#SetItemId-Cardinal-">SetItemId</a>;</code></td>
+<td class="itemcode"><code>property <strong><a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#ItemId">ItemId</a></strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetItemId">_GetItemId</a> write <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_SetItemId-Cardinal-">_SetItemId</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -73,7 +73,7 @@ Using an item</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetByteSize"></span><code>function <strong>GetByteSize</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetByteSize"></span><code>function <strong>_GetByteSize</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p><h6 class="description_section">Attributes</h6>
@@ -86,7 +86,7 @@ Using an item</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="GetItemId"></span><code>function <strong>GetItemId</strong>: Cardinal;</code></td>
+<td class="itemcode"><span id="_GetItemId"></span><code>function <strong>_GetItemId</strong>: Cardinal;</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -94,7 +94,7 @@ Using an item</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="SetItemId-Cardinal-"></span><code>procedure <strong>SetItemId</strong>(ItemId: Cardinal);</code></td>
+<td class="itemcode"><span id="_SetItemId-Cardinal-"></span><code>procedure <strong>_SetItemId</strong>(ItemId: Cardinal);</code></td>
 </tr>
 <tr><td colspan="2">
 <p class="nodescription">This item has no description.</p></td></tr>
@@ -140,7 +140,7 @@ Serializes this <code>IItemUseClientPacket</code> object to the provided <a clas
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetByteSize">GetByteSize</a>;</code></td>
+<td class="itemcode"><span id="ByteSize"></span><code>property <strong>ByteSize</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetByteSize">_GetByteSize</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
@@ -150,7 +150,7 @@ The size of the data that this object was deserialized from. <dl class="tag note
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="ItemId"></span><code>property <strong>ItemId</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#GetItemId">GetItemId</a> write <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#SetItemId-Cardinal-">SetItemId</a>;</code></td>
+<td class="itemcode"><span id="ItemId"></span><code>property <strong>ItemId</strong>: Cardinal read <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_GetItemId">_GetItemId</a> write <a href="EOLib.Protocol.Net.Client.IItemUseClientPacket.html#_SetItemId-Cardinal-">_SetItemId</a>;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
