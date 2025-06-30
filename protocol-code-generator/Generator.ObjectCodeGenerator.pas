@@ -1159,10 +1159,10 @@ begin
 
   FData.Fields.AddLine(Format('F%s: %s;', [DelphiName, DelphiTypeName]));
 
-  FData.ReadWriteMethodDeclarations.AddLine(Format('function Get%s: %s;', [DelphiName, DelphiTypeName]));
+  FData.ReadWriteMethodDeclarations.AddLine(Format('function _Get%s: %s;', [DelphiName, DelphiTypeName]));
   FData.MethodImplementations.Add(
       (TCodeBlock.Create)
-          .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, DelphiName, DelphiTypeName]))
+          .AddLine(Format('function %s._Get%s: %s;', [FData.ClassTypeName, DelphiName, DelphiTypeName]))
           .AddLine('begin')
           .Indent
           .AddLine(Format('Result := F%s;', [DelphiName]))
@@ -1170,18 +1170,18 @@ begin
           .AddLine('end;')
   );
 
-  PropertyDeclaration := Format('property %s: %s read Get%s', [EscapedDelphiName, DelphiTypeName, DelphiName]);
+  PropertyDeclaration := Format('property %s: %s read _Get%s', [EscapedDelphiName, DelphiTypeName, DelphiName]);
 
   if FHardcodedValue = '' then begin
     FData.ReadWriteMethodDeclarations.AddLine(
-        Format('procedure Set%s(%s: %s);', [DelphiName, EscapedDelphiName, DelphiTypeName])
+        Format('procedure _Set%s(%s: %s);', [DelphiName, EscapedDelphiName, DelphiTypeName])
     );
 
     FData.MethodImplementations.Add(
         (TCodeBlock.Create)
             .AddLine(
                 Format(
-                    'procedure %s.Set%s(%s: %s);',
+                    'procedure %s._Set%s(%s: %s);',
                     [FData.ClassTypeName, DelphiName, EscapedDelphiName, DelphiTypeName]
                 ))
             .AddLine('begin')
@@ -1191,7 +1191,7 @@ begin
             .AddLine('end;')
     );
 
-    PropertyDeclaration := Format('%s write Set%s', [PropertyDeclaration, DelphiName]);
+    PropertyDeclaration := Format('%s write _Set%s', [PropertyDeclaration, DelphiName]);
   end;
 
   PropertyDeclaration := PropertyDeclaration + ';';
@@ -1592,12 +1592,12 @@ begin
   FData.Fields.AddLine(Format('F%s: %s;', [CaseDataFieldName, InterfaceTypeName]));
 
   (FData.MethodDeclarations)
-      .AddLine(Format('function Get%s: %s;', [CaseDataFieldName, InterfaceTypeName]))
-      .AddLine(Format('procedure Set%0:s(%0:s: %1:s);', [CaseDataFieldName, InterfaceTypeName]));
+      .AddLine(Format('function _Get%s: %s;', [CaseDataFieldName, InterfaceTypeName]))
+      .AddLine(Format('procedure _Set%0:s(%0:s: %1:s);', [CaseDataFieldName, InterfaceTypeName]));
 
   FData.MethodImplementations.Add(
       (TCodeBlock.Create)
-          .AddLine(Format('function %s.Get%s: %s;', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
+          .AddLine(Format('function %s._Get%s: %s;', [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]))
           .AddLine('begin')
           .Indent
           .AddLine(Format('Result := F%s;', [CaseDataFieldName]))
@@ -1609,7 +1609,7 @@ begin
       (TCodeBlock.Create)
           .AddLine(
               Format(
-                  'procedure %0:s.Set%1:s(%1:s: %2:s);',
+                  'procedure %0:s._Set%1:s(%1:s: %2:s);',
                   [FData.ClassTypeName, CaseDataFieldName, InterfaceTypeName]
               ))
           .AddLine('begin')
@@ -1621,7 +1621,7 @@ begin
 
   (FData.Properties)
       .AddLine(Format('{ Data associated with the @code(%s) field. }', [SwitchFieldName]))
-      .AddLine(Format('property %0:s: %1:s read Get%0:s write Set%0:s;', [CaseDataFieldName, InterfaceTypeName]));
+      .AddLine(Format('property %0:s: %1:s read _Get%0:s write _Set%0:s;', [CaseDataFieldName, InterfaceTypeName]));
 end;
 
 procedure TSwitchCodeGenerator.GenerateSwitchStart;
@@ -2151,7 +2151,7 @@ begin
 
   MethodDeclarations :=
       (TCodeBlock.Create)
-          .AddLine('function GetByteSize: Cardinal;')
+          .AddLine('function _GetByteSize: Cardinal;')
           .AddCodeBlock(FData.ReadWriteMethodDeclarations)
           .AddLine
           .AddCodeBlock(FData.MethodDeclarations);
@@ -2160,7 +2160,7 @@ begin
       (TCodeBlock.Create)
           .AddLine('{ The size of the data that this object was deserialized from.')
           .AddLine('  @note(0 if the instance was not created by the @code(Deserialize) method.) }')
-          .AddLine('property ByteSize: Cardinal read GetByteSize;')
+          .AddLine('property ByteSize: Cardinal read _GetByteSize;')
           .AddCodeBlock(FData.Properties);
 
   Guid := CreateInterfaceGuid(FData.UnitName + '.' + FData.InterfaceTypeName, FData.FieldSignatures.ToArray);
@@ -2228,7 +2228,7 @@ begin
       .AddLine(Format('{ %s }', [FData.ClassTypeName]))
       .AddLine
       .AddCodeBlock(ConstructorImplementation)
-      .AddLine(Format('function %s.GetByteSize: Cardinal;', [FData.ClassTypeName]))
+      .AddLine(Format('function %s._GetByteSize: Cardinal;', [FData.ClassTypeName]))
       .AddLine('begin')
       .Indent
       .AddLine('Result := FByteSize;')

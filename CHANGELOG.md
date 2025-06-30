@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Prefix protocol object getter/setter names with underscores to hint that they shouldn't be used.
+
 ### Fixed
 
 - Incorrect (de)serialization of some data structures containing arrays with trailing delimiters.
