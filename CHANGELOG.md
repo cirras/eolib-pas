@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-06-30
+
 ### Changed
 
 - Prefix protocol object getter/setter names with underscores to hint that they shouldn't be used.
@@ -38,5 +40,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Data encryption
   - Packet sequencer
 
-[Unreleased]: http://github.com/cirras/eolib-pas/compare/v1.0.0-RC1...HEAD
+[Unreleased]: http://github.com/cirras/eolib-pas/compare/v1.0.0...HEAD
+[1.0.0]: http://github.com/cirras/eolib-pas/compare/v1.0.0-RC1...v1.0.0
 [1.0.0-RC1]: http://github.com/cirras/eolib-pas/compare/v1.0.0-RC1
