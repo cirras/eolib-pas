@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Incorrect (de)serialization of some data structures containing arrays with trailing delimiters.
+- Change incorrect `ISkillLearn.StatRequirements` field type from `ICharacterBaseStats` to
+  `ISkillStatRequirements`.
+
 
 ## [1.0.0-RC1] - 2024-10-20
 
