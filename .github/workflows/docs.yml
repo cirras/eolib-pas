@@ -82,5 +82,9 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m "Deploy updated documentation"
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Deploy updated documentation"
+            git push
+          else
+            echo "Documentation unchanged. No commit created."
+          fi
