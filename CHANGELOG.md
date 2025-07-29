@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-07-29
+
 ### Fixed
 
 - Fix inaccurate deserialization of `TWelcomeReplyServerPacket` where non-chunked portions of the
@@ -45,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Data encryption
   - Packet sequencer
 
-[Unreleased]: http://github.com/cirras/eolib-pas/compare/v1.0.0...HEAD
+[Unreleased]: http://github.com/cirras/eolib-pas/compare/v1.0.1...HEAD
+[1.0.1]: http://github.com/cirras/eolib-pas/compare/v1.0.0...v1.0.1
 [1.0.0]: http://github.com/cirras/eolib-pas/compare/v1.0.0-RC1...v1.0.0
 [1.0.0-RC1]: http://github.com/cirras/eolib-pas/compare/v1.0.0-RC1
