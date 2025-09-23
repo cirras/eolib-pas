@@ -579,7 +579,7 @@ begin
       LengthDescription := '';
       if FContext.AccessibleFields.TryGetValue(FLengthString, FieldData) then begin
         MaxValue := GetMaxValueOf(FieldData.Type_ as TIntegerType) + FieldData.Offset;
-        LengthDescription := Format('%d or less', [MaxValue]);
+        LengthDescription := Format('%u or less', [MaxValue]);
       end
       else begin
         LengthDescription := Format('@code(%s)', [FLengthString]);
@@ -593,7 +593,7 @@ begin
     FieldType := GetType;
     if FieldType is TIntegerType then begin
       ValueDescription := IfThen(FArrayField, 'Element value', 'Value');
-      Notes.Add(Format('%s range is 0-%d', [ValueDescription, GetMaxValueOf(FieldType as TIntegerType)]));
+      Notes.Add(Format('%s range is 0-%u', [ValueDescription, GetMaxValueOf(FieldType as TIntegerType)]));
     end;
 
     Result := GeneratePasDoc(FComment, Notes.ToArray);
