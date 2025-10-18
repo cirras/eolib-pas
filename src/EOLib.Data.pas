@@ -297,9 +297,9 @@ type
     { If string sanitization mode is enabled, the writer will switch @code($FF) (ÿ) bytes in
       strings to @code($79) (y).
 
-      See:
-
-      @url(https://github.com/Cirras/eo-protocol/blob/master/docs/chunks.md#sanitization Chunked Reading: Sanitization) }
+      See @url(
+        https://github.com/Cirras/eo-protocol/blob/master/docs/chunks.md#sanitization
+        Chunked Reading: Sanitization). }
     property StringSanitizationMode: Boolean read FStringSanitizationMode write FStringSanitizationMode;
 
     { The length of the writer data. }
