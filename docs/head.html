@@ -1,1 +1,109 @@
 <link rel="icon" href="logo.svg">
+<script>
+  (function () {
+    function isCompactMobileLayout() {
+      return window.matchMedia('(max-width: 768px), (max-height: 520px) and (orientation: landscape)').matches;
+    }
+
+    function setupMobileNav() {
+      let nav = document.querySelector('.navigation');
+      if (!nav || document.querySelector('.doc-nav-toggle')) {
+        return;
+      }
+
+      nav.id = 'doc-sidebar';
+
+      let button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'doc-nav-toggle';
+      button.setAttribute('aria-controls', nav.id);
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'Toggle navigation');
+      button.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
+
+      let backdrop = document.createElement('div');
+      backdrop.className = 'doc-nav-backdrop';
+      backdrop.setAttribute('aria-hidden', 'true');
+
+      let closeButton = document.createElement('button');
+      closeButton.type = 'button';
+      closeButton.className = 'doc-nav-close';
+      closeButton.setAttribute('aria-label', 'Close navigation');
+      closeButton.textContent = '\u00d7';
+
+      function closeNav() {
+        document.body.classList.remove('nav-open');
+        button.setAttribute('aria-expanded', 'false');
+      }
+
+      button.addEventListener('click', function () {
+        let isOpen = document.body.classList.toggle('nav-open');
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      nav.addEventListener('click', function (event) {
+        if (event.target.closest('a')) {
+          closeNav();
+        }
+      });
+
+      backdrop.addEventListener('click', closeNav);
+      closeButton.addEventListener('click', closeNav);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          closeNav();
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (!isCompactMobileLayout()) {
+          closeNav();
+        }
+      });
+
+      document.body.appendChild(button);
+      document.body.appendChild(backdrop);
+      nav.appendChild(closeButton);
+    }
+
+    function setupBackToTop() {
+      if (document.querySelector('.doc-back-to-top')) {
+        return;
+      }
+
+      let backToTop = document.createElement('button');
+      backToTop.type = 'button';
+      backToTop.className = 'doc-back-to-top';
+      backToTop.setAttribute('aria-label', 'Back to top');
+      backToTop.hidden = true;
+      backToTop.innerHTML = '<svg viewBox="0 0 32 32" width="21" height="21" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 12 5 23l2.1 2.1 8.9-8.9 8.9 8.9L27 23 16 12zM4 7h24v3H4z"/></svg>';
+
+      function updateBackToTopVisibility() {
+        let show = isCompactMobileLayout() && window.scrollY > 280;
+        backToTop.hidden = !show;
+      }
+
+      backToTop.addEventListener('click', function () {
+        let reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo(reducedMotion ? { top: 0 } : { top: 0, behavior: 'smooth' });
+      });
+
+      window.addEventListener('scroll', updateBackToTopVisibility, { passive: true });
+      window.addEventListener('resize', updateBackToTopVisibility);
+
+      document.body.appendChild(backToTop);
+      updateBackToTopVisibility();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        setupMobileNav();
+        setupBackToTop();
+      });
+    } else {
+      setupMobileNav();
+      setupBackToTop();
+    }
+  })();
+</script>
