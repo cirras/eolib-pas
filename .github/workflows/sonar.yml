@@ -33,7 +33,7 @@ jobs:
           STANDARD_LIBRARY_DOWNLOAD_URL: ${{ secrets.STANDARD_LIBRARY_DOWNLOAD_URL }}
 
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v5
+        uses: sonarsource/sonarqube-scan-action@v6
         with:
           args: >
             -Dsonar.projectKey=eolib-pas
